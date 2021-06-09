@@ -1,0 +1,72 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+header{
+    background-color: #023E7D;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+}
+p{
+    display: inline-block;
+    width: 400px;
+    font-weight: 200;
+}
+.especiality{
+    background-color: #0466C8;
+    color: #000; text-align: center;
+    padding: 10px;
+    font-weight: 700;
+}
+.secction_left{
+    text-align: left;
+}
+.container{
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+.contaner_education{
+    display: inline-block;
+    width: 68%;
+    vertical-align: top;
+}
+.image_presentation{
+    display: inline-block;
+    width: 30%;
+}
+.title1{
+    display: inline-block;
+    width: 400px;
+    font-weight: 700;
+}
+.title3{
+    font-size: 36px;
+    font-weight: 700;
+    color: #023E8A;
+}
+dt{
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 36px;
+}
+.section_separator{
+    margin-top: 70px;
+}
+.separator_courses{
+    margin-top: 16px;
+}
+.image_width{
+    width: 50px;
+}
+.margin_icons{
+    margin-right: 3em;
+}
+ul{
+    margin-top: 12px;
+    padding: 0px;
+}
