@@ -11,6 +11,9 @@ img{
 }
 :root{
     --yellow: #EF233C;
+    --color1: #566473
+    --color2: #16a085
+    --color3: #435a6b
 }
 /* Estilos globales */
 body{
@@ -138,6 +141,54 @@ main-content{
 }
 .item header{
     padding: 1.5em 2em;
+}
+.button-and-icons{
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+}
+/* Button componen */
+.btn {
+    /* Color del texo */
+    color: #D90429; 
+    color: #D90429; 
+    /* Eliminar color de fondo */
+    background: transparent; 
+    background: transparent; 
+    /* Grosor del borde, estilo de línea y color */
+    border: 2px solid #D90429;
+    border: 2px solid #D90429;
+    /* Añadir esquinas curvadas */
+    border-radius: 6px; 
+    border-radius: 6px; 
+    /* Poner texto en mayúsculas */
+    background-color: #EDF2F4; 
+    color: black; 
+    border: 2px solid #D90429;
+    border: none;
+    color: #EDF2F4;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.btn1 {
+    background-color: #EDF2F4; 
+    color: black; 
+    border: 2px solid #D90429;
+}
+.btn1:hover {
+    background-color: #D90429;
+    color: #EDF2F4;
+    background-color: #D90429;
+    color: #EDF2F4;
 }
 /* Media Querys */
 @media(min-width:60rem){
