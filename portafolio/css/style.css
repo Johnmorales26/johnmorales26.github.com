@@ -164,7 +164,7 @@ main-content{
     border-radius: 6px; 
     /* Poner texto en mayúsculas */
     background-color: #EDF2F4; 
-    color: black; 
+    color: #2B2D42; 
     border: 2px solid #D90429;
     border: none;
     color: #EDF2F4;
@@ -181,7 +181,7 @@ main-content{
 }
 .btn1 {
     background-color: #EDF2F4; 
-    color: black; 
+    color: #2B2D42; 
     border: 2px solid #D90429;
 }
 .btn1:hover {
@@ -192,7 +192,7 @@ main-content{
 }
 .btn2 {
     background-color: #EDF2F4; 
-    color: black; 
+    color: #D90429; 
     border: 2px solid #2B2D42;
 }
 .btn2:hover {
