@@ -1,0 +1,92 @@
+/* Estilos de componentes */
+:root {
+    --purple: #7B2CBF;
+    --color1: #566473 --color2: #16a085 --color3: #435a6b
+}
+
+.purple-underline {
+    text-decoration: underline;
+    text-decoration-color: var(--purple);
+}
+.calisthenics-titles{
+    color: #2B2D42;
+}
+.bg-purple {
+    background-color: var(--purple);
+}
+
+.color-titles {
+    color: #EDF2FB;
+}
+
+.button-and-icons {
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.btn-photo {
+    /* Color del texo */
+    color: #7B2CBF;
+    color: #7B2CBF;
+    /* Eliminar color de fondo */
+    background: transparent;
+    background: transparent;
+    /* Grosor del borde, estilo de línea y color */
+    border: 2px solid #7B2CBF;
+    border: 2px solid #7B2CBF;
+    /* Añadir esquinas curvadas */
+    border-radius: 6px;
+    border-radius: 6px;
+    /* Poner texto en mayúsculas */
+    background-color: #EDF2F4;
+    color: #2B2D42;
+    border: 2px solid #7B2CBF;
+    border: none;
+    color: #5e5e5e;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn1-photo {
+    background-color: #EDF2F4;
+    color: #2B2D42;
+    border: 2px solid #7B2CBF;
+}
+
+.btn1-photo:hover {
+    background-color: #7B2CBF;
+    color: #EDF2F4;
+    background-color: #7B2CBF;
+    color: #EDF2F4;
+}
+
+.btn2-photo {
+    background-color: #EDF2F4;
+    color: #7B2CBF;
+    border: 2px solid #2B2D42;
+}
+
+.btn2-photo:hover {
+    background-color: #2B2D42;
+    color: #EDF2F4;
+    background-color: #2B2D42;
+    color: #EDF2F4;
+}
+dd{
+    padding-bottom: 2rem;
+}
+.section-padding-calisthenics {
+    align-self: center;
+    padding: 0rem 0rem;
+}
