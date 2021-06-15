@@ -4,12 +4,40 @@
     --color1: #566473 --color2: #16a085 --color3: #435a6b
 }
 
+/* Card */
+.exersices_cards img {
+    width: 100rem;
+    height: 25rem;
+}
+.color-title {
+    color: #2B2D42;
+}
+.card {
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 1px 3px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.exersices_cards h3 {
+    font-size: 1.7em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .purple-underline {
     text-decoration: underline;
     text-decoration-color: var(--purple);
 }
-.calisthenics-titles{
+
+.calisthenics-titles {
     color: #2B2D42;
+}
+.text-cards{
+    color: #10002B;
+}
+.section-padding-movement-library {
+    align-self: center;
+    padding: 2rem 2rem;
 }
 .bg-purple {
     background-color: var(--purple);
@@ -83,9 +111,11 @@
     background-color: #2B2D42;
     color: #EDF2F4;
 }
-dd{
+
+dd {
     padding-bottom: 2rem;
 }
+
 .section-padding-calisthenics {
     align-self: center;
     padding: 0rem 0rem;
