@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../Muestras/bg.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+body {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Monument Extended", sans-serif;
+}
+
+.cursor,
+.follow {
+  position: absolute;
+  pointer-events: none;
+  width: 0.4em;
+  height: 0.4em;
+  transform: translate(-50%, -50%);
+}
+
+.cursor {
+  background: white;
+  border-radius: 50%;
+}
+
+.follow {
+  padding: 2rem;
+  border: 0.1rem solid white;
+  transition: all 0.2s ease-out;
+  border-radius: 100%;
+}
+
+.follow.on-focus {
+  transform: translate(-0.55rem, -0.55rem);
+  border: 0.1rem solid white;
+  border-radius: 0%;
+  padding: 0.46rem;
+}
+
+.button1 {
+  position: relative;
+  font-size: 30px;
+  bottom: 43%;
+  left: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin: 4rem;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: grey;
+  text-decoration: none;
+}
+
+.button1:hover {
+  color: white;
+}
+
+h1 {
+  font-size: 50px;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  bottom: 76%;
+  /* left: 15em; */
+  transform: translate(750px);
+  color: white;
+}
+
+img {
+  position: absolute;
+  bottom: 857px;
+  left: 30px;
+}
+
+.wrapper {
+  display: inline-flex;
+  position: absolute;
+  left: 70%;
+  top: 90%;
+}
+
+.wrapper .icon {
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon span {
+  display: block;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon span i {
+  line-height: 60px;
+  font-size: 25px;
+}
+
+.wrapper .icon .tooltip {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.icon .tooltip:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%) rotate(45deg);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover span {
+  color: #fff;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip:before {
+  background: #3b5999;
+}
+
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip:before {
+  background: #46c1f6;
+}
+
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip:before {
+  background: #e1306c;
+}
+
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip:before {
+  background: #333;
+}
+
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip:before {
+  background: #de463b;
+}
+
+.prueba {
+  color: #fff;
+  border-style: solid;
+  border-color: aqua;
+}
+
+ .container {
+  position: relative;
+  height: 25rem;
+  width: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 26%;
+} 
+
+.content {
+  width: 100%;
+  height: 100%;
+  background-color: #8bf;
+  box-shadow: 0 3px 6px 10px rgb(0, 0, 0, 0.16),
+    0 3px 6px 10px rgb(0, 0, 0, 0.23);
+  border-radius: 4px;
+  position: relative;
+  align-items: center;
+}
+
+.formulario1 {
+  transform: translate(8rem);
+}
+.etiqueta {
+  transform: translate(10rem);
+}
+
+form {
+  width: 700px;
+  margin: auto;
+  background-color: #8bf;
+  margin-top: 20px;
+}
+input {
+  margin: 12px;
+  padding: 8px;
+  width: 660px;
+  font-size: 18px;
+  border: none;
+  margin-bottom: 5px;
+}
+
+input[type="submit"]
+{
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+textarea {
+  margin: 12px;
+  padding: 8px;
+  min-width: 660px;
+  max-width: 660px;
+  min-height: 100px;
+  max-height: 0px;
+  font-size: 18px;
+  border: none;
+  margin-bottom: 5px;
+}
