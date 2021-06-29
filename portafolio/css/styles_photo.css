@@ -77,3 +77,19 @@
     background-color: #2B2D42;
     color: #EDF2F4;
 }
+.bg_lower_green {
+    background: url(../images/resources_svg/svg_lower_green.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.bg_upper_green{
+    background: url(../images/resources_svg/svg_upper_green.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.bg_blobgreen{
+    background: url(../images/resources_svg/blob_green.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20rem;
+}

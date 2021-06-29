@@ -43,10 +43,28 @@ dt {
     width: 3.12rem;
 }
 
-.bg {
-    background-color: #D90429;
+.bg_upper {
+    background: url(../images/resources_svg/svg_upper.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
-
+.bg_lower {
+    background: url(../images/resources_svg/svg_lower.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.bg_blobred{
+    background: url(../images/resources_svg/blob_red.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20rem;
+}
+.bg_blobredV2{
+    background: url(../images/resources_svg/blob_redV2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20rem;
+}
 .container {
     width: 60rem;
     max-width: 100%;

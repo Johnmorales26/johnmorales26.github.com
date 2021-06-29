@@ -120,3 +120,19 @@ dd {
     align-self: center;
     padding: 0rem 0rem;
 }
+.bg_lower_purple {
+    background: url(../images/resources_svg/svg_lower_purple.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.bg_upper_purple{
+    background: url(../images/resources_svg/svg_upper_purple.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.bg_blobpurple{
+    background: url(../images/resources_svg/blob_purple.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30rem;
+}
