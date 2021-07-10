@@ -183,6 +183,10 @@ main-content {
     grid-column: span 12;
 }
 
+.link_decoration{
+    text-decoration: none;
+}
+
 .items .item {
     background-color: white;
     grid-column: span 12;
