@@ -90,9 +90,15 @@ h1 {
     font-size: 4rem;
 }
 
+.moreViews{
+    display: inline-block;
+    text-align: left;
+}
+
 .subtitle {
     font-size: 3em;
     font-weight: bold;
+    display: inline-block;
 }
 
 .main-grid {
