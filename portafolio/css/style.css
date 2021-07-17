@@ -288,7 +288,7 @@ main-content {
 }
 
 /* Media Querys */
-@media(min-width:60rem) {
+@media(min-width:40rem) {
     .product img {
         width: 31.25rem;
         height: 25rem;
