@@ -1,6 +1,6 @@
 /* Estilos de componentes */
 :root {
-    --purple: #7B2CBF;
+    --yellow: #FFB700;
     --color1: #566473 --color2: #16a085 --color3: #435a6b
 }
 
@@ -24,12 +24,12 @@
     margin-bottom: 5px;
 }
 
-.purple-underline {
+.yellow-underline {
     text-decoration: underline;
-    text-decoration-color: var(--purple);
+    text-decoration-color: var(--yellow);
 }
 
-.calisthenics-titles {
+.proyects-titles {
     color: #2B2D42;
 }
 .text-cards{
@@ -39,12 +39,12 @@
     align-self: center;
     padding: 2rem 2rem;
 }
-.bg-purple {
-    background-color: var(--purple);
+.bg-yellow {
+    background-color: var(--yellow);
 }
 
 .color-titles {
-    color: #EDF2FB;
+    color: #2B2D42;
 }
 
 .button-and-icons {
@@ -54,23 +54,23 @@
     font-weight: 700;
 }
 
-.btn-photo {
+.btn_proyects {
     /* Color del texo */
-    color: #7B2CBF;
-    color: #7B2CBF;
+    color: #FFB700;
+    color: #FFB700;
     /* Eliminar color de fondo */
     background: transparent;
     background: transparent;
     /* Grosor del borde, estilo de línea y color */
-    border: 2px solid #7B2CBF;
-    border: 2px solid #7B2CBF;
+    border: 2px solid #FFB700;
+    border: 2px solid #FFB700;
     /* Añadir esquinas curvadas */
     border-radius: 6px;
     border-radius: 6px;
     /* Poner texto en mayúsculas */
     background-color: #EDF2F4;
     color: #2B2D42;
-    border: 2px solid #7B2CBF;
+    border: 2px solid #FFB700;
     border: none;
     color: #5e5e5e;
     padding: 16px 32px;
@@ -86,26 +86,26 @@
     text-transform: uppercase;
 }
 
-.btn1-photo {
+.btn1_proyects {
     background-color: #EDF2F4;
     color: #2B2D42;
-    border: 2px solid #7B2CBF;
+    border: 2px solid #FFB700;
 }
 
-.btn1-photo:hover {
-    background-color: #7B2CBF;
+.btn1_proyects:hover {
+    background-color: #FFB700;
     color: #EDF2F4;
-    background-color: #7B2CBF;
+    background-color: #FFB700;
     color: #EDF2F4;
 }
 
-.btn2-photo {
+.btn2_proyects {
     background-color: #EDF2F4;
-    color: #7B2CBF;
+    color: #FFB700;
     border: 2px solid #2B2D42;
 }
 
-.btn2-photo:hover {
+.btn2_proyects:hover {
     background-color: #2B2D42;
     color: #EDF2F4;
     background-color: #2B2D42;
@@ -120,18 +120,18 @@ dd {
     align-self: center;
     padding: 0rem 0rem;
 }
-.bg_lower_purple {
-    background: url(../images/resources_svg/svg_lower_purple.svg);
+.bg_lower_yellow {
+    background: url(../images/resources_svg/svg_lower_yellow.svg);
     background-repeat: no-repeat;
     background-position: bottom;
 }
-.bg_upper_purple{
-    background: url(../images/resources_svg/svg_upper_purple.svg);
+.bg_upper_yellow{
+    background: url(../images/resources_svg/svg_upper_yellow.svg);
     background-repeat: no-repeat;
     background-position: top;
 }
-.bg_blobpurple{
-    background: url(../images/resources_svg/blob_purple.svg);
+.bg_blobyellow{
+    background: url(../images/resources_svg/blob_yellow.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30rem;

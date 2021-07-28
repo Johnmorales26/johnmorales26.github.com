@@ -123,7 +123,7 @@ h1 {
 /*.yellow-underline{
     position: relative;
     display: inline-block;
-    z-index: 1;
+    z_index: 1;
 }
 .yellow-underline::before{
     position: absolute;
@@ -133,7 +133,7 @@ h1 {
     height: 0.56rem;
     background-color: var(--yellow);
     width: 100%;
-    z-index: -1;
+    z_index: -1;
 }*/
 /* Estilos de componentes */
 .avatar {
@@ -211,7 +211,7 @@ main-content {
 }
 
 /* Button componen */
-.btn {
+.btn_index {
     /* Color del texo */
     color: #D90429;
     color: #D90429;
@@ -243,26 +243,26 @@ main-content {
     text-transform: uppercase;
 }
 
-.btn1 {
+.btn1_index {
     background-color: #EDF2F4;
     color: #2B2D42;
     border: 2px solid #D90429;
 }
 
-.btn1:hover {
+.btn1_index:hover {
     background-color: #D90429;
     color: #EDF2F4;
     background-color: #D90429;
     color: #EDF2F4;
 }
 
-.btn2 {
+.btn2_index {
     background-color: #EDF2F4;
     color: #D90429;
     border: 2px solid #2B2D42;
 }
 
-.btn2:hover {
+.btn2_index:hover {
     background-color: #2B2D42;
     color: #EDF2F4;
     background-color: #2B2D42;
@@ -271,8 +271,8 @@ main-content {
 
 /* Card */
 .product img {
-    width: 23rem;
-    height: 15rem;
+    width: 30rem;
+    height: 20rem;
 }
 
 .card {
