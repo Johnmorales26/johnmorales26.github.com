@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.supercalculadora">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".SuperCalculadoraapp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SuperCalculadora">
+        <activity
+            android:name=".Algebra.PercentOptions.PercentFromActivity"
+            android:label="@string/percent_from"/>
+        <activity
+            android:name=".Algebra.PercentOptions.IncreaseDecreaseActivity"
+            android:label="@string/increase_decresase"/>
+        <activity
+            android:name=".Algebra.PercentOptions.SimplePercentActivity"
+            android:label="@string/simple_percent"/>
+        <activity
+            android:name=".Algebra.PercentOptions.IncreaseActivity"
+            android:label="@string/increase"/>
+        <activity
+            android:name=".Algebra.PercentOptions.PercentMenuActivity"
+            android:label="@string/percent_menu"/>
+        <activity
+            android:name=".Algebra.NumberGeneratorActivity"
+            android:label="@string/number_generator" />
+        <activity
+            android:name=".Algebra.PrimeNumbersActivity"
+            android:label="@string/prime_numbers" />
+        <activity
+            android:name=".Algebra.CombinationsActivity"
+            android:label="@string/combinations" />
+        <activity
+            android:name=".Algebra.MCDActivity"
+            android:label="@string/mcd_mcm" />
+        <activity
+            android:name=".Algebra.FractionsActivity"
+            android:label="@string/fractions" />
+        <activity
+            android:name=".Algebra.EcuationsActivity"
+            android:label="@string/ecuations" />
+        <activity
+            android:name=".Algebra.ProportionActivity"
+            android:label="@string/proportion" />
+        <activity
+            android:name=".Algebra.AverageActivity"
+            android:label="@string/average" />
+        <activity
+            android:name=".Algebra.PercentOptions.DiscountActivity"
+            android:label="@string/txt_discount" />
+        <activity
+            android:name=".Health.BodyFatPercentageActivity"
+            android:label="@string/txt_body_fat_percentage" />
+        <activity
+            android:name=".Health.DailyCaloriesBurnedActivity"
+            android:label="@string/txt_daily_calories_burned" />
+        <activity
+            android:name=".Health.BodyMassIndexActivity"
+            android:label="@string/body_mass_index" />
+        <activity
+            android:name=".AllMenu.MenuHealthActivity"
+            android:label="@string/health_menu" />
+        <activity
+            android:name=".AllMenu.MenuAlgebraActivity"
+            android:label="@string/algebra_menu" />
+        <activity
+            android:name=".GeometryBodiesActivities.EllipsoidActivity"
+            android:label="@string/ellipsoid" />
+        <activity
+            android:name=".GeometryBodiesActivities.SphereSegmentActivity"
+            android:label="@string/segment_sphere" />
+        <activity
+            android:name=".GeometryBodiesActivities.SphereCapActivity"
+            android:label="@string/sphere_cap" />
+        <activity
+            android:name=".GeometryBodiesActivities.SphereActivity"
+            android:label="@string/sphere" />
+        <activity
+            android:name=".GeometryBodiesActivities.CylinderActivity"
+            android:label="@string/cylinder" />
+        <activity
+            android:name=".GeometryBodiesActivities.ShortConeActivity"
+            android:label="@string/short_cone" />
+        <activity
+            android:name=".GeometryBodiesActivities.ConeActivity"
+            android:label="@string/cone" />
+        <activity
+            android:name=".GeometryBodiesActivities.PyramidActivity"
+            android:label="@string/pyramid" />
+        <activity
+            android:name=".GeometryBodiesActivities.PrismActivity"
+            android:label="@string/prism" />
+        <activity
+            android:name=".GeometryBodiesActivities.CubeActivity"
+            android:label="@string/cube" />
+        <activity
+            android:name=".AllMenu.MenuUnitConverterActivity"
+            android:label="@string/unit_converter" />
+        <activity
+            android:name=".AllMenu.MenuGeometryBodiesActivity"
+            android:label="@string/geometry_bodies_menu" />
+        <activity
+            android:name=".GeometryFigures.OvalActivity"
+            android:label="@string/txt_Oval" />
+        <activity
+            android:name=".GeometryFigures.CircularArcActivity"
+            android:label="@string/txt_CircularArc" />
+        <activity
+            android:name=".GeometryFigures.CircleActivity"
+            android:label="@string/txt_Circle" />
+        <activity
+            android:name=".GeometryFigures.HexagonActivity"
+            android:label="@string/txt_Hexagon" />
+        <activity
+            android:name=".GeometryFigures.PentagonActivity"
+            android:label="@string/txt_Pentagon" />
+        <activity
+            android:name=".GeometryFigures.RhombActivity"
+            android:label="@string/txt_Rhomb" />
+        <activity
+            android:name=".GeometryFigures.TrapezoidActivity"
+            android:label="@string/txt_Trapezoid" />
+        <activity
+            android:name=".GeometryFigures.RectangleActivity"
+            android:label="@string/txt_rectangle" />
+        <activity
+            android:name=".GeometryFigures.SquareActivity"
+            android:label="@string/txt_Square" />
+        <activity
+            android:name=".GeometryFigures.TriangleRectangleActivity"
+            android:label="@string/txt_TriangleRectangle" />
+        <activity
+            android:name=".AllMenu.MenuGeometryActivity"
+            android:label="@string/geometry_figures_menu" />
+        <activity
+            android:name=".GeometryFigures.TriangleActivity"
+            android:label="@string/txt_Equilateral_Triangle" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+    </application>
+
+</manifest>

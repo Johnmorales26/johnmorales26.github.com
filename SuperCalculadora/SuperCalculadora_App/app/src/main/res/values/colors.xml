@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Button before being pressed -->
+    <color name="bg">#343A40</color>
+    <color name="Celadon">#B7EFC5</color>
+    <color name="Light_Green">#6EDE8A</color>
+    <color name="Dark_Pastel_Green">#2DC653</color>
+    <color name="Ocean_Green_G28">#208B3A</color>
+
+    <!-- Button after being pressed -->
+    <color name="Forest_Green_Traditional">#10451D</color>
+    <color name="Pine_Tree_Green_G29">#1A7431</color>
+
+    <!-- Geometry Bodies Button's before being pressed -->
+    <color name="Middle_Yellow">#FFEA00</color>
+    <color name="Cyber_Yellow">#FFD000</color>
+    <color name="Selective_Yellow">#FFB700</color>
+    <color name="Orange_Web">#FFA200</color>
+    <!-- Button after being pressed -->
+    <color name="Heat_Wave">#FF7B00</color>
+    <color name="Yellow_Orange_Color_Wheel">#FF9500</color>
+
+    <!-- Button before being pressed Unit Converter -->
+    <color name="Light_Blue">#A9D6E5</color>
+    <color name="Maximum_Blue">#61A5C2</color>
+    <color name="Celadon_Blue">#2C7DA0</color>
+    <color name="USAFA_Blue">#014F86</color>
+
+    <!-- Button after being pressed Unit Convereter-->
+    <color name="Prussian_Blue">#012A4A</color>
+    <color name="Indigo_Dye">#01497C</color>
+
+    <!-- Button before being pressed Algebra -->
+    <color name="Rose_Madder">#E01E37</color>
+    <color name="Cardinal">#C71F37</color>
+    <color name="Red_NCS">#B21E35</color>
+    <color name="Crimson_UA">#A11D33</color>
+
+    <!-- Button after being pressed Algebra -->
+    <color name="Persian_Plum">#641220</color>
+    <color name="Antique_Ruby">#85182A</color>
+
+</resources>

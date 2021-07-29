@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_padding_default">16dp</dimen>
+    <dimen name="common_padding_min">10dp</dimen>
+    <dimen name="button_stroke">2dp</dimen>
+    <dimen name="button_size">128dp</dimen>
+    <dimen name="button_size_min">32dp</dimen>
+    <dimen name="common_padding_max">24dp</dimen>
+</resources>

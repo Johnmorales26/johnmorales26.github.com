@@ -1,0 +1,157 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Super Calculator</string>
+    <!-- Names of labels in menus and individual sections of functions in geometric2D and Geometric3d -->
+    <string name="txt_rectangle">Rectangle</string>
+    <string name="txt_Square">Square</string>
+    <string name="txt_TriangleRectangle">Triangle Rectangle</string>
+    <string name="txt_Triangle">Triangle</string>
+    <string name="category_geometry">Geometry</string>
+    <string name="txt_Trapezoid">Trapezoid</string>
+    <string name="txt_Rhomb">Rhomb</string>
+    <string name="txt_Pentagon">Pentagon</string>
+    <string name="txt_Hexagon">Hexagon</string>
+    <string name="txt_Circle">Circle</string>
+    <string name="txt_CircularArc">Circular Arc</string>
+    <string name="txt_Oval">Oval</string>
+    <string name="category_geometric_bodies">Geometric Bodies</string>
+    <string name="txt_Cube">Cube</string>
+    <string name="txt_Prism">Prism</string>
+    <string name="txt_Pyramid">Pyramid</string>
+    <string name="txt_ShortPyramid">Short Pyramid</string>
+    <string name="txt_Cone">Cone</string>
+    <string name="txt_ShortCone">Short Cone</string>
+    <string name="txt_Cylinder">Cylinder</string>
+    <string name="txt_Sphere">Sphere</string>
+    <string name="txt_SphereCap">Sphere Cap</string>
+    <string name="txt_SfereSegment">Sphere Segment</string>
+    <string name="txt_Ellipsoid">Ellipsoid</string>
+    <string name="equilateral_triangle_icon">Equilateral Triangle Icon</string>
+    <string name="equilateral_triangle">Equilateral Triangle</string>
+    <string name="geometric_bodies">Geometric Bodies</string>
+    <string name="geometric_figures">Geometric Figures</string>
+    <string name="ellipsoid">Ellipsoid</string>
+    <string name="segment_sphere">Sphere Segment</string>
+    <string name="sphere_cap">Sphere Cap</string>
+    <string name="sphere">Sphere</string>
+    <string name="cylinder">Cylinder</string>
+    <string name="short_cone">Short Cone</string>
+    <string name="cone">Cone</string>
+    <string name="pyramid">Pyramid</string>
+    <string name="prism">Prism</string>
+    <string name="cube">Cube</string>
+    <!-- Names of components of diferents figures -->
+    <string name="side_a">Side A</string>
+    <string name="side_b">Side B</string>
+    <string name="side_c">Side C</string>
+    <string name="btn_calculate">Calculate</string>
+    <string name="area">Area</string>
+    <string name="perimeter">Perimeter</string>
+    <string name="angle_ab">Angle AB</string>
+    <string name="height_a">Height A</string>
+    <string name="angle_bc">Angle BC</string>
+    <string name="height_b">Height B</string>
+    <string name="angle_ac">Angle AC</string>
+    <string name="height_c">Height C</string>
+    <string name="help_required">Obligatory</string>
+    <string name="txt_Equilateral_Triangle">Equilateral Triangle</string>
+    <string name="hypotenuse">Hypotenuse</string>
+    <string name="angle_a">Angle A</string>
+    <string name="angle_b">Angle B</string>
+    <string name="diagonal">Diagonal</string>
+    <string name="circunference">Circunference</string>
+    <string name="radius">Radius</string>
+    <string name="diameter">Diameter</string>
+    <string name="radius_b">Radius B</string>
+    <string name="radius_a">Radius A</string>
+    <string name="volumen">Volume</string>
+    <string name="height">Height</string>
+    <!-- Names menus -->
+    <string name="geometry_bodies_menu">Geometry Bodies Menu</string>
+    <string name="geometry_figures_menu">Geometric Figures Menu</string>
+    <string name="algebra_menu">Algebra</string>
+    <string name="health_menu">Health</string>
+    <string name="logotipe_of_geometric_figures">Logotipe of geometric figures</string>
+    <!-- Descriptions Icons -->
+    <string name="triangle_rectangle_icon">Triangle Rectangle Icon</string>
+    <string name="square_icon">Square Icon</string>
+    <string name="rectangle_icon">Rectangle Icon</string>
+    <string name="trapezoid_icon">Trapezoid icon</string>
+    <string name="rhomb_icon">Rhomb icon</string>
+    <string name="hexagon_icon">hexagon icon</string>
+    <string name="circle_icon">circle_icon</string>
+    <string name="circular_arc_icon">Circular arc icon</string>
+    <string name="oval_icon">Oval Icon</string>
+    <!-- Names of labels in menus and individual sections of functions in Menu Unit Converter -->
+    <string name="unit_converter">Unit Converter</string>
+    <string name="txt_aceleration">Aceleration</string>
+    <string name="txt_data_storage">Data Storage</string>
+    <string name="txt_angle">Angle</string>
+    <string name="txt_kitchen">Kitchen</string>
+    <string name="Fuel">Fuel</string>
+    <string name="txt_energy">Energy</string>
+    <string name="txt_volumetric_flow">Volumetric Flow</string>
+    <string name="txt_strenght">Strenght</string>
+    <string name="txt_longitude">Longitude</string>
+    <string name="txt_base_number">Base Number</string>
+    <string name="text_roman_numbers">Roman Numbers</string>
+    <string name="txt_weight">Weight</string>
+    <string name="txt_power">Power</string>
+    <string name="txt_presion">Pressure</string>
+    <string name="txt_ring_size">Ring Size</string>
+    <string name="txt_shoe_size">Shoe Size</string>
+    <string name="txt_temperature">Temperature</string>
+    <string name="txt_time">Time</string>
+    <string name="txt_torque">Torque</string>
+    <string name="txt_data_transference">Data Transference</string>
+    <string name="txt_velocity">Velocity</string>
+    <string name="txt_volume">Volume</string>
+    <!-- Names of labels in menus and individual sections of functions in Menu Algebra -->
+    <string name="percent">Percent</string>
+    <string name="txt_average">Average</string>
+    <string name="txt_proportion">Proportion</string>
+    <string name="txt_ecuations">Ecuations</string>
+    <string name="txt_fractions">Fractions</string>
+    <string name="txt_mcd_mcm">MCD/MCM</string>
+    <string name="txt_combinations">Combinations</string>
+    <string name="txt_prime_numbers">Prime Numbers</string>
+    <string name="txt_number_generator">Number Generator</string>
+    <!-- Names of labels in menus and individual sections of functions in Menu Algebra -->
+    <string name="body_mass_index">Body Mass Index</string>
+    <string name="txt_daily_calories_burned">Daily Calories Burned</string>
+    <string name="txt_body_fat_percentage">Body Fat Percentage</string>
+    <string name="average">Average</string>
+    <string name="proportion">Proportion</string>
+    <string name="ecuations">Ecuations</string>
+    <string name="fractions">Fractions</string>
+    <string name="mcd_mcm">MCD / MCM</string>
+    <string name="combinations">Combinations</string>
+    <string name="prime_numbers">Prime Numbers</string>
+    <string name="number_generator">Number Generator</string>
+    <string name="from">From</string>
+    <string name="until">Until</string>
+    <string name="count">Count</string>
+    <string name="result">Result</string>
+    <string name="txt_discount">Discount</string>
+    <string name="txt_increase">Increase</string>
+    <string name="txt_simple_percent">Simple Percent</string>
+    <string name="txt_increase_decrease">Increase / Decrease</string>
+    <string name="txt_percent_from_a_to_b">Percent From A To B</string>
+    <string name="percent_from">Percent From A To B</string>
+    <string name="increase_decresase">Increase / Decrease</string>
+    <string name="simple_percent">Simple Percent</string>
+    <string name="increase">Increase</string>
+    <string name="percent_menu">Percent Menu</string>
+    <string name="value_a">A</string>
+    <string name="result_value">X</string>
+    <string name="percent_simbol">B</string>
+    <string name="txt_operation_discount">a - b% = x</string>
+    <string name="txt_operation_increase">a + b% = x</string>
+    <string name="increment">Increment:</string>
+    <string name="txt_operation_simple_percent">a * b% = x</string>
+    <string name="txt_operation_increase_decrease"><![CDATA[a --> b = x%]]></string>
+    <string name="txt_operation_from_a_to_b"><![CDATA[a <-- b = x%]]></string>
+    <string name="arithmetic">Arithmetic</string>
+    <string name="geometric">Geometric</string>
+    <string name="harmonic">Harmonic</string>
+</resources>

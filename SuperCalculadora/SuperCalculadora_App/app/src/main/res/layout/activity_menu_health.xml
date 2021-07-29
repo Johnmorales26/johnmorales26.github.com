@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:padding="@dimen/common_padding_min"
+    tools:context=".AllMenu.MenuHealthActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:src="@drawable/corazon"
+            android:padding="@dimen/common_padding_max"
+            android:layout_margin="@dimen/common_padding_min"
+            android:background="@drawable/style_icons_health"
+            android:contentDescription="@string/logotipe_of_geometric_figures" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/health_menu"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/common_padding_min"
+            android:layout_gravity="center"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_body_mass_index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            android:layout_margin="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:src="@drawable/weighing_machine"
+                    android:background="@drawable/style_icons_health"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="30"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/common_padding_default"
+                    android:layout_margin="@dimen/common_padding_min"
+                    android:contentDescription="@string/equilateral_triangle_icon" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_weight="70"
+                    android:padding="@dimen/common_padding_default"
+                    android:text="@string/body_mass_index"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+        android:id="@+id/btn_daily_calories_burned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:layout_margin="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/average"
+                android:background="@drawable/style_icons_health"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="30"
+                android:layout_gravity="center"
+                android:padding="@dimen/common_padding_default"
+                android:layout_margin="@dimen/common_padding_min"
+                android:contentDescription="@string/triangle_rectangle_icon" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="70"
+                android:padding="@dimen/common_padding_default"
+                android:text="@string/txt_daily_calories_burned"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+        android:id="@+id/btn_body_fat_percentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:layout_margin="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/body_fat_percentage"
+                android:background="@drawable/style_icons_health"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="30"
+                android:layout_gravity="center"
+                android:padding="@dimen/common_padding_default"
+                android:layout_margin="@dimen/common_padding_min"
+                android:contentDescription="@string/square_icon" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="70"
+                android:padding="@dimen/common_padding_default"
+                android:text="@string/txt_body_fat_percentage"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/bannerMenuGeometryPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+
+    </LinearLayout>
+
+</ScrollView>
