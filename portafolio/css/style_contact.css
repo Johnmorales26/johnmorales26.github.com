@@ -1,0 +1,74 @@
+.btn_contact {
+    /* Color del texo */
+    color: #38b000;
+    color: #38b000;
+    /* Eliminar color de fondo */
+    background: transparent;
+    background: transparent;
+    /* Grosor del borde, estilo de línea y color */
+    border: 2px solid #38b000;
+    border: 2px solid #38b000;
+    /* Añadir esquinas curvadas */
+    border-radius: 6px;
+    border-radius: 6px;
+    /* Poner texto en mayúsculas */
+    background-color: #EDF2F4;
+    color: #2B2D42;
+    border: 2px solid #38b000;
+    border: none;
+    color: #5e5e5e;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn1_contact {
+    background-color: #EDF2F4;
+    color: #2B2D42;
+    border: 2px solid #38b000;
+}
+
+.btn1_contact:hover {
+    background-color: #38b000;
+    color: #EDF2F4;
+    background-color: #38b000;
+    color: #EDF2F4;
+}
+
+.btn2_contact {
+    background-color: #EDF2F4;
+    color: #38b000;
+    border: 2px solid #2B2D42;
+}
+
+.btn2_contact:hover {
+    background-color: #2B2D42;
+    color: #EDF2F4;
+    background-color: #2B2D42;
+    color: #EDF2F4;
+}
+/*  For svg format */
+.bg_upper_green {
+    background: url(../images/resources_svg/svg_upper_green.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.bg_lower_green {
+    background: url(../images/resources_svg/svg_lower_green.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.bg_blob_green{
+    background: url(../images/resources_svg/blob_green.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20rem;
+}
