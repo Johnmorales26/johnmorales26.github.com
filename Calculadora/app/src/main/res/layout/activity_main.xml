@@ -56,7 +56,7 @@
             android:text="@string/calc_btn_point"
             android:textSize="@dimen/calc_btn_text_size"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_700"
+            android:backgroundTint="@color/Steel_Blue"
             android:onClick="onClickButton"/>
         <Button
             android:id="@+id/btnZero"
@@ -67,7 +67,7 @@
             android:text="@string/calc_btn_zero"
             android:textSize="@dimen/calc_btn_text_size"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_200"/>
+            android:backgroundTint="@color/Acid_Green"/>
         <Button
             android:id="@+id/btnResult"
             android:layout_width="0dp"
@@ -77,7 +77,7 @@
             android:text="@string/calc_btn_result"
             android:textSize="@dimen/calc_btn_text_size"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_700"/>
+            android:backgroundTint="@color/Steel_Blue"/>
 
     </LinearLayout>
 
@@ -101,7 +101,7 @@
             android:text="@string/calc_btn_One"
             android:textSize="@dimen/calc_btn_text_size"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_200"/>
+            android:backgroundTint="@color/Acid_Green"/>
         <Button
             android:id="@+id/btnTwo"
             android:layout_width="0dp"
@@ -111,7 +111,7 @@
             android:text="@string/calc_btn_Two"
             android:textSize="@dimen/calc_btn_text_size"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_200"/>
+            android:backgroundTint="@color/Acid_Green"/>
         <Button
             android:id="@+id/btnThree"
             android:layout_width="0dp"
@@ -121,7 +121,7 @@
             android:text="@string/calc_btn_three"
             android:textSize="@dimen/calc_btn_text_size"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_200"/>
+            android:backgroundTint="@color/Acid_Green"/>
         <Button
             android:id="@+id/btnSum"
             android:layout_width="0dp"
@@ -131,7 +131,7 @@
             android:text="@string/calc_btn_sum"
             android:textSize="@dimen/calc_btn_text_size"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_700"/>
+            android:backgroundTint="@color/Blue_Sapphire"/>
 
     </LinearLayout>
 
@@ -155,7 +155,7 @@
             android:text="@string/calc_btn_four"
             android:textSize="@dimen/calc_btn_text_size"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_200"/>
+            android:backgroundTint="@color/Acid_Green"/>
         <Button
             android:id="@+id/btnFive"
             android:layout_width="0dp"
@@ -165,7 +165,7 @@
             android:text="@string/calc_btn_five"
             android:textSize="@dimen/calc_btn_text_size"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_200"/>
+            android:backgroundTint="@color/Acid_Green"/>
         <Button
             android:id="@+id/btnSix"
             android:layout_width="0dp"
@@ -175,7 +175,7 @@
             android:text="@string/calc_btn_six"
             android:textSize="@dimen/calc_btn_text_size"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_200"/>
+            android:backgroundTint="@color/Acid_Green"/>
         <Button
             android:id="@+id/btnMin"
             android:layout_width="0dp"
@@ -185,7 +185,7 @@
             android:text="@string/calc_btn_min"
             android:textSize="@dimen/calc_btn_text_size"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_700"/>
+            android:backgroundTint="@color/Blue_Sapphire"/>
 
     </LinearLayout>
 
@@ -209,7 +209,7 @@
             android:text="@string/calc_btn_seven"
             android:textSize="@dimen/calc_btn_text_size"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_200"/>
+            android:backgroundTint="@color/Acid_Green"/>
         <Button
             android:id="@+id/btnEight"
             android:layout_width="0dp"
@@ -219,7 +219,7 @@
             android:text="@string/calc_btn_eight"
             android:textSize="@dimen/calc_btn_text_size"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_200"/>
+            android:backgroundTint="@color/Acid_Green"/>
         <Button
             android:id="@+id/btnNine"
             android:layout_width="0dp"
@@ -229,7 +229,7 @@
             android:text="@string/calc_btn_nine"
             android:textSize="@dimen/calc_btn_text_size"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_200"/>
+            android:backgroundTint="@color/Acid_Green"/>
         <Button
             android:id="@+id/btnMul"
             android:layout_width="0dp"
@@ -239,7 +239,7 @@
             android:text="@string/calc_btn_mul"
             android:textSize="@dimen/calc_btn_text_size"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_700"/>
+            android:backgroundTint="@color/Blue_Sapphire"/>
 
     </LinearLayout>
 
@@ -264,7 +264,7 @@
             android:text="@string/calc_btn_clear"
             android:textSize="@dimen/calc_btn_text_size"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_200"/>
+            android:backgroundTint="@color/Maximum_Green"/>
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnDelete"
             android:layout_width="0dp"
@@ -272,7 +272,7 @@
             android:layout_weight="25"
             android:onClick="onClickButton"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_200"
+            android:backgroundTint="@color/Steel_Blue"
             app:icon="@drawable/ic_backspace"
             app:iconGravity="textStart"
             app:iconPadding="@dimen/common_padding_none"/>
@@ -285,7 +285,7 @@
             android:text="@string/calc_btn_div"
             android:textSize="@dimen/calc_btn_text_size"
             android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/deep_purple_700"/>
+            android:backgroundTint="@color/Blue_Sapphire"/>
 
     </LinearLayout>
 

@@ -18,4 +18,5 @@
     <string name="calc_btn_clear">C</string>
     <string name="calc_btn_delete"><![CDATA[<]]></string>
     <string name="calc_btn_div">/</string>
+    <string name="message_exp_incorrect">La expresion es incorrecta</string>
 </resources>
