@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyTextView">
+        <item name="android:padding">@dimen/common_padding_min</item>
+        <item name="android:textColor">?colorOnSurface</item>
+        <item name="android:background">?background</item>
+        <item name="android:layout_marginBottom">@dimen/common_padding_min</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+    </style>
+
+    <style name="MyLinealLayout">
+        <item name="android:orientation">horizontal</item>
+        <item name="paddingEnd">@dimen/common_padding_min</item>
+        <item name="layout_constraintDimensionRatio">H, 4:1</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+    </style>
+
+    <style name="MyNumberButtons">
+        <item name="android:onClick">onClickButton</item>
+        <item name="android:textSize">@dimen/calc_btn_text_size</item>
+        <item name="android:layout_marginStart">@dimen/common_padding_min</item>
+        <item name="android:backgroundTint">?colorPrimary</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+
+    <style name="MyOperationButton">
+        <item name="android:onClick">onClickButton</item>
+        <item name="android:textSize">@dimen/calc_btn_text_size</item>
+        <item name="android:layout_marginStart">@dimen/common_padding_min</item>
+        <item name="android:backgroundTint">?colorPrimaryVariant</item>
+        <item name="android:textColor">?colorOnSurface</item>
+        <item name="android:layout_marginEnd">@dimen/common_padding_min</item>
+    </style>
+
+    <style name="MyDeleteButton">
+        <item name="android:onClick">onClickButton</item>
+        <item name="android:text">@string/calc_btn_clear</item>
+        <item name="android:textSize">@dimen/calc_btn_text_size</item>
+        <item name="android:layout_marginStart">@dimen/common_padding_min</item>
+        <item name="android:backgroundTint">?colorOnSecondary</item>
+        <item name="android:textColor">?colorSurface</item>
+        <item name="android:layout_marginEnd">@dimen/common_padding_min</item>
+    </style>
+</resources>

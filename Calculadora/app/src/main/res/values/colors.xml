@@ -15,4 +15,18 @@
     <color name="Steel_Blue">#427AA1</color>
     <color name="Maximum_Green">#679436</color>
     <color name="Acid_Green">#A5BE00</color>
+    <!--  Colors for light version  -->
+    <color name="BG_light">#ddddda</color>
+    <color name="color1_light">#ddddda</color>
+    <color name="color2_light">#c2c8c5</color>
+    <color name="color3_light">#94b0b7</color>
+    <color name="color4_light">#7697a0</color>
+    <color name="color5_light">#4a707a</color>
+    <!--  Colors for dark version  -->
+    <color name="BG_dark">#343a40</color>
+    <color name="color1_dark">#7bd5f5</color>
+    <color name="color2_dark">#7b7ff6</color>
+    <color name="color3_dark">#4adede</color>
+    <color name="color4_dark">#1ca7ec</color>
+    <color name="color5_dark">#1f2f98</color>
 </resources>

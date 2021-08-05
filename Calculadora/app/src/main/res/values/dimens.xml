@@ -2,5 +2,5 @@
 <resources>
     <dimen name="common_padding_min">8dp</dimen>
     <dimen name="calc_btn_text_size">32dp</dimen>
-    <dimen name="common_padding_none">8dp</dimen>
+    <dimen name="common_padding_default">16dp</dimen>
 </resources>
