@@ -1,0 +1,7 @@
+
+W
+java:S1118":Add a private constructor to hide the implicit public one.(§Á¡Œ8Ó•ßÐÂ/
+=	java:S131)""Add a default case to this switch.(ñ¬ƒ
+8é•ßÐÂ/
+|
+java:S2637""ZParameter 2 to this call is marked "androidx.annotation.NonNull" but null could be passed.(˜¼ÊÅùÿÿÿÿ8Å–ßÐÂ/

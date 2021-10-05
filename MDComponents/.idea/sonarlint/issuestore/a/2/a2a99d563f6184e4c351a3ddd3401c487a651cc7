@@ -1,0 +1,8 @@
+
+7	java:S131R""Add a default case to this switch.(é∫÷ç
+a
+java:S1301R"KReplace this "switch" statement by "if" statements to increase readability.(é∫÷ç
+k
+java:S1104""UMake mInstance a static final constant or non-public and provide accessors if needed.(∫§»ã
+E
+java:S1444""/Make this "public static mInstance" field final(∫§»ã

@@ -1,0 +1,10 @@
+
+J
+java:S3740."/Provide the parametrized type for this generic.(û•¸Ëøÿÿÿÿ
+m
+java:S1450""XRemove the "mInstance" field and declare it as a local variable in the relevant methods.(¨ÕN
+œ
+java:S1186V"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ìó°şÿÿÿÿ
+<	java:S131G""Add a default case to this switch.(³ÒÂŒÿÿÿÿÿ
+f
+java:S1301G"KReplace this "switch" statement by "if" statements to increase readability.(³ÒÂŒÿÿÿÿÿ

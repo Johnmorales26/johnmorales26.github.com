@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.16111111111111112" />
+        <entry key="app/src/main/res/drawable-night/ic_check.xml" value="0.10185185185185185" />
+        <entry key="app/src/main/res/drawable-night/ic_star.xml" value="0.10185185185185185" />
+        <entry key="app/src/main/res/drawable/background_splash.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/ic_check.xml" value="0.15260416666666668" />
+        <entry key="app/src/main/res/layout/activity_add_artist.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_detalle.xml" value="0.16597510373443983" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/content_detalle.xml" value="0.2477355072463768" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/item_artist.xml" value="0.22" />
+        <entry key="app/src/main/res/menu/menu_main.xml" value="0.26510416666666664" />
+        <entry key="app/src/main/res/menu/menu_save.xml" value="0.13645833333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

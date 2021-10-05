@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MD Desserts</string>
+
+    <string name="item_product_photo_description">Product Image</string>
+    <string name="item_product_name_hint">Product Name</string>
+
+    <string name="car_price">$1.00</string>
+    <string name="car_pay">Pay</string>
+    <string name="car_back">Back</string>
+    <string name="car_sum">Total = $%1$.2f</string>
+    <string name="car_title">Shopping cart</string>
+
+    <string name="confirmation_message">Your food will arrive soon, thank you for your purchase</string>
+    <string name="confirmation_status">¡Succesful Payment!</string>
+    <string name="confirmation_done">Ready</string>
+    <string name="confirmation_title">Payment</string>
+    <string name="confirmation_title_alt">Payment(by Id)</string>
+
+    <string name="products_add_car">Add</string>
+    <string name="products_check_list">Order:</string>
+    <string name="products_title">Products</string>
+    <string name="bottom_sheet_title">¿Exit MD Desserts?</string>
+    <string name="bottom_sheet_exit">Exit</string>
+</resources>

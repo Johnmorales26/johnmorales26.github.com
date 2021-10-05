@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MD Login</string>
+    <string name="tv_welcome">Bienvenido</string>
+    <string name="til_password">Password</string>
+    <string name="til_name">Name</string>
+    <string name="btn_login">Iniciar Sesion</string>
+</resources>

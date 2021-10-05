@@ -1,0 +1,6 @@
+
+m
+java:S1450"XRemove the "mInstance" field and declare it as a local variable in the relevant methods.(®ê’N
+7	java:S131B""Add a default case to this switch.(é∫÷ç
+a
+java:S1301B"KReplace this "switch" statement by "if" statements to increase readability.(é∫÷ç
