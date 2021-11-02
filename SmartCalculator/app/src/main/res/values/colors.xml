@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Primary Colors  -->
+    <color name="colorPrimary">#ffc107</color>
+    <color name="colorPrimaryLight">#fff350</color>
+    <color name="colorPrimaryDark">#c79100</color>
+
+    <!--  Secondary Colors  -->
+    <color name="colorSecondary">#e65100</color>
+    <color name="colorSecondaryLight">#ff833a</color>
+    <color name="colorSecondaryDark">#ac1900</color>
+
+    <color name="colorPrimaryText">#000000</color>
+    <color name="colorSecondaryText">#000000</color>
+
+    <color name="colorBackground">#f5f5f5</color>
+    <color name="colorSurface">#ffffff</color>
+    <color name="colorError">#b71c1c</color>
+
+    <color name="colorOnPrimary">#000000</color>
+    <color name="colorOnSecondary">#ffffff</color>
+    <color name="colorOnBackground">#000000</color>
+    <color name="colorOnSurface">#000000</color>
+    <color name="colorOnError">#ffffff</color>
+
+    <color name="colorDivider">#1E000000</color>
+
+    <!--    Dark Mode   -->
+
+    <color name="colorPrimaryDarkMode">#424242</color>
+    <color name="colorPrimaryLightDarkMode">#6d6d6d</color>
+    <color name="colorPrimaryDarkDarkMode">#1b1b1b</color>
+    <color name="colorSecondaryDarkMode">#f9a825</color>
+    <color name="colorSecondaryLightDarkMode">#ffd95a</color>
+    <color name="colorSecondaryDarkDarkMode">#c17900</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
+
+    <color name="colorBackgroundDarkMode">#000000</color>
+    <color name="colorSurfaceDarkMode">#424242</color>
+
+    <color name="colorOnPrimaryDarkMode">#000000</color>
+    <color name="colorOnSecondaryDarkMode">#ffffff</color>
+    <color name="colorOnBackgroundDarkMode">#000000</color>
+    <color name="colorOnSurfaceDarkMode">#000000</color>
+    <color name="colorOnErrorDarkMode">#ffffff</color>
+
+</resources>

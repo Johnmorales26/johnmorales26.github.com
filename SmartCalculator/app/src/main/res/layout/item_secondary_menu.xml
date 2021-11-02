@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    style="@style/Theme.SmartCalculator.CardView">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="@dimen/common_padding_bottom_scroll"
+            android:layout_height="@dimen/common_padding_bottom_scroll"
+            android:src="@drawable/ic_launcher_foreground"
+            android:padding="@dimen/common_padding_min"
+            android:transitionName="@string/tn_photo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_options_lineal_ecuations"
+            android:padding="@dimen/common_padding_nano"
+            android:transitionName="@string/tn_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgPhoto"
+            style="@style/Theme.SmartCalculator.HeadLine6"/>
+
+        <TextView
+            android:id="@+id/tvFormula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/formula_options_lineal_ecuation"
+            android:padding="@dimen/common_padding_nano"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toEndOf="@id/imgPhoto"
+            style="@style/Theme.SmartCalculator.Subtitle2"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

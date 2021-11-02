@@ -1,0 +1,12 @@
+
+pkotlin:S100†"XRename function "Factores_Primos" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(ÆÁ¼
+rkotlin:S100Î"URename function "two_Decimals" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(ä¦Ùéùÿÿÿÿ
+>kotlin:S1110"!Remove these useless parentheses.(Ì’¡ùùÿÿÿÿ
+fkotlin:S117à"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Â—¡¨
+kkotlin:S117ä"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(‚ü¤…ÿÿÿÿÿ
+kkotlin:S117ê"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$( ü„ûúÿÿÿÿ
+fkotlin:S117î"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Ã¨—è
+kkotlin:S117˜"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(î˜ô
+pkotlin:S117‡"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(È§èÕùÿÿÿÿ
+pkotlin:S117±"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Æñ¤ƒıÿÿÿÿ
+kkotlin:S117²"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(«åÂ

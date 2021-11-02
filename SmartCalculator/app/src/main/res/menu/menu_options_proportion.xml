@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_directly_proportional"
+        android:title="@string/menu_options_directly_proportional"/>
+
+    <item
+        android:id="@+id/action_indirectly_proportional"
+        android:title="@string/menu_options_indirectly_proportional"/>
+
+</menu>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_discount"
+        android:title="@string/menu_options_descuento"/>
+
+    <item
+        android:id="@+id/action_increment"
+        android:title="@string/menu_options_increment"/>
+
+    <item
+        android:id="@+id/action_simple_percent"
+        android:title="@string/menu_options_simple_porcent"/>
+
+    <item
+        android:id="@+id/action_increment_decrement"
+        android:title="@string/menu_options_increment_decrement"/>
+
+    <item
+        android:id="@+id/action_percent"
+        android:title="@string/menu_options_porcent_from_a_to_b"/>
+
+</menu>

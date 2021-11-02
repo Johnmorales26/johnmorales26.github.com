@@ -1,0 +1,11 @@
+
+nkotlin:S100?"RRename function "angleA_TR" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(˜‹É«şÿÿÿÿ
+nkotlin:S100B"RRename function "angleB_TR" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(ì‚¬«øÿÿÿÿ
+rkotlin:S100¡"URename function "two_Decimals" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(ä¦Ùéùÿÿÿÿ
+9kotlin:S1110$"!Remove these useless parentheses.(íğäœ
+9kotlin:S1110+"!Remove these useless parentheses.(ÊŠÃÖ
+>kotlin:S11102"!Remove these useless parentheses.(ûÎ…èúÿÿÿÿ
+jkotlin:S117"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ûÁøÆ
+jkotlin:S117!"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ûÁøÆ
+jkotlin:S117("SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ûÁøÆ
+jkotlin:S117/"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ûÁøÆ

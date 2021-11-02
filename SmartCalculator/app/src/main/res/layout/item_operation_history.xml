@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    style="@style/Theme.SmartCalculator.CardView">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/common_padding_default">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/Theme.SmartCalculator.HeadLine5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_history_figure"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:id="@+id/guideline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvDates"
+            style="@style/Theme.SmartCalculator.Subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_dates"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline"/>
+
+        <TextView
+            android:id="@+id/tvSideA"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/common_padding_min"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_side_a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDates"/>
+
+        <TextView
+            android:id="@+id/tvSideB"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_side_b"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSideA"/>
+
+        <TextView
+            android:id="@+id/tvSideC"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_side_c"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSideB"/>
+
+        <TextView
+            android:id="@+id/tvHeight"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSideC"/>
+
+        <TextView
+            android:id="@+id/tvWidth"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_history_figure"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHeight"/>
+
+        <TextView
+            android:id="@+id/tvRadiusA"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_radio_a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvWidth"/>
+
+        <TextView
+            android:id="@+id/tvRadiusB"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_radio_b"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvRadiusA"/>
+
+        <TextView
+            android:id="@+id/tvRadiusC"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_radio_c"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvRadiusB"/>
+
+        <TextView
+            android:id="@+id/tvAngleA"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_angle_a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvRadiusC"/>
+
+        <View
+            android:id="@+id/guideline2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginEnd="@dimen/common_padding_default"
+            app:layout_constraintTop_toBottomOf="@id/tvAngleA"
+            app:layout_constraintEnd_toStartOf="@id/imgFigure"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvResults"
+            style="@style/Theme.SmartCalculator.Subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_results"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline2"/>
+
+        <TextView
+            android:id="@+id/tvResultArea"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prefix_value_area"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResults"/>
+
+        <TextView
+            android:id="@+id/tvResultPerimeter"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prefix_value_perimeter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResultArea"/>
+
+        <TextView
+            android:id="@+id/tvResultAngleAB"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_angle_a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResultPerimeter"/>
+
+        <TextView
+            android:id="@+id/tvResultAngleBC"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_angle_a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResultAngleAB"/>
+
+        <TextView
+            android:id="@+id/tvResultAngleAC"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_angle_a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResultAngleBC"/>
+
+        <TextView
+            android:id="@+id/tvResultHeightA"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_angle_a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResultAngleAC"/>
+
+        <TextView
+            android:id="@+id/tvResultHeightB"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_angle_a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResultHeightA"/>
+
+        <TextView
+            android:id="@+id/tvResultHeightC"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_angle_a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResultHeightB"/>
+
+        <TextView
+            android:id="@+id/tvResultLateralArea"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_angle_a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResultHeightC"/>
+
+        <TextView
+            android:id="@+id/tvResultVolume"
+            android:visibility="gone"
+            style="@style/Theme.SmartCalculator.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_angle_a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResultLateralArea"/>
+
+        <ImageView
+            android:id="@+id/imgFigure"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_marginTop="@dimen/common_padding_min"
+            app:layout_constraintTop_toBottomOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

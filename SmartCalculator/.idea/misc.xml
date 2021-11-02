@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/drawable/background_splash.xml" value="0.16" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/drawable/splash_screen.xml" value="0.1" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/activity_edit_profile.xml" value="0.2164855072463768" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/activity_equivalences.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/activity_formulas.xml" value="0.2346014492753623" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/activity_operation_history.xml" value="0.2" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_bodies_cone.xml" value="0.2" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_bodies_cube.xml" value="0.2" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_bodies_cut_cone.xml" value="0.2" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_bodies_cut_pyramid.xml" value="0.2" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_bodies_cylinder.xml" value="0.2" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_bodies_ellipsoid.xml" value="0.2" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_bodies_pyramid.xml" value="0.2" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_bodies_rectangular_prism.xml" value="0.176" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_bodies_sphere.xml" value="0.176" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_bodies_sphere_cap.xml" value="0.2" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_bodies_sphere_segment.xml" value="0.2" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_container_combinations.xml" value="0.1" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_container_fractions.xml" value="0.2" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_container_proportion.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_figures_circular_arc.xml" value="0.176" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_figures_triangle.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_main_algebra.xml" value="0.17391304347826086" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_main_extra_options.xml" value="0.17391304347826086" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_main_figures.xml" value="0.11296296296296296" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/fragment_main_profile.xml" value="0.176" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/item_extra_options.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/item_formulas.xml" value="0.11980749746707194" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/item_functions.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/item_operation_history.xml" value="0.2" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/item_secondary_menu.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/menu/menu_bottom_nav.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/background_image.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/drawable/ic_add.xml" value="0.259375" />
+        <entry key="app/src/main/res/drawable/ic_error.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_percent.xml" value="0.2553846153846154" />
+        <entry key="app/src/main/res/layout/activity_calculator.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_formulas.xml" value="0.14114583333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_operations.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_operations_secondary.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/bottom_sheet_exit.xml" value="0.17" />
+        <entry key="app/src/main/res/layout/fragment_average.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/fragment_container_combinations.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/fragment_container_ecuations.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/fragment_container_fractions.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/fragment_container_m_c_d__m_c_m.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/fragment_container_number_generator.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/fragment_container_percent.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_container_prime_numbers.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/fragment_container_proportion.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/fragment_contanier_average.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_ecuation_lineal.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/fragment_ecuation_quadratic.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/fragment_ecuation_system.xml" value="0.22916666666666666" />
+        <entry key="app/src/main/res/layout/fragment_figures_circle.xml" value="0.26458333333333334" />
+        <entry key="app/src/main/res/layout/fragment_figures_circular_arc.xml" value="0.25052083333333336" />
+        <entry key="app/src/main/res/layout/fragment_figures_hexagon.xml" value="0.26458333333333334" />
+        <entry key="app/src/main/res/layout/fragment_figures_oval.xml" value="0.19701086956521738" />
+        <entry key="app/src/main/res/layout/fragment_figures_pentagon.xml" value="0.26458333333333334" />
+        <entry key="app/src/main/res/layout/fragment_figures_rectangle.xml" value="0.26458333333333334" />
+        <entry key="app/src/main/res/layout/fragment_figures_rhomb.xml" value="0.19701086956521738" />
+        <entry key="app/src/main/res/layout/fragment_figures_right_triangle.xml" value="0.19701086956521738" />
+        <entry key="app/src/main/res/layout/fragment_figures_square.xml" value="0.26458333333333334" />
+        <entry key="app/src/main/res/layout/fragment_figures_trapezoide.xml" value="0.26458333333333334" />
+        <entry key="app/src/main/res/layout/fragment_figures_triangle.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/fragment_formula_paralelogramo.xml" value="0.20244565217391305" />
+        <entry key="app/src/main/res/layout/fragment_formula_rectangle.xml" value="0.14114583333333333" />
+        <entry key="app/src/main/res/layout/fragment_formula_rhomb.xml" value="0.2028985507246377" />
+        <entry key="app/src/main/res/layout/fragment_formula_square.xml" value="0.2078804347826087" />
+        <entry key="app/src/main/res/layout/fragment_formula_trapezoide.xml" value="0.2028985507246377" />
+        <entry key="app/src/main/res/layout/fragment_formula_triangle.xml" value="0.26458333333333334" />
+        <entry key="app/src/main/res/layout/fragment_formulas_shift_triangle.xml" value="0.20199275362318841" />
+        <entry key="app/src/main/res/layout/fragment_fraction_simplifier.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/fragment_fraction_to_decimal.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/fragment_main_algebra.xml" value="0.21" />
+        <entry key="app/src/main/res/layout/fragment_main_bodies.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/fragment_main_figures.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/fragment_main_formulas.xml" value="0.20471014492753623" />
+        <entry key="app/src/main/res/layout/fragment_main_profile.xml" value="0.20471014492753623" />
+        <entry key="app/src/main/res/layout/fragment_operations_view.xml" value="0.16485507246376813" />
+        <entry key="app/src/main/res/layout/fragment_percent__discount_.xml" value="0.21467391304347827" />
+        <entry key="app/src/main/res/layout/fragment_percent_container.xml" value="0.21467391304347827" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/item_figures_bodies.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/item_formulas.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/item_functions.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/item_secondary_menu.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/menu/menu_bottom_nav.xml" value="0.22777777777777777" />
+        <entry key="app/src/main/res/menu/menu_options_average.xml" value="0.17037037037037037" />
+        <entry key="app/src/main/res/menu/menu_options_proportion.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/menu/menu_options_system_of_ecuations.xml" value="0.24322916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

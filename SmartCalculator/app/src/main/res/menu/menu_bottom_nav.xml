@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_functions"
+        android:title="@string/menu_bottom_nav_functions"
+        android:icon="@drawable/ic_menu"/>
+
+    <item
+        android:id="@+id/action_formulas"
+        android:title="@string/menu_bottom_nav_formulas"
+        android:icon="@drawable/ic_functions"/>
+
+    <!--<item
+        android:id="@+id/action_calculator"
+        android:title="@string/menu_bottom_nav_calculator"
+        android:icon="@drawable/ic_calculate"/>-->
+
+    <item
+        android:id="@+id/action_extra_options"
+        android:title="@string/menu_bottom_nav_extra_options"
+        android:icon="@drawable/ic_person"/>
+</menu>

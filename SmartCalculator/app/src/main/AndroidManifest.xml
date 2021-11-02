@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.johndev.smartcalculator">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartCalculator">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".usecases.common.OperationHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".usecases.common.FormulasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".usecases.common.CalculatorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".usecases.common.OperationsSecondaryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".usecases.common.OperationsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_operations"
+            android:theme="@style/Theme.SmartCalculator.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

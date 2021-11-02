@@ -1,0 +1,251 @@
+<resources>
+    <string name="app_name">Smart Calculator</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="menu_bottom_nav_functions">Functions</string>
+    <string name="menu_bottom_nav_formulas">Formulas</string>
+    <string name="menu_bottom_nav_calculator">Calculator</string>
+    <string name="menu_bottom_nav_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="menu_options_descuento">Discount</string>
+    <string name="menu_options_increment">Increment</string>
+    <string name="menu_options_simple_porcent">Simple Percent</string>
+    <string name="menu_options_increment_decrement">Increment / Decrement</string>
+    <string name="menu_options_porcent_from_a_to_b">Percent From A To B</string>
+    <string name="menu_options_directly_proportional">Directly Proportional</string>
+    <string name="menu_options_indirectly_proportional">Indirectly Proportional</string>
+    <string name="menu_options_lineal_ecuations">Lineal Ecuations</string>
+    <string name="menu_options_quadratics_ecuations">Quadratic Ecuations</string>
+    <string name="menu_options_fraction_simplifier">Fraction Simplifier</string>
+    <string name="menu_options_decimal_to_fraction">Decimal to Fraction</string>
+    <string name="menu_bottom_nav_extra_options">Extra Options</string>
+
+    <string name="formula_options_descuento">a - b% = x</string>
+    <string name="formula_options_increment">a + b% = x</string>
+    <string name="formula_options_simple_porcent">a x b% = x</string>
+    <string name="formula_options_increment_decrement">a → b = x%</string>
+    <string name="formula_options_porcent_from_a_to_b">a ← b = x%</string>
+    <string name="formula_options_directly_proportional">( a / b ) = ( x / y )</string>
+    <string name="formula_options_indirectly_proportionalb">a * b = x * y</string>
+    <string name="formula_options_lineal_ecuation">ax = b</string>
+    <string name="formula_options_quadratics_ecuations">ax² + bx = c</string>
+    <string name="formula_options_system_of_ecuations">2x2, 3x3</string>
+    <string name="formula_options_intervalo">Interval</string>
+    <string name="formula_options_other">Other</string>
+    <string name="formula_options_result">Result</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_operations">OperationsActivity</string>
+
+    <string name="key_function_name">Funcion_key_nombre</string>
+    <string name="key_function_id">Funcion_key_id</string>
+    <string name="key_function_img">Funcion_key_img</string>
+    <string name="key_image">k_image</string>
+    <string name="key_name">k_name</string>
+
+    <string name="tn_text">tnText</string>
+    <string name="tn_photo">tnPhoto</string>
+
+    <string name="tv_formula_area">Formula Area:</string>
+    <string name="tv_formula_perimetro">Formula Perimeter:</string>
+    <string name="tv_formula_diametro">Formula Diameter:</string>
+    <string name="tv_other_formulas">Other Formulas</string>
+    <string name="tv_input">Input:</string>
+    <string name="tv_output">Output:</string>
+
+    <string name="item_functions_name_function">Name Function</string>
+    <string name="item_formulas_formula">Formula</string>
+    <string name="item_extra_formula">Extra Option</string>
+    <string name="item_option">Name Option</string>
+    <string name="item_history_figure">Figure</string>
+
+    <string name="fm_label_algebra">Algebra</string>
+    <string name="fm_label_geometria">Geometry</string>
+
+    <string name="activity_label_types_operations">Type Operation</string>
+
+    <string name="functions_content_percent">Percent</string>
+    <string name="functions_content_average">Average</string>
+    <string name="functions_content_proportion">Proportion</string>
+    <string name="functions_content_ecuations">Ecuations</string>
+    <string name="functions_content_fractions">Fractions</string>
+    <string name="functions_content_mcd_mcm">MCD / MCM</string>
+    <string name="functions_content_combinations">Combinations</string>
+    <string name="functions_content_prime_numbers">Prime Numbers</string>
+    <string name="functions_content_number_generator">Number Generator</string>
+    <string name="functions_content_forms">Forms</string>
+    <string name="functions_content_bodies">Bodies</string>
+    <string name="functions_content_dont_exist_data">No Exist Data</string>
+
+    <string name="hint_value_a1">A1</string>
+    <string name="hint_value_a2">A2</string>
+    <string name="hint_value_a3">A3</string>
+    <string name="hint_value_b1">B1</string>
+    <string name="hint_value_b2">B2</string>
+    <string name="hint_value_b3">B3</string>
+    <string name="hint_value_c1">C1</string>
+    <string name="hint_value_c2">C2</string>
+    <string name="hint_value_c3">C3</string>
+    <string name="hint_value_d1">D1</string>
+    <string name="hint_value_d2">D2</string>
+    <string name="hint_value_d3">D3</string>
+    <string name="hint_value_a">Value a</string>
+    <string name="hint_value_b">Value b</string>
+    <string name="hint_value_c">Value c</string>
+    <string name="hint_value_x">Value x</string>
+    <string name="hint_value_y">Value y</string>
+    <string name="hint_value_result_simbol">-</string>
+    <string name="hint_value_result">Result</string>
+    <string name="hint_value_exchange">Exchange</string>
+    <string name="hint_value_arithmetic">Arithmetic</string>
+    <string name="hint_value_geometric">Geometric</string>
+    <string name="hint_value_harmonic">Harmonic</string>
+    <string name="hint_value_no_elements">No. de Elementos</string>
+    <string name="hint_value_decimal">Decimal</string>
+    <string name="hint_value_size">Tamaño</string>
+    <string name="hint_value_yes">Si</string>
+    <string name="hint_value_no">No</string>
+    <string name="hint_value_value">Value</string>
+    <string name="hint_value_from">From</string>
+    <string name="hint_value_to">To</string>
+    <string name="hint_value_count">Count</string>
+    <string name="hint_side_a">Side A</string>
+    <string name="hint_side_b">Side B</string>
+    <string name="hint_side_c">Side C</string>
+    <string name="hint_height">Height</string>
+    <string name="hint_weight">Weight</string>
+    <string name="hint_angle_a">Angle A</string>
+    <string name="hint_radio">Radio</string>
+    <string name="hint_radio_a">Radio A</string>
+    <string name="hint_radio_b">Radio B</string>
+    <string name="hint_radio_c">Radio C</string>
+    <string name="hint_dates">Data:</string>
+    <string name="hint_results">Results:</string>
+
+    <string name="prefix_value_a">a</string>
+    <string name="prefix_value_b">b</string>
+    <string name="prefix_value_c">c</string>
+    <string name="prefix_value_x">x</string>
+    <string name="prefix_value_y">y</string>
+    <string name="prefix_value_z">z</string>
+    <string name="prefix_value_a1">A1</string>
+    <string name="prefix_value_a2">A2</string>
+    <string name="prefix_value_a3">A3</string>
+    <string name="prefix_value_b1">B1</string>
+    <string name="prefix_value_b2">B2</string>
+    <string name="prefix_value_b3">B3</string>
+    <string name="prefix_value_c1">C1</string>
+    <string name="prefix_value_c2">C2</string>
+    <string name="prefix_value_c3">C3</string>
+    <string name="prefix_value_d1">D1</string>
+    <string name="prefix_value_d2">D2</string>
+    <string name="prefix_value_d3">D3</string>
+    <string name="prefix_value_x1">x1</string>
+    <string name="prefix_value_x2">x2</string>
+    <string name="prefix_value_one">1</string>
+    <string name="prefix_value_two">2</string>
+    <string name="prefix_value_percent">%</string>
+    <string name="prefix_value_decimal">Decimal</string>
+    <string name="prefix_value_mcd">MCD</string>
+    <string name="prefix_value_mcm">MCM</string>
+    <string name="prefix_value_repeteable">Repeteable</string>
+    <string name="prefix_value_ordered">Ordered</string>
+    <string name="prefix_value_permutations">Permutations</string>
+    <string name="prefix_value_is_prime">Is Prime</string>
+    <string name="prefix_value_prime_factor">Prime Factor</string>
+    <string name="prefix_value_next_prime">Next Prime</string>
+    <string name="prefix_value_value">Valor</string>
+    <string name="prefix_value_from">From</string>
+    <string name="prefix_value_to">To</string>
+    <string name="prefix_value_count">Contar</string>
+    <string name="prefix_value_unique">Unique</string>
+    <string name="prefix_value_area">Area</string>
+    <string name="prefix_value_perimeter">Perimeter</string>
+    <string name="prefix_value_angleAB">Angle AB</string>
+    <string name="prefix_value_height_a">Height A</string>
+    <string name="prefix_value_angleBC">Angle BC</string>
+    <string name="prefix_value_height_b">Height B</string>
+    <string name="prefix_value_angleAC">Angle AC</string>
+    <string name="prefix_value_height_c">Height C</string>
+    <string name="prefix_value_hypotenuse">Hypotenuse</string>
+    <string name="prefix_value_angle_a">Angle A</string>
+    <string name="prefix_value_angle_b">Angle B</string>
+    <string name="prefix_value_diameter">Diameter</string>
+    <string name="prefix_value_circumference">Circumference</string>
+    <string name="prefix_value_lateral_area">Lateral Area</string>
+    <string name="prefix_value_volume">Volume</string>
+
+    <string name="figures_content_triangle">Triangle</string>
+    <string name="figures_content_triangle_rectangle">Triangle Rectangle</string>
+    <string name="figures_content_square">Square</string>
+    <string name="figures_content_rectangle">Rectangle</string>
+    <string name="figures_content_trapezoid">Trapezoid</string>
+    <string name="figures_content_rhomb">Rhomb</string>
+    <string name="figures_content_pentagon">Pentagon</string>
+    <string name="figures_content_hexagon">Hexagon</string>
+    <string name="figures_content_circle">Circle</string>
+    <string name="figures_content_circular_arc">Circular Arc</string>
+    <string name="figures_content_oval">Oval</string>
+
+    <string name="bodies_content_cube">Cube</string>
+    <string name="bodies_content_prism">Prism</string>
+    <string name="bodies_content_pyramid">Pyramid</string>
+    <string name="bodies_content_cone">Cone</string>
+    <string name="bodies_content_cone_cut">Cone Cut</string>
+    <string name="bodies_content_cylinder">Cylinder</string>
+    <string name="bodies_content_sphere">Sphere</string>
+    <string name="bodies_content_sphere_cap">Sphere Cap</string>
+    <string name="bodies_content_sphere_segment">Sphere Segment</string>
+    <string name="bodies_content_ellipsoid">Ellipsoid</string>
+    <string name="bodies_content_cut_pyramid">Cut Pyramid</string>
+
+    <string name="error_option_no_selected">Option no selected</string>
+    <string name="error_not_triangle_a">Not a triangle: A > B + C</string>
+    <string name="error_not_triangle_b">Not a triangle: B > A + C</string>
+    <string name="error_not_triangle_c">Not a triangle: C > A + B</string>
+
+    <string name="bottom_sheet_title_exit">He wants to return?</string>
+    <string name="bottom_sheet_title_return">¿Seguro quiere regresar?</string>
+
+    <string name="btn_cancelar">Cancel</string>
+    <string name="btn_return">Return</string>
+    <string name="btn_exit">Exit</string>
+
+    <string name="alert_required">Obligatory</string>
+    <string name="alert_wrong_value">Wrong Values</string>
+    <string name="fab_description">Button for calc activate</string>
+
+    <string name="calc_btn_point">.</string>
+    <string name="calc_btn_zero">0</string>
+    <string name="calc_btn_result">=</string>
+    <string name="calc_btn_One">1</string>
+    <string name="calc_btn_Two">2</string>
+    <string name="calc_btn_three">3</string>
+    <string name="calc_btn_sum">+</string>
+    <string name="calc_btn_four">4</string>
+    <string name="calc_btn_five">5</string>
+    <string name="calc_btn_six">6</string>
+    <string name="calc_btn_min">-</string>
+    <string name="calc_btn_seven">7</string>
+    <string name="calc_btn_eight">8</string>
+    <string name="calc_btn_nine">9</string>
+    <string name="calc_btn_mul">*</string>
+    <string name="calc_btn_clear">C</string>
+    <string name="calc_btn_delete"><![CDATA[<]]></string>
+    <string name="calc_btn_div">/</string>
+
+    <string name="message_exp_incorrect">The expression is wrong</string>
+    <string name="message_num_incorrect">Check your numbers</string>
+
+    <string name="formula_triangle">Triangle</string>
+    <string name="formula_right_triangle">Right Triangle</string>
+    <string name="formula_square">Square</string>
+    <string name="formula_rectangle">Rectangle</string>
+    <string name="formula_parallelogram">Parallelogram</string>
+    <string name="formula_rhomb">Rhomb</string>
+    <string name="formula_trapezoid">Trapezoid</string>
+
+    <string name="btn_operation_history">Operation History</string>
+    <string name="title_history_operations">Operations History</string>
+    <string name="splash_screen_loading">Loading…</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="common_padding_min">8dp</dimen>
+    <dimen name="common_padding_nano">2dp</dimen>
+    <dimen name="common_padding_none">0dp</dimen>
+    <dimen name="common_padding_micro">4dp</dimen>
+    <dimen name="common_padding_middle">24dp</dimen>
+    <dimen name="common_padding_default">16dp</dimen>
+    <dimen name="common_padding_bottom_scroll">64dp</dimen>
+    <dimen name="common_padding_top_cardview_profile">88dp</dimen>
+
+    <dimen name="card_img_size">80dp</dimen>
+    <dimen name="card_padding_variant2">20dp</dimen>
+    <dimen name="card_baseline_message">26dp</dimen>
+    <dimen name="card_baseline_subtitle">36dp</dimen>
+    <dimen name="card_baseline_top_title">44dp</dimen>
+    <dimen name="card_baseline_ratingbar">24dp</dimen>
+    <dimen name="card_baseline_secondary">32dp</dimen>
+    <dimen name="card_padding_container_variant">14dp</dimen>
+
+    <dimen name="icon_view">32dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="form_stroke">2dp</dimen>
+    <dimen name="form_size">128dp</dimen>
+
+    <dimen name="calc_btn_text_size">32dp</dimen>
+
+    <dimen name="profile_image_size_large">256dp</dimen>
+    <dimen name="profile_image_size_medium">160dp</dimen>
+    <dimen name="profile_image_size_small">96dp</dimen>
+    <dimen name="profile_corner_radius_large">128dp</dimen>
+    <dimen name="profile_text_size_large">24sp</dimen>
+    <dimen name="profile_text_size_middle">18sp</dimen>
+
+
+</resources>
