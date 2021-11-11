@@ -11,7 +11,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.johndev.smartcalculator.R
 import com.johndev.smartcalculator.databinding.FragmentMainBodiesBinding
-import com.johndev.smartcalculator.databinding.FragmentMainFiguresBinding
 import com.johndev.smartcalculator.usecases.Adapters.FiguresAndBodiesAdapter
 import com.johndev.smartcalculator.usecases.Interfaces.OnClickListener
 import com.johndev.smartcalculator.usecases.base.FiguresAndBodies
@@ -73,8 +72,8 @@ class MainBodiesFragment : Fragment(), OnClickListener {
             FiguresAndBodies(1, getString(R.string.bodies_content_prism), R.drawable.prisma_rectangular),
             FiguresAndBodies(2, getString(R.string.bodies_content_pyramid), R.drawable.pyramid),
             FiguresAndBodies(3, getString(R.string.bodies_content_cut_pyramid), R.drawable.pyramid_cut),
-            FiguresAndBodies(4, getString(R.string.bodies_content_cone), R.drawable.cono),
-            FiguresAndBodies(5, getString(R.string.bodies_content_cone_cut), R.drawable.cono),
+            FiguresAndBodies(4, getString(R.string.bodies_content_cone), R.drawable.figura_cono_formulas),
+            FiguresAndBodies(5, getString(R.string.bodies_content_cone_cut), R.drawable.figura_cono_formulas),
             FiguresAndBodies(6, getString(R.string.bodies_content_cylinder), R.drawable.cylinder),
             FiguresAndBodies(7, getString(R.string.bodies_content_sphere), R.drawable.sphere),
             FiguresAndBodies(8, getString(R.string.bodies_content_sphere_cap), R.drawable.sphere_cap),

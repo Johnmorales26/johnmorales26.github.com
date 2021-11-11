@@ -18,6 +18,8 @@
     <string name="menu_options_fraction_simplifier">Fraction Simplifier</string>
     <string name="menu_options_decimal_to_fraction">Decimal to Fraction</string>
     <string name="menu_bottom_nav_extra_options">Extra Options</string>
+    <string name="menu_bottom_nav_about_developer">Developer</string>
+    <string name="menu_bottom_nav_history_operations">Trading History</string>
 
     <string name="formula_options_descuento">a - b% = x</string>
     <string name="formula_options_increment">a + b% = x</string>
@@ -32,6 +34,26 @@
     <string name="formula_options_intervalo">Interval</string>
     <string name="formula_options_other">Other</string>
     <string name="formula_options_result">Result</string>
+    <string name="formula_sphere">Sphere</string>
+    <string name="formula_spherical_cap">Spherical Cap</string>
+    <string name="formula_spherical_segment">Spherical Segment</string>
+    <string name="formula_spherical_sector">Spherical Sector</string>
+    <string name="formula_torus">Torus</string>
+    <string name="formula_cylinder">Cylinder</string>
+    <string name="formula_cone">Cone</string>
+    <string name="formula_cone_trunk">Cone Trunk</string>
+    <string name="formula_pyramid">Pyramid</string>
+    <string name="formula_prism">Prism</string>
+    <string name="formula_triangular_prism">Triangular Prism</string>
+    <string name="formula_polynomials">Polynomials</string>
+    <string name="formula_fraction">Fraction</string>
+    <string name="formula_identity">Identity</string>
+    <string name="formula_empowerment">Empowerment</string>
+    <string name="formula_settlement">Settlement</string>
+    <string name="formula_the_summations">The Summations</string>
+    <string name="formula_decimal_logarithm">Decimal Logarithm</string>
+    <string name="formula_natural_logarithm">Natural Logarithm</string>
+    <string name="formula_Eulers_formula">Euler\'s Formula</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="title_activity_operations">OperationsActivity</string>
@@ -51,6 +73,8 @@
     <string name="tv_other_formulas">Other Formulas</string>
     <string name="tv_input">Input:</string>
     <string name="tv_output">Output:</string>
+    <string name="tv_formula_volume">Formula Volume:</string>
+    <string name="tv_formula_surface">Formula Surface:</string>
 
     <string name="item_functions_name_function">Name Function</string>
     <string name="item_formulas_formula">Formula</string>
@@ -246,6 +270,15 @@
 
     <string name="btn_operation_history">Operation History</string>
     <string name="title_history_operations">Operations History</string>
-    <string name="splash_screen_loading">Loading…</string>
+    <string name="splash_screen_loading_1">Loading.</string>
+    <string name="splash_screen_loading_2">Loading..</string>
+    <string name="splash_screen_loading_3">Loading…</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="main_developer_name">Jonatan Arturo Morales Tavera</string>
+    <string name="main_developer_dev">Android Developer</string>
+    <string name="main_developer_description">I\'m warmed of mobile technologies. Ideas maker, curious and sports lover</string>
+
     <!-- TODO: Remove or change this placeholder text -->
 </resources>

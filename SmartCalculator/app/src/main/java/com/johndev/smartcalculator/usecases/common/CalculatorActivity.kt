@@ -115,6 +115,10 @@ class CalculatorActivity : AppCompatActivity() {
         })
     }
 
+    override fun onBackPressed() {
+        finish()
+    }
+
     private fun showMessage(errorRes: Int){
         Snackbar.make(binding.root, errorRes, Snackbar.LENGTH_SHORT)
             .setAnchorView(binding.llTop)

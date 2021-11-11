@@ -23,7 +23,7 @@ class OperationHistoryAdapter(private var optionsList: MutableList<OperationHist
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val history = optionsList[position]
         // Obligatory Parameters
-        history.image?.let { Picasso.get().load(it).into(holder.binding.imgFigure) }
+        history.image.let { Picasso.get().load(it).into(holder.binding.imgFigure) }
         holder.binding.tvTitle.text = history.nameFigure
         // Optional Parameters
         if (history.sideA != 0.0){

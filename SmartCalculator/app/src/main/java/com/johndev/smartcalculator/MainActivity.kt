@@ -1,71 +1,1 @@
-package com.johndev.smartcalculator
-
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.johndev.smartcalculator.databinding.ActivityMainBinding
-import com.johndev.smartcalculator.usecases.common.CalculatorActivity
-import com.johndev.smartcalculator.usecases.home.MainAlgebraFragment
-import com.johndev.smartcalculator.usecases.home.MainExtraOptionsFragment
-import com.johndev.smartcalculator.usecases.home.MainFormulasFragment
-
-class MainActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityMainBinding
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        binding.bottomNavigation.setOnNavigationItemSelectedListener { menuItem ->
-            when (menuItem.itemId) {
-                R.id.action_functions -> {
-                    val fragment = MainAlgebraFragment()
-                    openFragment(fragment)
-                    true
-                }
-                R.id.action_formulas -> {
-                    val fragment = MainFormulasFragment()
-                    openFragment(fragment)
-                    true
-                }
-                R.id.action_extra_options -> {
-                    val fragment = MainExtraOptionsFragment()
-                    openFragment(fragment)
-                    true
-                }
-                else -> false
-            }
-        }
-        binding.bottomNavigation.selectedItemId = R.id.action_functions
-
-        binding.fab.setOnClickListener {
-            val intent = Intent(this, CalculatorActivity::class.java)
-            startActivity(intent)
-        }
-
-    }
-
-    private fun openFragment(fragment: Fragment) {
-        val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.main_container, fragment)
-        transaction.addToBackStack(null)
-        transaction.commit()
-    }
-
-    override fun onBackPressed() {
-        MaterialAlertDialogBuilder(this)
-            .setTitle(R.string.bottom_sheet_title_exit)
-            .setPositiveButton(R.string.btn_exit) { dialogInterface, i -> finish() }
-            .setNegativeButton(getString(R.string.btn_cancelar), null)
-            .show()
-    }
-
-    companion object{
-        private const val RC_EDIT = 21
-    }
-
-}
+package com.johndev.smartcalculatorimport android.content.Contextimport android.content.Intentimport androidx.appcompat.app.AppCompatActivityimport android.os.Bundleimport androidx.fragment.app.Fragmentimport com.google.android.gms.ads.AdRequestimport com.google.android.gms.ads.LoadAdErrorimport com.google.android.gms.ads.interstitial.InterstitialAdimport com.google.android.gms.ads.interstitial.InterstitialAdLoadCallbackimport com.google.android.material.dialog.MaterialAlertDialogBuilderimport com.johndev.smartcalculator.databinding.ActivityMainBindingimport com.johndev.smartcalculator.usecases.common.CalculatorActivityimport com.johndev.smartcalculator.usecases.common.OperationHistoryActivityimport com.johndev.smartcalculator.usecases.home.MainAlgebraFragmentimport com.johndev.smartcalculator.usecases.home.MainDeveloperFragmentimport com.johndev.smartcalculator.usecases.home.MainFormulasFragmentimport com.johndev.smartcalculator.usecases.home.MainTradingHistoryFragmentclass MainActivity : AppCompatActivity() {    private lateinit var binding: ActivityMainBinding    // Variables for adds    private var interstitial: InterstitialAd? = null    override fun onCreate(savedInstanceState: Bundle?) {        super.onCreate(savedInstanceState)        binding = ActivityMainBinding.inflate(layoutInflater)        setContentView(binding.root)        initAdds()        binding.bottomNavigation.setOnNavigationItemSelectedListener { menuItem ->            when (menuItem.itemId) {                R.id.action_functions -> {                    addCounterForAdd()                    val fragment = MainAlgebraFragment()                    openFragment(fragment)                    true                }                R.id.action_formulas -> {                    addCounterForAdd()                    val fragment = MainFormulasFragment()                    openFragment(fragment)                    true                }                R.id.action_history_operations -> {                    /*                    val fragment = MainTradingHistoryFragment()                    openFragment(fragment)                    true*/                    addCounterForAdd()                    val intent = Intent(this, OperationHistoryActivity::class.java)                    startActivity(intent)                    true                }                R.id.action_developer -> {                    addCounterForAdd()                    val fragment = MainDeveloperFragment()                    openFragment(fragment)                    true                }                else -> false            }        }        binding.bottomNavigation.selectedItemId = R.id.action_functions        binding.fab.setOnClickListener {            val intent = Intent(this, CalculatorActivity::class.java)            startActivity(intent)        } }    private fun openFragment(fragment: Fragment) {        val transaction = supportFragmentManager.beginTransaction()        transaction.replace(R.id.main_container, fragment)        transaction.addToBackStack(null)        transaction.commit()    }    override fun onBackPressed() {        MaterialAlertDialogBuilder(this)            .setTitle(R.string.bottom_sheet_title_exit)            .setPositiveButton(R.string.btn_exit) { dialogInterface, i -> finish() }            .setNegativeButton(getString(R.string.btn_cancelar), null)            .show()    }    fun addCounterForAdd(){        counterAdds += 1        checkCounter()    }    fun initAdds(){        var adRequest: AdRequest = AdRequest.Builder().build()        InterstitialAd.load(this, "ca-app-pub-3940256099942544/1033173712", adRequest,            object: InterstitialAdLoadCallback(){                override fun onAdLoaded(p0: InterstitialAd) {                    interstitial = p0                }                override fun onAdFailedToLoad(p0: LoadAdError) {                    interstitial = null                }            })    }    private fun checkCounter() {        if (counterAdds == 5){            showAdd()            counterAdds = 0        }    }    fun showAdd(){        interstitial?.show(this)    }    companion object{        private const val RC_EDIT = 21        var counterAdds = 0        var interstitial: InterstitialAd? = null    }}

@@ -22,4 +22,9 @@
         <item name="cornerRadius">@dimen/common_padding_min</item>
         <item name="cardElevation">@dimen/common_padding_micro</item>
     </style>
+
+    <style name="Theme.SmartCalculator.CardView.Formulas">
+        <item name="android:backgroundTint">@color/colorFormulas</item>
+    </style>
+
 </resources>

@@ -6,9 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.johndev.smartcalculator.R
-import com.johndev.smartcalculator.databinding.FragmentBodiesConeBinding
 import com.johndev.smartcalculator.databinding.FragmentBodiesCutConeBinding
-import com.johndev.smartcalculator.databinding.FragmentBodiesCutPyramidBinding
 import com.johndev.smartcalculator.provider.services.DatabaseOperationHistory
 import com.johndev.smartcalculator.usecases.base.OperationHistory
 import com.johndev.smartcalculator.usecases.common.AddHistory
@@ -50,7 +48,7 @@ class BodiesCutConeFragment : Fragment() {
                     // Send data to History
                     val operationHistory = OperationHistory(
                         nameFigure = getString(R.string.bodies_content_cone_cut),
-                        image = R.drawable.cono,
+                        image = R.drawable.figura_cono_formulas,
                         radiusA = radioA,
                         radiusB = radioB,
                         height = height,

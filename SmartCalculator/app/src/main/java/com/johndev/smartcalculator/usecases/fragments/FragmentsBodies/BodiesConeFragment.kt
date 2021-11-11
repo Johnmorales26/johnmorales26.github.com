@@ -48,7 +48,7 @@ class BodiesConeFragment : Fragment() {
                 // Send data to History
                 val operationHistory = OperationHistory(
                     nameFigure = getString(R.string.bodies_content_cone),
-                    image = R.drawable.cono,
+                    image = R.drawable.figura_cono_formulas,
                     radiusA = radio,
                     height = height,
                     area = area,

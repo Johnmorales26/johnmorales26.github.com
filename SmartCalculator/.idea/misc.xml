@@ -3,6 +3,44 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/drawable/ic_arrow_forward.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/activity_operation_history.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/activity_splash.xml" value="0.2223731884057971" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_cone.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_cuboide.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_cylinder.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_logaritmo_natural.xml" value="0.2318840579710145" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_paralelogramo.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_pyramid.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_rectangle.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_rhomb.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_spherical_cap.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_spherical_sector.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_spherical_segment.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_square.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_torus.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_trapezoide.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_triangle.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_triangular_prism.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formulas_cone_trunk.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formulas_fraction.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formulas_identidad.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formulas_logaritmo_decimal.xml" value="0.2318840579710145" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formulas_polinomios.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formulas_potenciacion.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formulas_radicacion.xml" value="0.23641304347826086" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formulas_shift_triangle.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formulas_spehre.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formulas_sumatorias.xml" value="0.23641304347826086" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_main_algebra.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_main_developer.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_main_formulas.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_main_trading_history.xml" value="0.2269021739130435" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/item_extra_options.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/item_formulas.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/item_formulas_algebra.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/item_operation_history.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/menu/menu_bottom_nav.xml" value="0.12708333333333333" />
         <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/drawable/background_splash.xml" value="0.16" />
         <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/drawable/splash_screen.xml" value="0.1" />
         <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/activity_edit_profile.xml" value="0.2164855072463768" />

@@ -37,6 +37,10 @@ class OperationHistoryActivity : AppCompatActivity(), OnClickListenerHistory {
         }
     }
 
+    override fun onBackPressed() {
+        finish()
+    }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.getItemId() == android.R.id.home) {
             finish()

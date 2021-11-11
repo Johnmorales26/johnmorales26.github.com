@@ -33,6 +33,27 @@
     <string name="formula_options_indirectly_proportionalb">a * b = x * y</string>
     <string name="formula_options_directly_proportional">( a / b ) = ( x / y )</string>
 
+    <string name="formula_sphere">Esfera</string>
+    <string name="formula_spherical_cap">Casquillo Esférico</string>
+    <string name="formula_spherical_segment">Segmento Esférico</string>
+    <string name="formula_spherical_sector">Sector Esférico</string>
+    <string name="formula_torus">Torus</string>
+    <string name="formula_cylinder">Cilindro</string>
+    <string name="formula_cone">Cono</string>
+    <string name="formula_cone_trunk">Tronco De Cono</string>
+    <string name="formula_pyramid">Piramide</string>
+    <string name="formula_prism">Prisma</string>
+    <string name="formula_triangular_prism">Prisma Triangular</string>
+    <string name="formula_polynomials">Polinomios</string>
+    <string name="formula_fraction">Fracción</string>
+    <string name="formula_identity">Identidad</string>
+    <string name="formula_empowerment">Empoderamiento</string>
+    <string name="formula_settlement">Asentamiento</string>
+    <string name="formula_the_summations">Las Sumatorias</string>
+    <string name="formula_decimal_logarithm">Logaritmo Decimal</string>
+    <string name="formula_natural_logarithm">Logaritmo Natural</string>
+    <string name="formula_Eulers_formula">Fórmula de Euler</string>
+
     <string name="title_activity_operations">OperationsActivity</string>
 
     <string name="key_function_img">Funcion_key_img</string>
@@ -245,6 +266,20 @@
 
     <string name="btn_operation_history">Historial De Operaciones</string>
     <string name="title_history_operations">Historial De Operaciones</string>
-    <string name="splash_screen_loading">Cargando…</string>
+
+    <string name="splash_screen_loading_1">Cargando.</string>
+    <string name="splash_screen_loading_2">Cargando..</string>
+    <string name="splash_screen_loading_3">Cargando…</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_formula_volume">Formula Volumen:</string>
+    <string name="tv_formula_surface">Formula Superficie:</string>
+    <string name="menu_bottom_nav_about_developer">Desarrollador</string>
+    <string name="menu_bottom_nav_history_operations">Historial Operaciones</string>
+
+    <string name="main_developer_name">Jonatan Arturo Morales Tavera</string>
+    <string name="main_developer_dev">Desarrollador Android</string>
+    <string name="main_developer_description">Estoy entusiasmado con las tecnologías móviles. Creador de ideas, curioso y amante del deporte</string>
+
 
 </resources>

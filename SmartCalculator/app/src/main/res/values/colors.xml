@@ -27,6 +27,7 @@
 
     <!--    Dark Mode   -->
 
+    <color name="colorFormulas">#a4a4a4</color>
     <color name="colorPrimaryDarkMode">#424242</color>
     <color name="colorPrimaryLightDarkMode">#6d6d6d</color>
     <color name="colorPrimaryDarkDarkMode">#1b1b1b</color>

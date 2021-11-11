@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.johndev.smartcalculator.R
 import com.johndev.smartcalculator.databinding.FragmentBodiesEllipsoidBinding
-import com.johndev.smartcalculator.databinding.FragmentBodiesSphereSegmentBinding
 import com.johndev.smartcalculator.provider.services.DatabaseOperationHistory
 import com.johndev.smartcalculator.usecases.base.OperationHistory
 import com.johndev.smartcalculator.usecases.common.AddHistory

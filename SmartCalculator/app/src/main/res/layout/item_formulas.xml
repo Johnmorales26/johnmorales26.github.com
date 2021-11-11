@@ -15,13 +15,13 @@
 
         <TextView
             android:id="@+id/tvFormula"
-            style="@style/Theme.SmartCalculator.Subtitle1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/item_formulas_formula"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Theme.SmartCalculator.Subtitle1"/>
 
         <ImageButton
             android:id="@+id/btnViewFormula"

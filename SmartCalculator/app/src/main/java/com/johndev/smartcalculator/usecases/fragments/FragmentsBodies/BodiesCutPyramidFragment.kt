@@ -6,9 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.johndev.smartcalculator.R
-import com.johndev.smartcalculator.databinding.FragmentBodiesCubeBinding
 import com.johndev.smartcalculator.databinding.FragmentBodiesCutPyramidBinding
-import com.johndev.smartcalculator.databinding.FragmentBodiesPyramidBinding
 import com.johndev.smartcalculator.provider.services.DatabaseOperationHistory
 import com.johndev.smartcalculator.usecases.base.OperationHistory
 import com.johndev.smartcalculator.usecases.common.AddHistory

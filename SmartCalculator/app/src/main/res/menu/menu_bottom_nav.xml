@@ -16,7 +16,12 @@
         android:icon="@drawable/ic_calculate"/>-->
 
     <item
-        android:id="@+id/action_extra_options"
-        android:title="@string/menu_bottom_nav_extra_options"
+        android:id="@+id/action_history_operations"
+        android:title="@string/menu_bottom_nav_history_operations"
+        android:icon="@drawable/ic_history"/>
+
+    <item
+        android:id="@+id/action_developer"
+        android:title="@string/menu_bottom_nav_about_developer"
         android:icon="@drawable/ic_person"/>
 </menu>
