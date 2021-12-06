@@ -1,0 +1,23 @@
+
+_
+/app/src/main/java/com/example/stores/MainAux.kt,9\5\95cef8f386bffe318742ed43fdae6086f59e405a
+g
+7app/src/main/java/com/example/stores/OnClickListener.kt,4\e\4efcab4e81f16be428295899f9de43958a79c9fd
+d
+4app/src/main/java/com/example/stores/StoreAdapter.kt,3\8\385a3beccc6e056c1dfbb9fca304e7cf27707fcb
+h
+8app/src/main/java/com/example/stores/StoreApplication.kt,c\2\c2549cecc1fa721e82e3a04d40da13c4233ac62b
+`
+0app/src/main/java/com/example/stores/Database.kt,f\b\fbd7ebe814df8b1eb282d4e7c662236c2a9cd0d1
+`
+0app/src/main/java/com/example/stores/StoreDao.kt,5\d\5df259a0d1a51e7cc72117c44814c2757eb097b3
+c
+3app/src/main/java/com/example/stores/StoreEntity.kt,5\5\55a63e25495d404a08e19b05b5a540f9523197d9
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+i
+9app/src/main/java/com/example/stores/EditStoreFragment.kt,2\f\2f658aa9add93ebdcc16eedb91a894d8e3e0f877
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+d
+4app/src/main/java/com/example/stores/MainActivity.kt,1\b\1bc1b3fb38c043f833e03e8677e82d861d66706b
