@@ -1,0 +1,38 @@
+footer {
+  padding: 16px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+h3, h2, p {
+    color: purple;
+}
+
+.footer_container {
+  display: inline-block;
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: auto;
+}
+
+.fotter_options {
+  display: block;
+}
+
+.section_two_container {
+    display: inline-block;
+    padding: auto;
+    margin: auto;
+}
+
+.icon{
+    width: 80px;
+    padding: auto;
+    height: auto;
+}

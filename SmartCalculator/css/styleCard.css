@@ -1,0 +1,35 @@
+section {
+    padding: 16px;
+}
+
+.card {
+    background-color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 16px;
+    border: purple 2px solid;
+    display: inline-block;
+}
+
+.card:hover {
+    background-color: white;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 16px;
+    border: purple 2px solid;
+    display: inline-block;
+}
+
+.card img{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    padding: 16px;
+    margin: auto;
+}
+
+.card h3 {
+    background-color: white;
+    text-align: center;
+}
+
