@@ -57,7 +57,7 @@ section h2{
 }
 
 .card img{
-    background-color: var(--backgroundLight);
+    background-color: white;
     width: 100px;
     height: 100px;
     padding: 16px;
@@ -65,5 +65,6 @@ section h2{
 }
 
 .card_h3 {
-    color: var(--onBackgroundLight);
+    color: black;
+    background-color: white;
 }
