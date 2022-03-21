@@ -1,5 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
+
+:root{
+    --primaryColor: #ce93d8;
+    --primaryLightColor: #ffc4ff;
+    --primaryDarkColor: #9c64a6;
+    --secondaryColor: #4fc3f7;
+    --secondaryLightColor: #8bf6ff;
+    --secondaryDarkColor: #0093c4;
+    --primaryTextColor: #000000;
+    --secondaryTextColor: #000000;
+    --backgroundLight: #f2f2f2;
+    --surfaceLight: #f5f5f5;
+    --onBackgroundLight: #121212;
+    --onSurfaceLight: #121212;
+    overflow-x: hidden;
+}
+
+*{
+    font-family: 'Crimson Pro', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
 section {
     padding: 16px;
+}
+
+section h2{
+    color: var(--onBackgroundLight);
 }
 
 .card {
@@ -7,7 +38,7 @@ section {
     padding-left: 16px;
     padding-right: 16px;
     margin: 16px;
-    border: purple 2px solid;
+    border: var(--primaryDarkColor) 2px solid;
     display: inline-block;
 }
 
@@ -16,20 +47,23 @@ section {
     padding-left: 32px;
     padding-right: 32px;
     margin: 16px;
-    border: purple 2px solid;
+    border: var(--secondaryDarkColor) 2px solid;
     display: inline-block;
 }
 
+.card:hover img{
+    width: 120px;
+    height: 120px;
+}
+
 .card img{
-    background-color: white;
+    background-color: var(--backgroundLight);
     width: 100px;
     height: 100px;
     padding: 16px;
     margin: auto;
 }
 
-.card h3 {
-    background-color: white;
-    text-align: center;
+.card_h3 {
+    color: var(--onBackgroundLight);
 }
-
