@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OnboardingPages.InfResultsFragment">
+
+    <ImageView
+        android:id="@+id/imgInf"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/ic_inf_results"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cardview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgInf"
+        app:layout_constraintBottom_toTopOf="@id/btnNext"
+        style="@style/Theme.NeuronTraining.CardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/common_padding_default">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvInfTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/onboarding_title_results"
+                android:gravity="center"
+                style="@style/TextAppearance.NeuronTraining.Headline4"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvInfDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/onborarding_description_results"
+                android:textAlignment="center"
+                style="@style/TextAppearance.NeuronTraining.Body2"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPrevius"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Previus"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/cardview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNext"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/cardview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

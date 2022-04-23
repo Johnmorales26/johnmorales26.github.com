@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NeuronTraining" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorOnSecondary</item>
+        <!--    Shape   -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.NeuronTraining.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.NeuronTraining.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.NeuronTraining.LargeComponent</item>
+        <!--  Types  -->
+        <item name="textAppearanceHeadline6">@style/TextAppearance.NeuronTraining.Headline6</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.NeuronTraining.Headline5</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.NeuronTraining.Headline4</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.NeuronTraining.Headline3</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.NeuronTraining.Headline2</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearance.NeuronTraining.Headline1</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.NeuronTraining.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.NeuronTraining.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.NeuronTraining.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.NeuronTraining.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.NeuronTraining.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.NeuronTraining.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.NeuronTraining.Overline</item>
+    </style>
+    <!--  Neuron Training CardView  -->
+    <style name="Theme.NeuronTraining.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="strokeWidth">@dimen/border_cardview</item>
+        <item name="strokeColor">@color/secondaryDarkColor</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:backgroundTint">@color/surface_dark</item>
+        <item name="android:layout_margin">@dimen/common_padding_min</item>
+    </style>
+
+    <style name="BackgroundActivities">
+        <item name="android:background">@color/background_dark</item>
+    </style>
+
+    <style name="BackgroundLine">
+        <item name="android:background">@color/background</item>
+    </style>
+</resources>

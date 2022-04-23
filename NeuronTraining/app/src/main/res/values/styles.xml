@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Chip Styles  -->
+    <style name="ChipAppearace.NeuronTraining.Chip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipIconTint">@color/primaryDarkColor</item>
+        <item name="chipBackgroundColor">@color/surface</item>
+        <item name="chipStrokeWidth">2dp</item>
+        <item name="chipStrokeColor">@color/primaryColor</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="shapeAppearanceOverlay">@null</item>
+    </style>
+
+    <!--  Search View -->
+    <style name="MaterialSearchViewStyle">
+        <item name="android:background">@color/background</item>
+    </style>
+
+</resources>

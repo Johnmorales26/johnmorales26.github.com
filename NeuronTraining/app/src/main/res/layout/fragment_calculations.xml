@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/common_padding_default"
+    android:orientation="vertical"
+    tools:context=".MainViews.CalculationsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvInputData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_padding_min"
+            app:strokeColor="@color/secondaryColor"
+            app:strokeWidth="@dimen/border_cardview">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/common_padding_min">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvIndValueB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_insert_b"
+                    android:padding="@dimen/common_padding_min"
+                    style="@style/TextAppearance.NeuronTraining.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilValueB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/value_b"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperText="Required"
+                    android:layout_marginBottom="@dimen/common_padding_min"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etValueB"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvIndValueW"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_insert_w"
+                    android:padding="@dimen/common_padding_min"
+                    style="@style/TextAppearance.NeuronTraining.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilValueW"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/value_w"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperText="Required"
+                    android:layout_marginBottom="@dimen/common_padding_min"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etValueW"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/common_padding_min"
+            app:strokeColor="@color/secondaryColor"
+            app:strokeWidth="@dimen/border_cardview">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/common_padding_min">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvChips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_selected_method"
+                    android:padding="@dimen/common_padding_min"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/TextAppearance.NeuronTraining.Subtitle1"/>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:singleLine="false"
+                    app:layout_constraintTop_toBottomOf="@id/tvChips"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipMetaCost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/method_meta_error"
+                            android:layout_marginHorizontal="@dimen/common_padding_min"
+                            android:singleLine="true"
+                            android:checkable="true"
+                            app:chipIcon="@drawable/ic_looks_one"
+                            app:layout_constraintTop_toBottomOf="@id/tvChips"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/chipIterations"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            style="@style/ChipAppearace.NeuronTraining.Chip"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipIterations"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/method_iterations"
+                            android:layout_marginHorizontal="@dimen/common_padding_min"
+                            android:singleLine="true"
+                            android:checkable="true"
+                            app:chipIcon="@drawable/ic_looks_two"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/chipMetaCost"
+                            app:layout_constraintTop_toBottomOf="@id/tvChips"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            style="@style/ChipAppearace.NeuronTraining.Chip"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvIterations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/common_padding_min"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:strokeColor="@color/secondaryColor"
+            app:strokeWidth="@dimen/border_cardview">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/common_padding_min">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvIndIterations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_insert_iterations"
+                    android:padding="@dimen/common_padding_min"
+                    style="@style/TextAppearance.NeuronTraining.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilIterations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/tv_no_iterations"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperText="Required"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etIterations"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvRanges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/common_padding_min"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:strokeColor="@color/secondaryColor"
+            app:strokeWidth="@dimen/border_cardview">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/common_padding_min">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvIndMaxRange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_insert_range_max"
+                    android:padding="@dimen/common_padding_min"
+                    style="@style/TextAppearance.NeuronTraining.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilMaxRange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_range_max"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperText="Required"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etMaxRange"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvIndMinRange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_insert_range_min"
+                    android:padding="@dimen/common_padding_min"
+                    style="@style/TextAppearance.NeuronTraining.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilMinRange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_range_min"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperText="Required"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etMinRange"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCalcular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginHorizontal="@dimen/common_padding_min"
+                app:icon="@drawable/ic_calculate"
+                app:iconGravity="start"
+                android:text="@string/btn_calculate"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginHorizontal="@dimen/common_padding_min"
+                android:enabled="false"
+                app:icon="@drawable/ic_more"
+                app:iconGravity="start"
+                android:text="@string/btn_more"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:listitem="@layout/item_progress_data"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

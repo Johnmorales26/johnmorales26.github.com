@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    El sistema deberá permitir el ingreso de un "dataset" en archivo "csv"
+    El sistema deberá permitir el ingreso del valor de "b"
+    El sistema deberá permitir ingresar el calculo de la "w" mediante dos opciones
+        Costo meta + un error
+        Número de iteraciones
+    El sistema deberá imprimir el valor final de "w" , costo "J(w)" y número de iteraciones.
+    -->
+
+    <item
+        android:id="@+id/action_introduction"
+        android:title="@string/menu_bottom_introduction"
+        android:icon="@drawable/ic_preview"/>
+
+    <item
+        android:id="@+id/action_dataset"
+        android:title="@string/menu_bottom_dataset"
+        android:icon="@drawable/ic_data_object"/>
+
+    <item
+        android:id="@+id/action_calculo"
+        android:title="@string/menu_bottom_calculo_b_y_w"
+        android:icon="@drawable/ic_calculate"/>
+
+    <item
+        android:id="@+id/action_developer"
+        android:title="@string/menu_bottom_developer"
+        android:icon="@drawable/ic_person"/>
+</menu>
