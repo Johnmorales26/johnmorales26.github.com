@@ -26,6 +26,11 @@
         android:icon="@drawable/ic_calculate"/>
 
     <item
+        android:id="@+id/action_calculo_automatic"
+        android:title="@string/menu_bottom_calculo_automatic"
+        android:icon="@drawable/ic_auto_fix_high"/>
+
+    <item
         android:id="@+id/action_developer"
         android:title="@string/menu_bottom_developer"
         android:icon="@drawable/ic_person"/>

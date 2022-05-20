@@ -3,26 +3,37 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/drawable/ic_wabe_bg_header_two.xml" value="0.1" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/drawable/ic_wave_bg_bottom.xml" value="0.1" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/drawable/ic_wave_bg_header.xml" value="0.1" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/drawable/ic_wave_bottom_splash.xml" value="0.1" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/drawable/ic_wave_top_splash.xml" value="0.1" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/drawable/item_gradient_toolbar.xml" value="0.16" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/activity_automatic_chart.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/activity_iteration_details.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/activity_onboarding.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/activity_operations_graphics.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/dialog_details_data.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/dialog_load_operations.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/dialog_print.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/fragment_automatic_chart.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/fragment_automatic_view.xml" value="0.2" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/fragment_bottom_options.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/fragment_calculations.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/fragment_calculations_automatic.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/fragment_charge_data.xml" value="0.264" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/fragment_data.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/fragment_developer.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/fragment_graphics.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/fragment_graphics.xml" value="0.1" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/fragment_inf_dataset.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/fragment_inf_graphics.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/fragment_inf_operations.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/fragment_inf_results.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/fragment_introduction.xml" value="0.264" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/fragment_operations.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/item_automatic_results.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/item_bottom_options.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/item_error_guess.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JohnT/Desktop/Android Developer/NeuronTraining/app/src/main/res/layout/item_introduction_cards.xml" value="0.25416666666666665" />

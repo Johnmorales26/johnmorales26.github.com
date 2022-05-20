@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.johndev.neurontraining.Adapters.ChargeDataAdapter
 import com.johndev.neurontraining.BottomOptions.BottomOptionsFragment
 import com.johndev.neurontraining.DialogFragments.DialogDetailsDataFragment
@@ -28,6 +29,7 @@ import com.johndev.neurontraining.OperationsGraphicsActivity
 import com.johndev.neurontraining.R
 import com.johndev.neurontraining.databinding.FragmentCalculationsBinding
 import com.johndev.neurontraining.format.NumberFormat
+import java.util.*
 
 class CalculationsFragment : Fragment(), OnChargeData {
 
@@ -128,18 +130,18 @@ class CalculationsFragment : Fragment(), OnChargeData {
         var counter = 1
         var w = valueW
         var derivadaRes: Float
-        var costo = 0.0f
-        var valueJW = String()
-        var error: MutableList<Float> = mutableListOf()
-        var guess: MutableList<Float> = mutableListOf()
-        var results = mutableListOf<ResultsPerceptron>()
-        resultsPerceptron = mutableListOf()
+        var costo: Float
+        var valueJW: String
+        var error: MutableList<Float>
+        var guess: MutableList<Float>
+        val results = mutableListOf<ResultsPerceptron>()
+        val resume = mutableListOf<ChargeData>()
         while (counter <= iterations){
             derivadaRes = neuronTraining.resolveDerivative(w, valueB, valuesX, valuesY)
             guess = neuronTraining.resolveGuess(valuesX, w, valueB)
             error = neuronTraining.resolveError(guess, valuesY)
-            valueJW = formatNum.getTwoDecimals(neuronTraining.resolveCost(w, valuesX, valuesY)).toString()
-            costo = neuronTraining.resolveCost(w, valuesX, valuesY)
+            valueJW = formatNum.getTwoDecimals(neuronTraining.resolveCost(w, valueB, valuesX, valuesY)).toString()
+            costo = neuronTraining.resolveCost(w, valueB, valuesX, valuesY)
             println("---------- Iteracion #$counter ----------")
             println("El valor de w: ${formatNum.getTwoDecimals(w)}")
             println("El costo es de: $costo")
@@ -151,9 +153,13 @@ class CalculationsFragment : Fragment(), OnChargeData {
             results.add(ResultsPerceptron(counter, w, valueB, iterations.toInt(), valuesX = valuesX,
                 valuesY = valuesY, valueJW = valueJW.toFloat(), derivada = derivadaRes, error = error,
                 guess = guess, costo = costo))
-            adapter.add(charge)
+            resume.add(charge)
             w = neuronTraining.resolveW(w, derivadaRes)
             counter++
+        }
+        resume.reverse()
+        resume.forEach {
+            adapter.add(it)
         }
         binding.btnMore.isEnabled = true
         return results
@@ -172,17 +178,17 @@ class CalculationsFragment : Fragment(), OnChargeData {
         }
         var newW = w
         var counter = 0
-        var derivadaRes = 0.0f
-        var valueJW = 0.0f
-        var error: MutableList<Float> = mutableListOf()
-        var guess: MutableList<Float> = mutableListOf()
+        var derivadaRes: Float
+        var valueJW: Float
+        var error: MutableList<Float>
+        var guess: MutableList<Float>
         val results = mutableListOf<ResultsPerceptron>()
-        resultsPerceptron = arrayListOf()
+        val resume = mutableListOf<ChargeData>()
         do {
             derivadaRes = neuronTraining.resolveDerivative(newW, b, valuesX, valuesY)
             guess = neuronTraining.resolveGuess(ChargeDataFragment.valuesX, w, b)
             error = neuronTraining.resolveError(guess, ChargeDataFragment.valuesY)
-            valueJW = neuronTraining.resolveCost(newW, valuesX, valuesY)
+            valueJW = neuronTraining.resolveCost(newW, b, valuesX, valuesY)
             println("---------- Iteracion #$counter ----------")
             println("El valor de w: ${formatNum.getTwoDecimals(newW)}")
             println("El valor de J(w) es igual a: ${formatNum.getTwoDecimals(valueJW)}")
@@ -193,16 +199,20 @@ class CalculationsFragment : Fragment(), OnChargeData {
             results.add(ResultsPerceptron(counter, newW, b, valuesX = ChargeDataFragment.valuesX, valuesY = ChargeDataFragment.valuesY,
                 valueJW = valueJW, derivada = derivadaRes, error = error, guess = guess,
                 costo = valueJW))
-            adapter.add(charge)
+            resume.add(charge)
             newW = neuronTraining.resolveW(newW, derivadaRes)
             counter++
         } while (mayorRango < valueJW || menorRango > valueJW)
+        resume.reverse()
+        resume.forEach {
+            adapter.add(it)
+        }
         binding.btnMore.isEnabled = true
         return results
     }
 
     private fun configRecyclerView() {
-        val options = mutableListOf<ChargeData>()
+        var options = mutableListOf<ChargeData>()
         binding.let {
             adapter = ChargeDataAdapter(options, this)
             it.recyclerViewData.apply {

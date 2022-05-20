@@ -1,9 +1,11 @@
 package com.johndev.neurontraining
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.johndev.neurontraining.Adapters.ViewDataAdapter
+import com.johndev.neurontraining.DialogFragments.DialogPrintFragment
 import com.johndev.neurontraining.Interfaces.OnDataPass
 import com.johndev.neurontraining.MainViews.CalculationsFragment.Companion.resultsPerceptron
 import com.johndev.neurontraining.MainViews.DataFragment
@@ -24,13 +26,13 @@ class OperationsGraphicsActivity : AppCompatActivity(), OnDataPass {
         binding.toolbar.setOnMenuItemClickListener { menuItem ->
             when(menuItem.itemId) {
                 R.id.action_print_results -> {
-                    /*//  Save Screen
+                    //  Save Screen
                     val dialogDetailsData = DialogPrintFragment(
                         onSubmitClickListener = { quantity ->
                             Toast.makeText(applicationContext, quantity.toString(), Toast.LENGTH_SHORT).show()
                         }
                     )
-                    dialogDetailsData.show(supportFragmentManager, "dialog")*/
+                    dialogDetailsData.show(supportFragmentManager, "dialog")
                     Toast.makeText(applicationContext, getString(R.string.msj_toast_proximamente), Toast.LENGTH_SHORT).show()
                     true
                 }

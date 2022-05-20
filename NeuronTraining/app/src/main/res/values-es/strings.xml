@@ -30,6 +30,7 @@
     <string name="main_title_introductions">Introduccion</string>
     <string name="main_title_load_data">Cargar Datos</string>
     <string name="main_title_calculates">Calculos</string>
+    <string name="main_title_calculates_automatic">Calculation Automatic</string>
     <string name="main_title_developer">Desarrollador</string>
     <string name="main_developer_name">Morales Tavera Jonatan Arturo</string>
     <string name="main_developer_dev">Desarrollador Android</string>
@@ -94,5 +95,10 @@
     <string name="introduction_title_overfitting">Sobreajuste</string>
     <string name="introduction_title_stores">¿Que almacena?</string>
     <string name="introduction_title_filter">¿Que es un filtro?</string>
+
+    <string name="file_extension_csv">.csv</string>
+    <string name="bottom_option_title_extension">Selecciona Una Extension</string>
+    <string name="file_extension_json">.json</string>
+    <string name="file_extension_txt">.txt</string>
 
 </resources>

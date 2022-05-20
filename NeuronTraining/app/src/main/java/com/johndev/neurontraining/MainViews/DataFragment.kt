@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.johndev.neurontraining.databinding.FragmentDataBinding
 import com.johndev.neurontraining.Adapters.ResultsPerceptronAdapter
 import com.johndev.neurontraining.Interfaces.OnResultsPerceptronListener
+import com.johndev.neurontraining.OperationsGraphicsActivity
 import com.johndev.neurontraining.OperationsGraphicsActivity.Companion.paintResults
 
 
@@ -36,6 +37,7 @@ class DataFragment : Fragment(), OnResultsPerceptronListener, SearchView.OnQuery
 
     private fun setupRecyclerView() {
         val options = paintResults
+        options.reverse()
         binding.let {
             adapter = ResultsPerceptronAdapter(options, listener = this)
             it.recyclerView.apply {

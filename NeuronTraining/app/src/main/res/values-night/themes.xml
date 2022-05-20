@@ -10,7 +10,7 @@
         <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
         <item name="colorOnSecondary">@color/secondaryTextColor</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorOnSecondary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!--    Shape   -->
         <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.NeuronTraining.SmallComponent</item>
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.NeuronTraining.MediumComponent</item>

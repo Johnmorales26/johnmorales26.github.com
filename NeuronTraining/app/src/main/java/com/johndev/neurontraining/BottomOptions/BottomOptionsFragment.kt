@@ -56,6 +56,14 @@ class BottomOptionsFragment(private val onSubmitClickListener: (BottomOptions) -
                     BottomOptions(2, 12, getString(R.string.bottom_options_view_progress))
                 )
             }
+            "Extension" -> {
+                binding!!.tvTitle.text = getString(R.string.bottom_option_title_extension)
+                mutableListOf(
+                    BottomOptions(1, 12, getString(R.string.file_extension_json)),
+                    BottomOptions(2, 12, getString(R.string.file_extension_csv)),
+                    BottomOptions(3, 12, getString(R.string.file_extension_txt))
+                )
+            }
             else -> { mutableListOf() }
         }
     }

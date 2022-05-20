@@ -19,14 +19,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/common_padding_min"
-            app:strokeColor="@color/secondaryColor"
-            app:strokeWidth="@dimen/border_cardview">
+            style="@style/Theme.NeuronTraining.CardView">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:padding="@dimen/common_padding_min">
+                android:padding="@dimen/common_padding_default">
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tvIndValueB"
@@ -87,14 +86,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/common_padding_min"
-            app:strokeColor="@color/secondaryColor"
-            app:strokeWidth="@dimen/border_cardview">
+            style="@style/Theme.NeuronTraining.CardView">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="@dimen/common_padding_min">
+                android:padding="@dimen/common_padding_default">
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tvChips"
@@ -164,14 +162,13 @@
             android:layout_marginVertical="@dimen/common_padding_min"
             android:visibility="gone"
             tools:visibility="visible"
-            app:strokeColor="@color/secondaryColor"
-            app:strokeWidth="@dimen/border_cardview">
+            style="@style/Theme.NeuronTraining.CardView">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:padding="@dimen/common_padding_min">
+                android:padding="@dimen/common_padding_default">
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tvIndIterations"
@@ -208,14 +205,13 @@
             android:layout_marginVertical="@dimen/common_padding_min"
             android:visibility="gone"
             tools:visibility="visible"
-            app:strokeColor="@color/secondaryColor"
-            app:strokeWidth="@dimen/border_cardview">
+            style="@style/Theme.NeuronTraining.CardView">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:padding="@dimen/common_padding_min">
+                android:padding="@dimen/common_padding_default">
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tvIndMaxRange"

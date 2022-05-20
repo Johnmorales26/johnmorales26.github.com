@@ -9,12 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import com.johndev.neurontraining.Interfaces.OnDatasetListener
-import com.johndev.neurontraining.MainViews.CalculationsFragment
-import com.johndev.neurontraining.MainViews.ChargeDataFragment
-import com.johndev.neurontraining.MainViews.DeveloperFragment
-import com.johndev.neurontraining.MainViews.IntroductionFragment
 import com.johndev.neurontraining.databinding.ActivityMainBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.johndev.neurontraining.MainViews.*
 
 class MainActivity : AppCompatActivity(), OnDatasetListener {
 
@@ -74,6 +71,12 @@ class MainActivity : AppCompatActivity(), OnDatasetListener {
                     val fragment = CalculationsFragment()
                     openFragment(fragment)
                     binding.toolbar.title = getString(R.string.main_title_calculates)
+                    true
+                }
+                R.id.action_calculo_automatic -> {
+                    val fragment = CalculationsAutomaticFragment()
+                    openFragment(fragment)
+                    binding.toolbar.title = getString(R.string.main_title_calculates_automatic)
                     true
                 }
                 R.id.action_developer -> {

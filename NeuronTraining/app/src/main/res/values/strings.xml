@@ -28,6 +28,7 @@
     <string name="main_title_introductions">Introduction</string>
     <string name="main_title_load_data">Charge Data</string>
     <string name="main_title_calculates">Calculation</string>
+    <string name="main_title_calculates_automatic">Calculation Automatic</string>
     <string name="main_title_developer">Developer</string>
     <string name="main_developer_name">Morales Tavera Jonatan Arturo</string>
     <string name="main_developer_dev">Android Developer</string>
@@ -91,5 +92,22 @@
     <string name="introduction_title_training">Training</string>
     <string name="introduction_title_overfitting">Overfitting</string>
     <string name="introduction_title_stores">What Do You Store?</string>
-        <string name="introduction_title_filter">What Is A Filter?</string>
+    <string name="introduction_title_filter">What Is A Filter?</string>
+
+    <string name="file_extension_csv">.csv</string>
+    <string name="bottom_option_title_extension">Select An Extension</string>
+    <string name="file_extension_json">.json</string>
+    <string name="file_extension_txt">.txt</string>
+    <string name="load_chart">Cargar Grafico</string>
+    <string name="save_chart">Guardar Grafico</string>
+    <string name="menu_bottom_calculo_automatic">Automatic Calculation</string>
+    <string name="tv_value_w0">Value W0:</string>
+    <string name="value_w0">W0</string>
+    <string name="tv_value_w1">Value W1:</string>
+    <string name="value_w1">W1</string>
+    <string name="tv_value_j">Value J:</string>
+    <string name="value_j">J</string>
+    <string name="tv_value_total_iterations">Total Iterations:</string>
+    <string name="value_iterations">Iterations</string>
+    <string name="btn_more_details">More Details</string>
 </resources>

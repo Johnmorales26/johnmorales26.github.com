@@ -1,7 +1,6 @@
 package com.johndev.neurontraining.MainViews
 
 import android.app.Activity
-import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -20,13 +19,11 @@ import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
 
-
 class ChargeDataFragment : Fragment(), OnDatasetListener {
 
     private var _binding: FragmentChargeDataBinding? = null
     private val binding get() = _binding!!
     private lateinit var datasetAdapter: DatasetAdapter
-    private lateinit var contentResolver: Context
     private val PICK_PDF_FILE = 1
 
     override fun onCreateView(
@@ -46,33 +43,11 @@ class ChargeDataFragment : Fragment(), OnDatasetListener {
         dataset = mutableListOf()
         valuesX = mutableListOf()
         valuesY = mutableListOf()
-        val contentResolver = appContext.contentResolver
         binding.btnChargeData.setOnClickListener {
-            /*//val openRawResource = resources.openRawResource(R.raw.dataset_father)
-            val openRawResource = resources.openRawResource(R.raw.dataset)
-            val bufferedReader = openRawResource.bufferedReader()
-            var line = bufferedReader.readLine()
-            var i = 0
-            while (line != null){
-                val textElements = line.toString().split(",")
-                //Toast.makeText(context, "${textElements[0]} --- ${textElements[1]}", Toast.LENGTH_SHORT).show()
-                val valueX = textElements[0].trim().toDouble()
-                val valueY = textElements[1].trim().toDouble()
-                dataset.add(Dataset(valueX, valueY))
-                valuesX.add(valueX.toFloat())
-                valuesY.add(valueY.toFloat())
-                println("Vuelta: $i------${dataset[i].dataX}, ${dataset[i].dataY}")
-                i++
-                line = bufferedReader.readLine()
-            }
-            binding.clData.visibility = VISIBLE
-            binding.tvAnnouncement.visibility = VISIBLE
-            setupRecyclerView(dataset)*/
             selectCSVFile()
         }
     }
 
-    @Throws(IOException::class)
     private fun readTextFromUri(uri: Uri): String {
         val stringBuilder = StringBuilder()
         appContext.contentResolver.openInputStream(uri)?.use { inputStream ->
@@ -81,7 +56,6 @@ class ChargeDataFragment : Fragment(), OnDatasetListener {
                 var i = 0
                 while (line != null) {
                     val textElements = line.toString().split(",")
-                    //Toast.makeText(context, "${textElements[0]} --- ${textElements[1]}", Toast.LENGTH_SHORT).show()
                     val valueX = textElements[0].trim().toDouble()
                     val valueY = textElements[1].trim().toDouble()
                     dataset.add(Dataset(valueX, valueY))
@@ -102,7 +76,6 @@ class ChargeDataFragment : Fragment(), OnDatasetListener {
     private fun selectCSVFile() {
         val intent = Intent(Intent.ACTION_GET_CONTENT)
         intent.addCategory(Intent.CATEGORY_OPENABLE)
-        //intent.type = "text/csv"
         intent.type = "*/*"
         startActivityForResult(Intent.createChooser(intent, "Open CSV"), PICK_PDF_FILE)
     }
@@ -116,10 +89,6 @@ class ChargeDataFragment : Fragment(), OnDatasetListener {
                 readTextFromUri(uri)
             }
         }
-        /*if (resultCode == RESULT_OK){
-            proImportCSV(new File(data.getData().getPath());
-            readTextFromUri(data.getData().getPath())
-        }*/
     }
 
     private fun setupRecyclerView(dataset: MutableList<Dataset>) {

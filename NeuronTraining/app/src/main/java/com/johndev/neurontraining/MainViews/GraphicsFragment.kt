@@ -1,18 +1,23 @@
 package com.johndev.neurontraining.MainViews
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.VISIBLE
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.github.mikephil.charting.components.Description
+import com.github.mikephil.charting.components.Legend
+import com.github.mikephil.charting.components.LimitLine
 import com.johndev.neurontraining.R
 import com.johndev.neurontraining.databinding.FragmentGraphicsBinding
-import com.johndev.neurontraining.MainViews.CalculationsFragment.Companion.resultsPerceptron
-import com.github.mikephil.charting.components.LimitLine
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
+import com.johndev.neurontraining.MainViews.CalculationsFragment.Companion.resultsPerceptron
 
 class GraphicsFragment : Fragment() {
 
@@ -20,6 +25,8 @@ class GraphicsFragment : Fragment() {
     private val binding get() = _binding!!
     private var valuesCosto: MutableList<Entry> = mutableListOf()
     private lateinit var valuesW: MutableList<Entry>
+    private var colorArray: MutableList<Int> = mutableListOf(R.color.primaryColor, R.color.primaryDarkColor, R.color.secondaryColor, R.color.secondaryDarkColor)
+    private var legendName: Array<String> = arrayOf("Cow", "Dog", "Cat", "Rat")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,6 +42,7 @@ class GraphicsFragment : Fragment() {
         configureValues()
 
         binding.btnChargeGrafic.setOnClickListener {
+            Toast.makeText(context, resultsPerceptron.size.toString(), Toast.LENGTH_SHORT).show()
             //binding.chartLine.onChartGestureListener = this
             //binding.chartLine.setOnChartValueSelectedListener(this)
             val upperLimit: LimitLine = LimitLine(65f, "Max Value")
@@ -108,8 +116,6 @@ class GraphicsFragment : Fragment() {
             Entry(3.0f, 1.0f)
         )
     }
-
-
 
     override fun onDestroyView() {
         super.onDestroyView()
