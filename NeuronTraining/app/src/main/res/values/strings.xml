@@ -110,4 +110,6 @@
     <string name="tv_value_total_iterations">Total Iterations:</string>
     <string name="value_iterations">Iterations</string>
     <string name="btn_more_details">More Details</string>
+    <string name="value_converter">Value Converter</string>
+    <string name="hint_result">Result</string>
 </resources>

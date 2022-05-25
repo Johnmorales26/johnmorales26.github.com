@@ -4,9 +4,11 @@ import NeuronTraining.NeuronTraining
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
+import android.text.TextWatcher
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.VISIBLE
 import android.view.ViewGroup
 import android.widget.Toast
 import com.johndev.neurontraining.AutomaticChartActivity
@@ -16,12 +18,15 @@ import com.johndev.neurontraining.Models.Automatic
 import com.johndev.neurontraining.databinding.FragmentCalculationsAutomaticBinding
 import kotlinx.coroutines.*
 import java.util.*
+import kotlin.properties.Delegates
 
 class CalculationsAutomaticFragment : Fragment() {
 
     private var _binding: FragmentCalculationsAutomaticBinding? = null
     private val binding get() = _binding!!
     private var neuronTraining = NeuronTraining()
+    private var finalW0 by Delegates.notNull<Double>()
+    private var finalW1 by Delegates.notNull<Double>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,6 +39,27 @@ class CalculationsAutomaticFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         configureButtons()
+        configureAnswers()
+    }
+
+    private fun configureAnswers() {
+        binding.etValueTransform.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
+
+            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+                val text = binding.etValueTransform.text.toString().trim()
+                var valueTransform = 0.0
+                if (text.isEmpty()){
+                    valueTransform = 0.0
+                } else {
+                    valueTransform = binding.etValueTransform.text.toString().trim().toDouble()
+                    var result = (valueTransform * finalW1) + finalW0
+                    binding.etValueResult.text = result.toString().trim().editable()
+                }
+            }
+
+            override fun afterTextChanged(p0: Editable?) {}
+        })
     }
 
     private fun configureButtons() {
@@ -90,7 +116,10 @@ class CalculationsAutomaticFragment : Fragment() {
             etValueIterations.text = x.toString().trim().editable()
             etValueJ.text = J.toString().trim().editable()
             btnMore.isEnabled = true
+            tilValueTransform.isEnabled = true
         }
+        finalW0 = W0.toDouble()
+        finalW1 = W1.toDouble()
     }
 
     private fun String.editable(): Editable = Editable.Factory.getInstance().newEditable(this)
