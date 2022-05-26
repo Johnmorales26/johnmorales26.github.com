@@ -8,14 +8,21 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
-import com.johndev.neurontraining.Interfaces.OnDatasetListener
-import com.johndev.neurontraining.databinding.ActivityMainBinding
+import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.johndev.neurontraining.Interfaces.OnDatasetListener
 import com.johndev.neurontraining.MainViews.*
+import com.johndev.neurontraining.MainViews.CalculationsAutomaticFragment.Companion.resultsAutomatic
+import com.johndev.neurontraining.MainViews.CalculationsFragment.Companion.resultsPerceptron
+import com.johndev.neurontraining.MainViews.ChargeDataFragment.Companion.dataset
+import com.johndev.neurontraining.MainViews.ChargeDataFragment.Companion.valuesX
+import com.johndev.neurontraining.MainViews.ChargeDataFragment.Companion.valuesY
+import com.johndev.neurontraining.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), OnDatasetListener {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var fragment: Fragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,6 +54,19 @@ class MainActivity : AppCompatActivity(), OnDatasetListener {
                     finishAffinity()
                     true
                 }
+                R.id.action_clear -> {
+                    resultsAutomatic = mutableListOf()
+                    valuesX = mutableListOf()
+                    valuesY = mutableListOf()
+                    dataset = mutableListOf()
+                    resultsPerceptron = mutableListOf()
+                    fragment = supportFragmentManager.findFragmentByTag("Your_Fragment_TAG")!!
+                    val ft: FragmentTransaction = supportFragmentManager.beginTransaction()
+                    ft.detach(fragment)
+                    ft.attach(fragment)
+                    ft.commit()
+                    true
+                }
                 else -> {
                     super.onOptionsItemSelected(menuItem)
                 }
@@ -56,31 +76,31 @@ class MainActivity : AppCompatActivity(), OnDatasetListener {
         binding.bottomNavigation.setOnNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.action_introduction -> {
-                    val fragment = IntroductionFragment()
+                    fragment = IntroductionFragment()
                     openFragment(fragment)
                     binding.toolbar.title = getString(R.string.main_title_introductions)
                     true
                 }
                 R.id.action_dataset -> {
-                    val fragment = ChargeDataFragment()
+                    fragment = ChargeDataFragment()
                     openFragment(fragment)
                     binding.toolbar.title = getString(R.string.main_title_load_data)
                     true
                 }
                 R.id.action_calculo -> {
-                    val fragment = CalculationsFragment()
+                    fragment = CalculationsFragment()
                     openFragment(fragment)
                     binding.toolbar.title = getString(R.string.main_title_calculates)
                     true
                 }
                 R.id.action_calculo_automatic -> {
-                    val fragment = CalculationsAutomaticFragment()
+                    fragment = CalculationsAutomaticFragment()
                     openFragment(fragment)
                     binding.toolbar.title = getString(R.string.main_title_calculates_automatic)
                     true
                 }
                 R.id.action_developer -> {
-                    val fragment = DeveloperFragment()
+                    fragment = DeveloperFragment()
                     openFragment(fragment)
                     binding.toolbar.title = getString(R.string.main_title_developer)
                     true

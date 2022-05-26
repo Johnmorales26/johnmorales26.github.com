@@ -7,7 +7,7 @@
         <item name="chipBackgroundColor">@color/surface</item>
         <item name="chipStrokeWidth">2dp</item>
         <item name="chipStrokeColor">@color/primaryColor</item>
-        <item name="checkedIconVisible">false</item>
+        <item name="checkedIconVisible">true</item>
         <item name="shapeAppearanceOverlay">@null</item>
     </style>
 

@@ -11,4 +11,9 @@
         android:title="@string/menu_toolbar_exit"
         android:icon="@drawable/ic_data_object"/>
 
+    <item
+        android:id="@+id/action_clear"
+        android:title="@string/menu_toolbar_clear"
+        android:icon="@drawable/ic_clear_all"/>
+
 </menu>

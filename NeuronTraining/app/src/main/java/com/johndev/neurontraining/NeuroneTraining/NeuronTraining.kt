@@ -1,6 +1,7 @@
 package NeuronTraining
 
 import kotlin.math.pow
+import kotlin.math.sqrt
 
 class NeuronTraining {
 
@@ -92,4 +93,11 @@ class NeuronTraining {
         val result =  (W1 - alpha * (numerator * sumatoria)).toFloat()
         return result
     }
+
+    fun getResultingMagnitude(J: Float, W1: Float): Float {
+        return sqrt(J.toDouble() + W1.toDouble()).toFloat()
+    }
+
+    fun getDifferenceMagnitude(W0: Float, W1: Float): Float = W0 - W1
+    
 }

@@ -112,4 +112,8 @@
     <string name="btn_more_details">More Details</string>
     <string name="value_converter">Value Converter</string>
     <string name="hint_result">Result</string>
+    <string name="menu_toolbar_clear">Limpiar Variables</string>
+    <string name="automatic_method">Method:</string>
+    <string name="method_resulting_magnitude">Resulting Magnitude</string>
+    <string name="method_difference">Difference</string>
 </resources>
