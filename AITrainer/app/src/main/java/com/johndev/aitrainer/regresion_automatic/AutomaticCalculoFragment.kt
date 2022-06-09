@@ -14,11 +14,11 @@ import android.widget.SearchView
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.johndev.aitrainer.Constants
 import com.johndev.aitrainer.Constants.DIFFERENCES_METHOD
 import com.johndev.aitrainer.Constants.MAGNITUDE_METHOD
 import com.johndev.aitrainer.Constants.NOT_VISIBLE_VIEW
 import com.johndev.aitrainer.Constants.VISIBLE_VIEW
+import com.johndev.aitrainer.MainActivity
 import com.johndev.aitrainer.MainActivity.Companion.printAutomatic
 import com.johndev.aitrainer.Models.Automatic
 import com.johndev.aitrainer.R
@@ -95,6 +95,7 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
 
     private fun configureButtons() {
         binding.btnCalcular.setOnClickListener {
+            binding.btnCalcular.isEnabled = false
             Toast.makeText(context, "Cargando Resultados...", Toast.LENGTH_SHORT).show()
             if (binding.chipDifference.isChecked) {
                 lifecycleScope.launch {
@@ -112,19 +113,9 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
         binding.btnMore.setOnClickListener {
             binding.searchView.visibility = VISIBLE
             binding.recyclerView.visibility = VISIBLE
-            var x = 0
-            val insert = resultsAutomatic.size - 1000
-            val newList: MutableList<Automatic> = mutableListOf()
-            while (x < resultsAutomatic.size){
-                if (x == insert || x >= insert){
-                    newList.add(resultsAutomatic[x])
-                }
-                x++
-            }
-            println(newList.size)
-            lifecycleScope.launch {
-                setupRecyclerView(newList)
-                Toast.makeText(context, "Datos Cargados...", Toast.LENGTH_SHORT).show()
+            lifecycleScope.launch(Dispatchers.Default) {
+                val printList = printData()
+                setupRecyclerView(printList)
             }
         }
 
@@ -181,9 +172,28 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
         }
     }
 
+    private suspend fun printData(): MutableList<Automatic> = withContext(Dispatchers.Default) {
+        var x = 0
+        val latestValues = resultsPerceptron.size - 10
+        val returnList: MutableList<Automatic> = mutableListOf()
+        lifecycleScope.launch {
+            while (x < resultsPerceptron.size) {
+                val adapterData = Automatic(resultsPerceptron[x].id, resultsPerceptron[x].W0, resultsPerceptron[x].W1,resultsPerceptron[x].J)
+                if (x in 0..10) {
+                    returnList.add(adapterData)
+                }
+                if (x in latestValues..resultsPerceptron.size){
+                    returnList.add(adapterData)
+                }
+                x++
+            }
+            Toast.makeText(context, "${resultsPerceptron.size}", Toast.LENGTH_SHORT).show()
+        }
+        return@withContext returnList
+    }
+
     private suspend fun automaticMethodForDiferences(Method: String) = withContext(Dispatchers.IO) {
-        val mediaPlayer = MediaPlayer.create(context, R.raw.programming_complete)
-        resultsAutomatic = mutableListOf()
+        resultsPerceptron = mutableListOf()
         val random = Random()
         var w0 = random.nextInt(1..2147483647).toFloat()
         var w1 = random.nextInt(1..2147483647).toFloat()
@@ -215,18 +225,23 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
             rest = newRest
             magnitude = newMagnitude
             println("Rest = $rest")
-            resultsAutomatic.add(Automatic(x, w0, w1, j))
+            resultsPerceptron.add(Automatic(x, w0, w1, j))
             printAutomatic.add(Automatic(x, w0, w1, j))
             x++
         } while (stop)
-        mediaPlayer.start()
+        val sound = MainActivity.sharedPreferences.getBoolean(getString(R.string.key_preference_enable_sound_active), true)
+        if (sound){
+            val mediaPlayer = MediaPlayer.create(context, R.raw.programming_complete)
+            mediaPlayer.start()
+        }
         finalW0 = w0.toDouble()
         finalW1 = w1.toDouble()
     }
 
     private fun paintResults() {
-        val reversed = resultsAutomatic.asReversed()
+        val reversed = resultsPerceptron.asReversed()
         binding.apply {
+            binding.btnCalcular.isEnabled = true
             etValueW0.isEnabled = true
             etValueJ.isEnabled = true
             etValueIterations.isEnabled = true
@@ -241,9 +256,8 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
         Toast.makeText(context, "Calculos Realizados...", Toast.LENGTH_SHORT).show()
     }
 
-    private suspend fun setupRecyclerView(newList: MutableList<Automatic>) = withContext(Dispatchers.Main) {
-        val data: MutableList<Automatic> = newList
-        data.reverse()
+    private fun setupRecyclerView(printList: MutableList<Automatic>) {
+        val data: MutableList<Automatic> = printList
         binding.let {
             adapter = AutomaticAdapter(data)
             it.recyclerView.apply {
@@ -273,7 +287,8 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
     }
 
     companion object {
-        lateinit var resultsAutomatic: MutableList<Automatic>
+        lateinit var resultsPerceptron: MutableList<Automatic>
+        //lateinit var chartData: MutableList<Automatic>
     }
 
 }

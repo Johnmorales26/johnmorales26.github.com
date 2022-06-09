@@ -1,6 +1,7 @@
 package com.johndev.aitrainer.regresion_manual
 
 import NeuronTraining.NeuronTraining
+import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -23,6 +24,8 @@ import com.johndev.aitrainer.DialogFragments.PassData.PASS_JW
 import com.johndev.aitrainer.DialogFragments.PassData.PASS_W
 import com.johndev.aitrainer.Interfaces.OnChargeData
 import com.johndev.aitrainer.Interfaces.OnResultsPerceptronListener
+import com.johndev.aitrainer.MainActivity
+import com.johndev.aitrainer.Models.Automatic
 import com.johndev.aitrainer.Models.ChargeData
 import com.johndev.aitrainer.Models.ResultsPerceptron
 import com.johndev.aitrainer.R
@@ -177,8 +180,17 @@ class ManualCalculoFragment : Fragment(), OnChargeData, OnResultsPerceptronListe
             w = neuronTraining.resolveW(w, derivadaRes)
             counter++
         }
-        binding.btnMore.isEnabled = true
+        playSound()
         return results
+    }
+
+    private fun playSound() {
+
+        val sound = MainActivity.sharedPreferences.getBoolean(getString(R.string.key_preference_enable_sound_active), true)
+        if (sound){
+            val mediaPlayer = MediaPlayer.create(context, R.raw.programming_complete)
+            mediaPlayer.start()
+        }
     }
 
     private fun methodRanges(w: Float, b: Float, rango1: Float, rango2: Float, valuesX: MutableList<Float>, valuesY: MutableList<Float>)
@@ -223,6 +235,7 @@ class ManualCalculoFragment : Fragment(), OnChargeData, OnResultsPerceptronListe
         resume.forEach {
             adapter.add(it)
         }
+        playSound()
         binding.btnMore.isEnabled = true
         return results
     }
@@ -352,6 +365,7 @@ class ManualCalculoFragment : Fragment(), OnChargeData, OnResultsPerceptronListe
 
     companion object {
         lateinit var resultsPerceptron: MutableList<ResultsPerceptron>
+        //lateinit var chartData: MutableList<Automatic>
     }
 
 }

@@ -14,9 +14,11 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.johndev.aitrainer.Adapters.DatasetAdapter
 import com.johndev.aitrainer.Interfaces.OnDatasetListener
+import com.johndev.aitrainer.MainActivity
 import com.johndev.aitrainer.Models.Dataset
 import com.johndev.aitrainer.R
 import com.johndev.aitrainer.MainActivity.Companion.appContext
+import com.johndev.aitrainer.MainActivity.Companion.sharedPreferences
 import com.johndev.aitrainer.databinding.FragmentChargeDatasetsBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -34,7 +36,7 @@ class ChargeDatasetsFragment : Fragment(), OnDatasetListener {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentChargeDatasetsBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -100,14 +102,16 @@ class ChargeDatasetsFragment : Fragment(), OnDatasetListener {
     }
 
     private fun setupRecyclerView(dataset: MutableList<Dataset>) {
-        val mediaPlayer = MediaPlayer.create(context, R.raw.programming_complete)
         datasetAdapter = DatasetAdapter(dataset, this)
         binding.rvChargeData.apply {
-            //layoutManager = LinearLayoutManager(context)
             layoutManager = LinearLayoutManager(context)
             adapter = datasetAdapter
         }
-        mediaPlayer.start()
+        val sound = sharedPreferences.getBoolean(getString(R.string.key_preference_enable_sound_active), true)
+        if (sound){
+            val mediaPlayer = MediaPlayer.create(context, R.raw.programming_complete)
+            mediaPlayer.start()
+        }
     }
 
     companion object {

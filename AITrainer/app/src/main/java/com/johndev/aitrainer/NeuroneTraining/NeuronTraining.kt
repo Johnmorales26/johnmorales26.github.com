@@ -60,13 +60,13 @@ class NeuronTraining {
     fun getJ(w: Float,b: Float, valuesX: MutableList<Float>, valuesY: MutableList<Float>): Float{
         var countResult = 0.0f
         var counter = 0
-        while (counter <= 7){
+        while (counter < valuesX.size){
             countResult += (valuesY[counter] - ((w * valuesX[counter]) + b)).pow(2)
             counter++
         }
         val size = valuesX.size.toString()
         val numerator = 1 / (size.toFloat() * 2)
-        return (numerator * countResult).toFloat()
+        return (numerator * countResult)
     }
 
     fun getAproximateW0(W0: Float, W1: Float, X: MutableList<Float>, Y: MutableList<Float>): Float {

@@ -16,12 +16,11 @@ import androidx.lifecycle.lifecycleScope
 import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
 import com.johndev.aitrainer.BottomOptions.BottomOptionsFragment
+import com.johndev.aitrainer.MainActivity
 import com.johndev.aitrainer.MainActivity.Companion.printAutomatic
 import com.johndev.aitrainer.Models.ResultsAuto
 import com.johndev.aitrainer.R
-import com.johndev.aitrainer.databinding.FragmentAutomaticCalculoBinding
 import com.johndev.aitrainer.databinding.FragmentAutomaticPrintBinding
-import com.johndev.aitrainer.regresion_automatic.AutomaticCalculoFragment.Companion.resultsAutomatic
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -58,7 +57,7 @@ class AutomaticPrintFragment : Fragment() {
                 nameFile = binding.etNameFile.text.toString().trim()
                 extensionFile = binding.btnExtension.text.toString().trim()
                 checkStoragePermission()
-                ordenateAnswer()
+                sortAnswer()
             }
         }
         binding.btnExtension.setOnClickListener {
@@ -74,7 +73,7 @@ class AutomaticPrintFragment : Fragment() {
         }
     }
 
-    private fun ordenateAnswer() {
+    private fun sortAnswer() {
         val resultList: MutableList<ResultsAuto> = ArrayList()
         var i = 0
         while (i < printAutomatic.size){
@@ -129,7 +128,6 @@ class AutomaticPrintFragment : Fragment() {
     }
 
     private suspend fun writeToFile(exportFile: String?) = withContext(Dispatchers.IO) {
-        val mediaPlayer = MediaPlayer.create(context, R.raw.programming_complete)
         val filePath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
         val file = File(filePath, "$nameFile$extensionFile".trim())
         if (!file.exists()){
@@ -139,7 +137,11 @@ class AutomaticPrintFragment : Fragment() {
         val bufferedWriter = BufferedWriter(fileWriter)
         bufferedWriter.write(exportFile)
         bufferedWriter.close()
-        mediaPlayer.start()
+        val sound = MainActivity.sharedPreferences.getBoolean(getString(R.string.key_preference_enable_sound_active), true)
+        if (sound){
+            val mediaPlayer = MediaPlayer.create(context, R.raw.programming_complete)
+            mediaPlayer.start()
+        }
         Snackbar.make(binding.root, "Archivo Creado", Snackbar.LENGTH_LONG).show()
     }
 

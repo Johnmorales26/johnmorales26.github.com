@@ -14,6 +14,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.google.gson.Gson
 import com.johndev.aitrainer.BottomOptions.BottomOptionsFragment
+import com.johndev.aitrainer.MainActivity
 import com.johndev.aitrainer.Models.ResultsJSON
 import com.johndev.aitrainer.R
 import com.johndev.aitrainer.databinding.FragmentPrintDatasetBinding
@@ -105,7 +106,6 @@ class PrintDatasetFragment : Fragment() {
     }
 
     private fun writeToFile(exportFile: String?) {
-        val mediaPlayer = MediaPlayer.create(context, R.raw.programming_complete)
         val filePath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
         Toast.makeText(context, "Guardando en $filePath", Toast.LENGTH_LONG).show()
         val file = File(filePath, "$nameFile$extensionFile".trim())
@@ -116,7 +116,11 @@ class PrintDatasetFragment : Fragment() {
         val bufferedWriter = BufferedWriter(fileWriter)
         bufferedWriter.write(exportFile)
         bufferedWriter.close()
-        mediaPlayer.start()
+        val sound = MainActivity.sharedPreferences.getBoolean(getString(R.string.key_preference_enable_sound_active), true)
+        if (sound){
+            val mediaPlayer = MediaPlayer.create(context, R.raw.programming_complete)
+            mediaPlayer.start()
+        }
     }
 
     override fun onRequestPermissionsResult(

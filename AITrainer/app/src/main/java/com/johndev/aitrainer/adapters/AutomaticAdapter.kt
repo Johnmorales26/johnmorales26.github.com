@@ -13,6 +13,8 @@ import com.johndev.aitrainer.Models.ResultsPerceptron
 import com.johndev.aitrainer.R
 import com.johndev.aitrainer.databinding.ItemAutomaticResultsBinding
 import com.johndev.aitrainer.databinding.ItemProgressDataBinding
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import java.util.stream.Collectors
 
 class AutomaticAdapter(private val dataList: MutableList<Automatic>):
@@ -40,6 +42,23 @@ class AutomaticAdapter(private val dataList: MutableList<Automatic>):
     }
 
     override fun getItemCount(): Int = dataList.size
+
+    suspend fun add(data: Automatic) = withContext(Dispatchers.Main){
+        if (!dataList.contains(data)){
+            dataList.add(data)
+            notifyItemInserted(dataList.size - 1)
+        } else{
+            update(data)
+        }
+    }
+
+    fun update(data: Automatic){
+        val index = dataList.indexOf(data)
+        if (index != -1){
+            dataList[index] = data
+            notifyItemChanged(index)
+        }
+    }
 
     fun filteredOut(txtSearch: String){
         if (automaticOriginal.isEmpty()){

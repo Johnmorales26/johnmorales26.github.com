@@ -12,6 +12,11 @@
         android:title="@string/menu_bottom_operations"/>
 
     <item
+        android:id="@+id/action_manual_chart"
+        android:icon="@drawable/ic_auto_graph"
+        android:title="@string/menu_bottom_chart"/>
+
+    <item
         android:id="@+id/action_manual_print_data"
         android:icon="@drawable/ic_print"
         android:title="@string/menu_bottom_manual_print_data"/>

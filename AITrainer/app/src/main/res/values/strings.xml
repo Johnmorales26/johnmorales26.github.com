@@ -1,16 +1,14 @@
 <resources>
     <string name="app_name">AI Trainer</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="lineal_regression_section">Regresion Lineal</string>
-    <string name="manual_regression">Regresion Manual</string>
-    <string name="automatic_regression">Regresion Automatica</string>
+    <string name="lineal_regression_section">Lineal Regression</string>
+    <string name="manual_regression">Manual Regression</string>
+    <string name="automatic_regression">Automatic Regression</string>
     <string name="menu_bottom_load_data">Dataset</string>
-    <string name="menu_bottom_operations">Operaciones</string>
-    <string name="menu_bottom_manual_results">Resultados</string>
-    <string name="menu_bottom_manual_print_data">Imprimir</string>
+    <string name="menu_bottom_operations">Operations</string>
+    <string name="menu_bottom_manual_results">Results</string>
+    <string name="menu_bottom_manual_print_data">Print</string>
 
-    <string name="menu_bottom_introduction">Introduccion</string>
+    <string name="menu_bottom_introduction">Introduction</string>
     <string name="menu_bottom_dataset">Dataset</string>
     <string name="menu_bottom_calculo_b_y_w">Calculation B and W</string>
     <string name="menu_bottom_developer">Developer</string>
@@ -25,10 +23,10 @@
 
     <string name="alert_required">Required</string>
 
-    <string name="item_results_cost">El costo es de: $%1$.2f</string>
-    <string name="item_results_jw">El valor de J(w) es de: $%1$.2f</string>
-    <string name="item_results_derivada">El valor de la derivada es de: $%1$.2f</string>
-    <string name="item_results_w">El valor de W es de: $%1$.2f</string>
+    <string name="item_results_cost">The Cost is: $%1$.2f</string>
+    <string name="item_results_jw">The value of J(w) is: $%1$.2f</string>
+    <string name="item_results_derivada">The value of the Derivative is: $%1$.2f</string>
+    <string name="item_results_w">The value of W is: $%1$.2f</string>
 
     <string name="bottom_options_view_graphics">See Graphs</string>
     <string name="bottom_options_view_progress">See Progress</string>
@@ -105,8 +103,9 @@
     <string name="bottom_option_title_extension">Select An Extension</string>
     <string name="file_extension_json">.json</string>
     <string name="file_extension_txt">.txt</string>
-    <string name="load_chart">Cargar Grafico</string>
-    <string name="save_chart">Guardar Grafico</string>
+
+    <string name="load_chart">Load Chart</string>
+    <string name="save_chart">Save Chart</string>
     <string name="menu_bottom_calculo_automatic">Automatic Calculation</string>
     <string name="tv_value_w0">Value W0:</string>
     <string name="value_w0">W0</string>
@@ -124,5 +123,44 @@
     <string name="method_resulting_magnitude">Resulting Magnitude</string>
     <string name="method_difference">Difference</string>
     <string name="btn_view_results">Resultados</string>
+    <string name="settings_title">Configuration</string>
+
+    <string name="key_preference_enable_light_mode">pref_enable_light_theme</string>
+    <string name="key_preference_enable_languaje">pref_enable_languaje</string>
+    <string name="key_preference_enable_sound_active">pref_enable_sound_active</string>
+    <string name="key_preference_enable_restore_data">pref_enable_restore_data</string>
+    <string name="key_preference_application_color">pref_ui_color</string>
+    <string name="key_preference_application_languaje">pref_ui_languaje</string>
+
+    <string name="preferences_data_title">Data</string>
+    <string name="preference_enable_restore_data">Restore Data And Settings</string>
+    <string name="preferences_sound_title">Sound</string>
+    <string name="preference_enable_sound_active">Sound Activated</string>
+    <string name="preference_enable_languaje">Engli</string>
+    <string name="preferences_display_title">Pantalla</string>
+    <string name="preference_enable_light_mode">Tema Claro</string>
+    <string name="preference_color_red">Rojo</string>
+    <string name="preference_color_yellow">Amarillo</string>
+    <string name="preference_color_blue">Azul</string>
+    <string name="preference_color_green">Verde</string>
+    <string name="preference_color_purple">Morado</string>
+    <string name="preference_color_orange">Naranja</string>
+
+    <string name="preference_key_color_red">pref_rojo</string>
+    <string name="preference_key_color_yellow">pref_amarillo</string>
+    <string name="preference_key_color_blue">pref_azul</string>
+    <string name="preference_key_color_green">pref_verde</string>
+    <string name="preference_key_color_purple">pref_morado</string>
+    <string name="preference_key_color_orange">pref_naranja</string>
+    <string name="preferences_ui_title">Interfaz</string>
+    <string name="preferences_application_color">Color De La Aplicación</string>
+    <string name="preferences_application_languaje">Idioma De La Aplicación</string>
+    <string name="preference_languaje_english">English</string>
+    <string name="preference_languaje_spanish">Spanish</string>
+    <string name="preference_key_languaje_english">pref_english</string>
+    <string name="preference_key_languaje_spanish">pref_spanish</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_bottom_chart">Chart</string>
 
 </resources>

@@ -31,8 +31,7 @@
         <item name="textAppearanceOverline">@style/TextAppearance.aitrainer.Overline</item>
     </style>
 
-    <!--  Neuron Training CardView  -->
-    <style name="Theme.NeuronTraining.CardView" parent="Widget.MaterialComponents.CardView">
+    <style name="Theme.aitrainer.CardView" parent="Widget.MaterialComponents.CardView">
         <item name="strokeWidth">@dimen/border_cardview</item>
         <item name="strokeColor">@color/secondaryDarkColor</item>
         <item name="android:clickable">true</item>
@@ -45,22 +44,22 @@
         <item name="android:background">@color/background_dark</item>
     </style>
 
-    <!--  Search View -->
-    <style name="MaterialSearchViewStyle">
+    <style name="BackgroundLine">
         <item name="android:background">@color/background</item>
     </style>
 
-    <style name="BackgroundLine">
-        <item name="android:background">@color/background_dark</item>
+    <!--  Search View -->
+    <style name="MaterialSearchViewStyle">
+        <item name="android:background">#424242</item>
     </style>
 
     <!--  Chip Styles  -->
     <style name="ChipAppearace.aitrainer.Chip" parent="Widget.MaterialComponents.Chip.Action">
         <item name="chipIconTint">@color/primaryDarkColor</item>
-        <item name="chipBackgroundColor">@color/surface</item>
+        <item name="chipBackgroundColor">@color/surface_dark</item>
         <item name="chipStrokeWidth">2dp</item>
         <item name="chipStrokeColor">@color/primaryColor</item>
-        <item name="checkedIconVisible">true</item>
+        <item name="checkedIconVisible">false</item>
         <item name="shapeAppearanceOverlay">@null</item>
     </style>
 

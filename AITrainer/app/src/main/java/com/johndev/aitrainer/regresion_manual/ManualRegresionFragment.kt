@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.johndev.aitrainer.R
 import com.johndev.aitrainer.common.ChargeDatasetsFragment
+import com.johndev.aitrainer.common.ChartFragment
 import com.johndev.aitrainer.common.PrintDatasetFragment
 import com.johndev.aitrainer.databinding.FragmentManualRegresionBinding
 
@@ -37,6 +38,11 @@ class ManualRegresionFragment : Fragment() {
                 }
                 R.id.action_manual_operations -> {
                     fragment = ManualCalculoFragment()
+                    openFragment(fragment)
+                    true
+                }
+                R.id.action_manual_chart -> {
+                    fragment = ChartFragment()
                     openFragment(fragment)
                     true
                 }
