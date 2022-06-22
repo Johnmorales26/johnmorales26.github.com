@@ -39,6 +39,13 @@
             app:key="@string/key_preference_enable_sound_active"
             android:defaultValue="true"/>
 
+        <ListPreference
+            app:title="@string/preferences_application_sounds"
+            app:key="@string/key_preference_application_sound"
+            app:entries="@array/Sounds"
+            app:entryValues="@array/sounds_values"
+            app:defaultValue="@string/preference_sound_one"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory

@@ -135,12 +135,13 @@ class AutomaticPrintFragment : Fragment() {
         }
         val fileWriter = FileWriter(file)
         val bufferedWriter = BufferedWriter(fileWriter)
-        bufferedWriter.write(exportFile)
-        bufferedWriter.close()
+        bufferedWriter.apply {
+            write(exportFile)
+            close()
+        }
         val sound = MainActivity.sharedPreferences.getBoolean(getString(R.string.key_preference_enable_sound_active), true)
         if (sound){
-            val mediaPlayer = MediaPlayer.create(context, R.raw.programming_complete)
-            mediaPlayer.start()
+            MediaPlayer.create(context, MainActivity.directionSound).start()
         }
         Snackbar.make(binding.root, "Archivo Creado", Snackbar.LENGTH_LONG).show()
     }

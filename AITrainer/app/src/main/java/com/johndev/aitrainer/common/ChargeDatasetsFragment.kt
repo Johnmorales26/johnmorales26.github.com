@@ -14,10 +14,9 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.johndev.aitrainer.Adapters.DatasetAdapter
 import com.johndev.aitrainer.Interfaces.OnDatasetListener
-import com.johndev.aitrainer.MainActivity
+import com.johndev.aitrainer.MainActivity.Companion.directionSound
 import com.johndev.aitrainer.Models.Dataset
 import com.johndev.aitrainer.R
-import com.johndev.aitrainer.MainActivity.Companion.appContext
 import com.johndev.aitrainer.MainActivity.Companion.sharedPreferences
 import com.johndev.aitrainer.databinding.FragmentChargeDatasetsBinding
 import kotlinx.coroutines.Dispatchers
@@ -31,7 +30,7 @@ class ChargeDatasetsFragment : Fragment(), OnDatasetListener {
     private var _binding: FragmentChargeDatasetsBinding? = null
     private val binding get() = _binding!!
     private lateinit var datasetAdapter: DatasetAdapter
-    private val PICK_PDF_FILE = 1
+    private val pickPdfFile = 1
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -52,13 +51,19 @@ class ChargeDatasetsFragment : Fragment(), OnDatasetListener {
         valuesY = mutableListOf()
         binding.btnChargeData.setOnClickListener {
             selectCSVFile()
+            binding.clData.visibility = VISIBLE
+            binding.tvAnnouncement.visibility = VISIBLE
         }
-        binding.clData.visibility = VISIBLE
-        binding.tvAnnouncement.visibility = VISIBLE
+
+        binding.btnClearData.setOnClickListener {
+            dataset.clear()
+            valuesX.clear()
+            valuesY.clear()
+            setupRecyclerView(dataset)
+        }
     }
 
     private suspend fun readTextFromUri(uri: Uri) = withContext(Dispatchers.IO) {
-        val stringBuilder = StringBuilder()
         requireContext().contentResolver.openInputStream(uri)?.use { inputStream ->
             BufferedReader(InputStreamReader(inputStream)).use { reader ->
                 var line: String? = reader.readLine()
@@ -84,11 +89,11 @@ class ChargeDatasetsFragment : Fragment(), OnDatasetListener {
             addCategory(Intent.CATEGORY_OPENABLE)
             type = "*/*"
         }
-        startActivityForResult(Intent.createChooser(intent, "Open CSV"), PICK_PDF_FILE)
+        startActivityForResult(Intent.createChooser(intent, "Open CSV"), pickPdfFile)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, resultData: Intent?) {
-        if (requestCode == PICK_PDF_FILE
+        if (requestCode == pickPdfFile
             && resultCode == Activity.RESULT_OK) {
             // The result data contains a URI for the document or directory that
             // the user selected.
@@ -109,8 +114,7 @@ class ChargeDatasetsFragment : Fragment(), OnDatasetListener {
         }
         val sound = sharedPreferences.getBoolean(getString(R.string.key_preference_enable_sound_active), true)
         if (sound){
-            val mediaPlayer = MediaPlayer.create(context, R.raw.programming_complete)
-            mediaPlayer.start()
+            MediaPlayer.create(context, directionSound).start()
         }
     }
 

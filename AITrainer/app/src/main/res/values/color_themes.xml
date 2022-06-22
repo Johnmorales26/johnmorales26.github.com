@@ -36,4 +36,25 @@
 
     </string-array>
 
+    <string-array name="Sounds">
+
+        <item>@string/preference_sound_one</item>
+        <item>@string/preference_sound_two</item>
+        <item>@string/preference_sound_three</item>
+        <item>@string/preference_sound_four</item>
+        <item>@string/preference_sound_five</item>
+        <item>@string/preference_sound_six</item>
+
+    </string-array>
+
+    <string-array name="sounds_values">
+        <item>@string/preference_key_sound_one</item>
+        <item>@string/preference_key_sound_two</item>
+        <item>@string/preference_key_sound_three</item>
+        <item>@string/preference_key_sound_four</item>
+        <item>@string/preference_key_sound_five</item>
+        <item>@string/preference_key_sound_six</item>
+
+    </string-array>
+
 </resources>

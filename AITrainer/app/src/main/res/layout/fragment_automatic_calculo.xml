@@ -132,6 +132,30 @@
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="@string/tv_value_r"
+                    android:padding="@dimen/common_padding_min"
+                    style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilValueR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/value_r"
+                    android:enabled="false"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    android:layout_marginBottom="@dimen/common_padding_min"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etValueR"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="@string/tv_value_total_iterations"
                     android:padding="@dimen/common_padding_min"
                     style="@style/TextAppearance.aitrainer.Subtitle1"/>

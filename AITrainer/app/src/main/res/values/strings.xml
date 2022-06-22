@@ -128,6 +128,8 @@
     <string name="key_preference_enable_light_mode">pref_enable_light_theme</string>
     <string name="key_preference_enable_languaje">pref_enable_languaje</string>
     <string name="key_preference_enable_sound_active">pref_enable_sound_active</string>
+    <string name="key_preference_application_sound">pref_application_sound</string>
+
     <string name="key_preference_enable_restore_data">pref_enable_restore_data</string>
     <string name="key_preference_application_color">pref_ui_color</string>
     <string name="key_preference_application_languaje">pref_ui_languaje</string>
@@ -162,5 +164,25 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="menu_bottom_chart">Chart</string>
+    <string name="preferences_application_sounds">Select A Sound</string>
+
+    <string name="preference_sound_one">Sound One</string>
+    <string name="preference_sound_two">Sound Two</string>
+    <string name="preference_sound_three">Sound Three</string>
+    <string name="preference_sound_four">Sound Four</string>
+    <string name="preference_sound_five">Sound Five</string>
+    <string name="preference_sound_six">Sound Six</string>
+    <string name="preference_key_sound_one">pref_sound_one</string>
+    <string name="preference_key_sound_two">pref_sound_two</string>
+    <string name="preference_key_sound_three">pref_sound_three</string>
+    <string name="preference_key_sound_four">pref_sound_four</string>
+    <string name="preference_key_sound_five">pref_sound_five</string>
+    <string name="preference_key_sound_six">pref_sound_six</string>
+    <string name="btn_clear_data">Clear Data</string>
+    <string name="chart_no_exist_data">No Existen Datos</string>
+    <string name="label_load">Cargando...</string>
+    <string name="value_r">R</string>
+    <string name="tv_value_r">Value R:</string>
+    <string name="name_chart_j_epoch">J - Epocas</string>
 
 </resources>

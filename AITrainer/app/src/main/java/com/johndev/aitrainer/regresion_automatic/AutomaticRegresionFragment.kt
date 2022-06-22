@@ -1,10 +1,12 @@
 package com.johndev.aitrainer.regresion_automatic
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.johndev.aitrainer.MainActivity
 import com.johndev.aitrainer.R
 import com.johndev.aitrainer.common.ChargeDatasetsFragment
 import com.johndev.aitrainer.common.ChartFragment
@@ -57,9 +59,11 @@ class AutomaticRegresionFragment : Fragment() {
 
     private fun openFragment(fragment: Fragment) {
         val transaction = childFragmentManager.beginTransaction()
-        transaction.replace(R.id.main_manual_container, fragment)
-        transaction.addToBackStack(null)
-        transaction.commit()
+        transaction.apply {
+            replace(R.id.main_manual_container, fragment)
+            addToBackStack(null)
+            commit()
+        }
     }
 
     override fun onDestroyView() {

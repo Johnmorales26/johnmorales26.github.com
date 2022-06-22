@@ -59,9 +59,11 @@ class ManualRegresionFragment : Fragment() {
 
     private fun openFragment(fragment: Fragment) {
         val transaction = childFragmentManager.beginTransaction()
-        transaction.replace(R.id.main_manual_container, fragment)
-        transaction.addToBackStack(null)
-        transaction.commit()
+        transaction.apply {
+            replace(R.id.main_manual_container, fragment)
+            addToBackStack(null)
+            commit()
+        }
     }
 
     override fun onDestroyView() {

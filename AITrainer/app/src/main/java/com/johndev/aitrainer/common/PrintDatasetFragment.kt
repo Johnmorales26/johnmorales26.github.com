@@ -118,7 +118,7 @@ class PrintDatasetFragment : Fragment() {
         bufferedWriter.close()
         val sound = MainActivity.sharedPreferences.getBoolean(getString(R.string.key_preference_enable_sound_active), true)
         if (sound){
-            val mediaPlayer = MediaPlayer.create(context, R.raw.programming_complete)
+            val mediaPlayer = MediaPlayer.create(context, R.raw.task_complete_six)
             mediaPlayer.start()
         }
     }

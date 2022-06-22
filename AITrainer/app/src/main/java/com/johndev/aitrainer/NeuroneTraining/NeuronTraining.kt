@@ -84,14 +84,13 @@ class NeuronTraining {
     fun getAproximateW1(W0: Float, W1: Float, X: MutableList<Float>, Y: MutableList<Float>): Float {
         var i = 0
         var sumatoria = 0.0
-        while (i < X.size){
+        while (i < X.size) {
             sumatoria += X[i] * ((W1 * X[i]) + W0 - Y[i])
             i++
         }
         val size = X.size.toString()
         val numerator = 1 / size.toFloat()
-        val result =  (W1 - alpha * (numerator * sumatoria)).toFloat()
-        return result
+        return (W1 - alpha * (numerator * sumatoria)).toFloat()
     }
 
     fun getResultingMagnitude(J: Float, W1: Float): Float {
@@ -99,5 +98,26 @@ class NeuronTraining {
     }
 
     fun getDifferenceMagnitude(W0: Float, W1: Float): Float = W0 - W1
+
+    fun getSSRegresion(y_i: MutableList<Float>, y_r: MutableList<Float>): Double {
+        var ssRegresion = 0.0
+        var i = 0
+        while (i < y_i.size) {
+            ssRegresion += (y_i[i] - y_r[i]).pow(2)
+            i++
+        }
+        return ssRegresion
+    }
+
+    fun getSSTotal(y_i: MutableList<Float>): Double {
+        var averageY = 0.0
+        y_i.forEach { averageY += it }
+        averageY /= y_i.size
+        var ssTotal = 0.0
+        y_i.forEach { ssTotal += (it - averageY).pow(2) }
+        return ssTotal
+    }
+
+    fun getRSquared(ssRegresion: Double, ssTotal: Double) = 1 - (ssRegresion / ssTotal)
     
 }

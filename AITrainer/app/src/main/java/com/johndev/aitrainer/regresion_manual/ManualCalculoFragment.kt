@@ -25,7 +25,6 @@ import com.johndev.aitrainer.DialogFragments.PassData.PASS_W
 import com.johndev.aitrainer.Interfaces.OnChargeData
 import com.johndev.aitrainer.Interfaces.OnResultsPerceptronListener
 import com.johndev.aitrainer.MainActivity
-import com.johndev.aitrainer.Models.Automatic
 import com.johndev.aitrainer.Models.ChargeData
 import com.johndev.aitrainer.Models.ResultsPerceptron
 import com.johndev.aitrainer.R
@@ -185,11 +184,9 @@ class ManualCalculoFragment : Fragment(), OnChargeData, OnResultsPerceptronListe
     }
 
     private fun playSound() {
-
         val sound = MainActivity.sharedPreferences.getBoolean(getString(R.string.key_preference_enable_sound_active), true)
         if (sound){
-            val mediaPlayer = MediaPlayer.create(context, R.raw.programming_complete)
-            mediaPlayer.start()
+            MediaPlayer.create(context, MainActivity.directionSound).start()
         }
     }
 

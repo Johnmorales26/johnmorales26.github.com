@@ -43,6 +43,7 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
     private var myVisibility = VISIBLE_VIEW
     private var myVisibilityTest = VISIBLE_VIEW
     private var myVisibilityResults = VISIBLE_VIEW
+    private var valueR by Delegates.notNull<Double>()
 
 
     override fun onCreateView(
@@ -80,9 +81,7 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
                 val text = binding.etValueTransform.text.toString().trim()
                 val valueTransform: Double
-                if (text.isEmpty()){
-                    valueTransform = 0.0
-                } else {
+                if (text.isNotEmpty()){
                     valueTransform = binding.etValueTransform.text.toString().trim().toDouble()
                     val result = (valueTransform * finalW1) + finalW0
                     binding.etValueResult.text = result.toString().trim().editable()
@@ -96,7 +95,13 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
     private fun configureButtons() {
         binding.btnCalcular.setOnClickListener {
             binding.btnCalcular.isEnabled = false
-            Toast.makeText(context, "Cargando Resultados...", Toast.LENGTH_SHORT).show()
+            with(binding) {
+                etValueW0.text = getString(R.string.label_load).trim().editable()
+                etValueW1.text = getString(R.string.label_load).trim().editable()
+                etValueIterations.text = getString(R.string.label_load).trim().editable()
+                etValueJ.text = getString(R.string.label_load).trim().editable()
+                etValueR.text = getString(R.string.label_load).trim().editable()
+            }
             if (binding.chipDifference.isChecked) {
                 lifecycleScope.launch {
                     automaticMethodForDiferences(DIFFERENCES_METHOD)
@@ -210,6 +215,13 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
             val newJ = neuronTraining.getJ(w1, w0, valuesX, valuesY)
             val newW0 = neuronTraining.getAproximateW0(w0, w1, valuesX, valuesY)
             val newW1 = neuronTraining.getAproximateW1(w0, w1, valuesX, valuesY)
+            val guess = neuronTraining.resolveGuess(valuesX, w1, w0)
+            val error = neuronTraining.resolveError(guess, valuesY)
+            //  Calculate Regression Line
+            val ssRegresion = neuronTraining.getSSRegresion(valuesY, guess)
+            val ssTotal = neuronTraining.getSSTotal(valuesY)
+            valueR = neuronTraining.getRSquared(ssRegresion, ssTotal)
+
             println("Iteracion: $x")
             println("W0 = $w0")
             println("W1 = $w1")
@@ -231,8 +243,7 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
         } while (stop)
         val sound = MainActivity.sharedPreferences.getBoolean(getString(R.string.key_preference_enable_sound_active), true)
         if (sound){
-            val mediaPlayer = MediaPlayer.create(context, R.raw.programming_complete)
-            mediaPlayer.start()
+            MediaPlayer.create(context, MainActivity.directionSound).start()
         }
         finalW0 = w0.toDouble()
         finalW1 = w1.toDouble()
@@ -246,10 +257,12 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
             etValueJ.isEnabled = true
             etValueIterations.isEnabled = true
             etValueW1.isEnabled = true
+            etValueR.isEnabled = true
             etValueW0.text = reversed[0].W0.toString().trim().editable()
             etValueW1.text = reversed[0].W1.toString().trim().editable()
             etValueIterations.text = reversed[0].id.toString().trim().editable()
             etValueJ.text = reversed[0].J.toString().trim().editable()
+            etValueR.text = valueR.toString().trim().editable()
             btnMore.isEnabled = true
             tilValueTransform.isEnabled = true
         }
