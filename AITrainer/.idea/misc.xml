@@ -35,6 +35,22 @@
         <entry key="..\:/Users/JohnT/Desktop/AITrainer/app/src/main/res/menu/menu_modal_drawer.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JohnT/Desktop/AITrainer/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1585" />
         <entry key="..\:/Users/JohnT/Desktop/AITrainer/app/src/main/res/xml/preferences.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/AITrainer/app/src/main/res/layout/fragment_automatic_calculo.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/AITrainer/app/src/main/res/layout/fragment_automatic_regresion.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/AITrainer/app/src/main/res/layout/fragment_charge_datasets.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/AITrainer/app/src/main/res/layout/fragment_chart.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/AITrainer/app/src/main/res/layout/fragment_vector.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/AITrainer/app/src/main/res/layout/fragment_vector_charts.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/AITrainer/app/src/main/res/layout/fragment_vector_datasets.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/AITrainer/app/src/main/res/layout/fragment_vector_operations.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/AITrainer/app/src/main/res/layout/item_automatic_results.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/AITrainer/app/src/main/res/layout/item_datasets_x_values.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/AITrainer/app/src/main/res/layout/item_results_x.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/AITrainer/app/src/main/res/layout/item_vector_datasets.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/AITrainer/app/src/main/res/layout/item_vector_datasets_x.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/AITrainer/app/src/main/res/layout/item_vector_datasets_x_values.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/AITrainer/app/src/main/res/menu/menu_modal_drawer.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/AITrainer/app/src/main/res/xml/preferences.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/AITrainer/app/src/main/res/layout/fragment_automatic_calculo.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/AITrainer/app/src/main/res/layout/fragment_charge_datasets.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/AITrainer/app/src/main/res/layout/fragment_chart.xml" value="0.264" />

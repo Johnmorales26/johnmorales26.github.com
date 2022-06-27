@@ -13,6 +13,9 @@
                 <item
                     android:id="@+id/action_automatic_regresion"
                     android:title="@string/automatic_regression"/>
+                <item
+                    android:id="@+id/action_vector_regresion"
+                    android:title="@string/vector_regression"/>
             </menu>
         </item>
     </group>

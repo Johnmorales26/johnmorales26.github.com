@@ -33,7 +33,7 @@
 
     <style name="Theme.aitrainer.CardView" parent="Widget.MaterialComponents.CardView">
         <item name="strokeWidth">@dimen/border_cardview</item>
-        <item name="strokeColor">@color/secondaryDarkColor</item>
+        <item name="strokeColor">@color/primaryDarkColor</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
         <item name="android:backgroundTint">@color/surface_dark</item>

@@ -57,4 +57,23 @@
 
     </string-array>
 
+    <string-array name="number_of_decimals">
+        <item>@string/preferences_two_decimals</item>
+        <item>@string/preferences_four_decimals</item>
+        <item>@string/preferences_six_decimals</item>
+        <item>@string/preferences_eight_decimals</item>
+    </string-array>
+
+    <string-array name="number_of_decimals_values">
+        <item>@string/preferences_key_two_decimals</item>
+        <item>@string/preferences_key_four_decimals</item>
+        <item>@string/preferences_key_six_decimals</item>
+        <item>@string/preferences_key_eight_decimals</item>
+    </string-array>
+
+    <string-array name="methods_values">
+        <item>@string/method_umbral</item>
+        <item>@string/method_equals</item>
+    </string-array>
+
 </resources>

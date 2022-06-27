@@ -56,6 +56,15 @@
                 style="@style/TextAppearance.aitrainer.Body1"
                 app:layout_constraintTop_toBottomOf="@id/tvW1"/>
 
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="R: 1.215064E-6"
+                android:layout_marginVertical="@dimen/common_padding_nano"
+                style="@style/TextAppearance.aitrainer.Body1"
+                app:layout_constraintTop_toBottomOf="@id/tvJ"/>
+
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -37,6 +37,7 @@ class AutomaticAdapter(private val dataList: MutableList<Automatic>):
                 tvJ.text = "J: ${data.J.toString().trim()}"
                 tvW0.text = "W0: ${data.W0.toString().trim()}"
                 tvW1.text = "W1: ${data.W1.toString().trim()}"
+                tvR.text = "R: ${data.R.toString().trim()}"
             }
         }
     }

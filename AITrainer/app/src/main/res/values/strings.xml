@@ -113,8 +113,8 @@
     <string name="value_w1">W1</string>
     <string name="tv_value_j">Value J:</string>
     <string name="value_j">J</string>
-    <string name="tv_value_total_iterations">Total Iterations:</string>
-    <string name="value_iterations">Iterations</string>
+    <string name="tv_value_total_iterations">Total Epoch:</string>
+    <string name="value_iterations">Epoch</string>
     <string name="btn_more_details">More Details</string>
     <string name="value_converter">Value Converter</string>
     <string name="hint_result">Result</string>
@@ -154,9 +154,9 @@
     <string name="preference_key_color_green">pref_verde</string>
     <string name="preference_key_color_purple">pref_morado</string>
     <string name="preference_key_color_orange">pref_naranja</string>
-    <string name="preferences_ui_title">Interfaz</string>
-    <string name="preferences_application_color">Color De La Aplicación</string>
-    <string name="preferences_application_languaje">Idioma De La Aplicación</string>
+    <string name="preferences_ui_title">Interface</string>
+    <string name="preferences_application_color">App Color</string>
+    <string name="preferences_application_languaje">App Languaje</string>
     <string name="preference_languaje_english">English</string>
     <string name="preference_languaje_spanish">Spanish</string>
     <string name="preference_key_languaje_english">pref_english</string>
@@ -179,10 +179,26 @@
     <string name="preference_key_sound_five">pref_sound_five</string>
     <string name="preference_key_sound_six">pref_sound_six</string>
     <string name="btn_clear_data">Clear Data</string>
-    <string name="chart_no_exist_data">No Existen Datos</string>
-    <string name="label_load">Cargando...</string>
+    <string name="chart_no_exist_data">There are no data</string>
+    <string name="label_load">Loading…</string>
     <string name="value_r">R</string>
     <string name="tv_value_r">Value R:</string>
-    <string name="name_chart_j_epoch">J - Epocas</string>
+    <string name="name_chart_j_epoch">J - Epoch</string>
+    <string name="vector_regression">Vectorial Regresion</string>
+    <string name="tv_value_ws">W values</string>
 
+    <string name="preferences_two_decimals">0.12</string>
+    <string name="preferences_four_decimals">0.1234</string>
+    <string name="preferences_six_decimals">0.123456</string>
+    <string name="preferences_eight_decimals">0.12345678</string>
+    <string name="preferences_key_two_decimals">pref_two_decimals</string>
+    <string name="preferences_key_four_decimals">pref_four_decimals</string>
+    <string name="preferences_key_six_decimals">pref_six_decimals</string>
+    <string name="preferences_key_eight_decimals">pref_eight_decimals</string>
+    <string name="preferences_decimal_numbers">Numero De Decimales</string>
+    <string name="key_preference_decimal_numbers">key_dc_num</string>
+    <string name="method">Method:</string>
+    <string name="method_umbral">Umbral Method</string>
+    <string name="method_equals">Equals Method</string>
+    <string name="value_umbral">Umbral</string>
 </resources>

@@ -10,7 +10,7 @@ import com.johndev.aitrainer.R
 import com.johndev.aitrainer.databinding.ItemErrorGuessBinding
 import java.util.*
 
-class GuessErrorAdapter(val guessErrorList: MutableList<Float>, val listener: OnGuessErrorListener):
+class GuessErrorAdapter(val guessErrorList: MutableList<Double>, val listener: OnGuessErrorListener):
  RecyclerView.Adapter<GuessErrorAdapter.ViewHolder>(){
 
     lateinit var context: Context

@@ -91,17 +91,17 @@ class ManualCalculoFragment : Fragment(), OnChargeData, OnResultsPerceptronListe
             //  Resolve Operations
             if (binding.chipIterations.isChecked){
                 if (validFieldsIterator()){
-                    val valueB = binding.etValueB.text.toString().trim().toFloat()
-                    val valueW = binding.etValueW.text.toString().trim().toFloat()
-                    val iterations = binding.etIterations.text.toString().trim().toFloat()
+                    val valueB = binding.etValueB.text.toString().trim().toDouble()
+                    val valueW = binding.etValueW.text.toString().trim().toDouble()
+                    val iterations = binding.etIterations.text.toString().trim().toDouble()
                     resultsPerceptron = methodIterator(valueB, valueW, iterations)
                 }
             } else if (binding.chipMetaCost.isChecked){
                 if (validFieldsRanges()){
-                    val valueB = binding.etValueB.text.toString().trim().toFloat()
-                    val valueW = binding.etValueW.text.toString().trim().toFloat()
-                    val rangeA = binding.etMaxRange.text.toString().trim().toFloat()
-                    val rangeB = binding.etMinRange.text.toString().trim().toFloat()
+                    val valueB = binding.etValueB.text.toString().trim().toDouble()
+                    val valueW = binding.etValueW.text.toString().trim().toDouble()
+                    val rangeA = binding.etMaxRange.text.toString().trim().toDouble()
+                    val rangeB = binding.etMinRange.text.toString().trim().toDouble()
                     resultsPerceptron = methodRanges(valueW, valueB, rangeA, rangeB, valuesX, valuesY)
                 }
             }
@@ -148,14 +148,14 @@ class ManualCalculoFragment : Fragment(), OnChargeData, OnResultsPerceptronListe
         }
     }
 
-    private fun methodIterator(valueB: Float, valueW: Float, iterations: Float): MutableList<ResultsPerceptron> {
+    private fun methodIterator(valueB: Double, valueW: Double, iterations: Double): MutableList<ResultsPerceptron> {
         var counter = 1
         var w = valueW
-        var derivadaRes: Float
-        var costo: Float
+        var derivadaRes: Double
+        var costo: Double
         var valueJW: String
-        var error: MutableList<Float>
-        var guess: MutableList<Float>
+        var error: MutableList<Double>
+        var guess: MutableList<Double>
         val results = mutableListOf<ResultsPerceptron>()
         val resume = mutableListOf<ChargeData>()
         while (counter <= iterations){
@@ -171,9 +171,9 @@ class ManualCalculoFragment : Fragment(), OnChargeData, OnResultsPerceptronListe
             println("El valor de la derivada es igual a ${formatNum.getTwoDecimals(neuronTraining.resolveDerivative(w, valueB, valuesX, valuesY))}")
             println("El valor de Guess es igual a: $error")
             println("El valor de Error es igual a: $guess")
-            val charge = ChargeData(counter, w, valueJW.toFloat(), costo)
+            val charge = ChargeData(counter, w, valueJW.toDouble(), costo)
             results.add(ResultsPerceptron(counter, w, valueB, iterations.toInt(), valuesX = valuesX,
-                valuesY = valuesY, valueJW = valueJW.toFloat(), derivada = derivadaRes, error = error,
+                valuesY = valuesY, valueJW = valueJW.toDouble(), derivada = derivadaRes, error = error,
                 guess = guess, costo = costo))
             resume.add(charge)
             w = neuronTraining.resolveW(w, derivadaRes)
@@ -190,10 +190,10 @@ class ManualCalculoFragment : Fragment(), OnChargeData, OnResultsPerceptronListe
         }
     }
 
-    private fun methodRanges(w: Float, b: Float, rango1: Float, rango2: Float, valuesX: MutableList<Float>, valuesY: MutableList<Float>)
+    private fun methodRanges(w: Double, b: Double, rango1: Double, rango2: Double, valuesX: MutableList<Double>, valuesY: MutableList<Double>)
             : MutableList<ResultsPerceptron>{
-        val mayorRango: Float
-        val menorRango: Float
+        val mayorRango: Double
+        val menorRango: Double
         if (rango1 > rango2){
             mayorRango = rango1
             menorRango = rango2
@@ -203,10 +203,10 @@ class ManualCalculoFragment : Fragment(), OnChargeData, OnResultsPerceptronListe
         }
         var newW = w
         var counter = 0
-        var derivadaRes: Float
-        var valueJW: Float
-        var error: MutableList<Float>
-        var guess: MutableList<Float>
+        var derivadaRes: Double
+        var valueJW: Double
+        var error: MutableList<Double>
+        var guess: MutableList<Double>
         val results = mutableListOf<ResultsPerceptron>()
         val resume = mutableListOf<ChargeData>()
         do {
@@ -246,9 +246,9 @@ class ManualCalculoFragment : Fragment(), OnChargeData, OnResultsPerceptronListe
 
         val bundle = Bundle()
         bundle.putInt(PASS_ID, chargeData.id)
-        bundle.putFloat(PASS_W, chargeData.w)
-        bundle.putFloat(PASS_JW, chargeData.jw)
-        bundle.putFloat(PASS_COSTO, chargeData.costo)
+        bundle.putDouble(PASS_W, chargeData.w)
+        bundle.putDouble(PASS_JW, chargeData.jw)
+        bundle.putDouble(PASS_COSTO, chargeData.costo)
         DialogDetailsData.arguments = bundle
         DialogDetailsData.show(parentFragmentManager, "dialog")
     }

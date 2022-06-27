@@ -117,8 +117,8 @@
     <string name="value_w1">W1</string>
     <string name="tv_value_j">Value J:</string>
     <string name="value_j">J</string>
-    <string name="tv_value_total_iterations">Total Iterations:</string>
-    <string name="value_iterations">Iterations</string>
+    <string name="tv_value_total_iterations">Total De Epocas:</string>
+    <string name="value_iterations">Epocas</string>
     <string name="btn_more_details">More Details</string>
     <string name="value_converter">Value Converter</string>
     <string name="hint_result">Result</string>
@@ -134,6 +134,8 @@
     <string name="key_preference_enable_sound_active">pref_enable_sound_active</string>
     <string name="key_preference_enable_restore_data">pref_enable_restore_data</string>
     <string name="key_preference_application_color">pref_ui_color</string>
+    <string name="key_preference_application_sound">pref_application_sound</string>
+    <string name="key_preference_application_languaje">pref_ui_languaje</string>
 
     <string name="preferences_data_title">Datos</string>
     <string name="preference_enable_restore_data">Restaurar datos y configuraiones</string>
@@ -157,5 +159,50 @@
     <string name="preference_key_color_orange">pref_naranja</string>
     <string name="preferences_ui_title">Interfaz</string>
     <string name="preferences_application_color">Color De La Aplicación</string>
+
+    <string name="preferences_application_languaje">Idioma De La Aplicación</string>
+    <string name="preference_languaje_english">Ingles</string>
+    <string name="preference_languaje_spanish">Español</string>
+    <string name="preference_key_languaje_english">pref_english</string>
+    <string name="preference_key_languaje_spanish">pref_spanish</string>
+
+    <string name="menu_bottom_chart">Grafica</string>
+    <string name="preferences_application_sounds">Selecciona Un Sonido</string>
+
+    <string name="preference_sound_one">Sonido Uno</string>
+    <string name="preference_sound_two">Sonido Dos</string>
+    <string name="preference_sound_three">Sonido Tres</string>
+    <string name="preference_sound_four">Sonido Cuatro</string>
+    <string name="preference_sound_five">Sonido Cinco</string>
+    <string name="preference_sound_six">Sonido Seis</string>
+    <string name="preference_key_sound_one">pref_sound_one</string>
+    <string name="preference_key_sound_two">pref_sound_two</string>
+    <string name="preference_key_sound_three">pref_sound_three</string>
+    <string name="preference_key_sound_four">pref_sound_four</string>
+    <string name="preference_key_sound_five">pref_sound_five</string>
+    <string name="preference_key_sound_six">pref_sound_six</string>
+    <string name="btn_clear_data">Limpiar Datos</string>
+    <string name="chart_no_exist_data">No Existen Datos</string>
+    <string name="label_load">Cargando…</string>
+    <string name="value_r">R</string>
+    <string name="tv_value_r">R value:</string>
+    <string name="name_chart_j_epoch">J - Epocas</string>
+    <string name="vector_regression">Regresion Vectorial</string>
+    <string name="tv_value_ws">W values</string>
+
+    <string name="preferences_two_decimals">0.12</string>
+    <string name="preferences_four_decimals">0.1234</string>
+    <string name="preferences_six_decimals">0.123456</string>
+    <string name="preferences_eight_decimals">0.12345678</string>
+    <string name="preferences_key_two_decimals">pref_two_decimals</string>
+    <string name="preferences_key_four_decimals">pref_four_decimals</string>
+    <string name="preferences_key_six_decimals">pref_six_decimals</string>
+    <string name="preferences_key_eight_decimals">pref_eight_decimals</string>
+    <string name="preferences_decimal_numbers">Numero De Decimales</string>
+    <string name="key_preference_decimal_numbers">key_dc_num</string>
+
+    <string name="method">Metodo:</string>
+    <string name="method_umbral">Metodo Por Umbral</string>
+    <string name="method_equals">Metodo Por Igualdad</string>
 
 </resources>

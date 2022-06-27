@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment
 import androidx.preference.PreferenceManager
 import com.johndev.aitrainer.ExtraFragments.SettingsActivity
 import com.johndev.aitrainer.Models.Automatic
+import com.johndev.aitrainer.VectorizedImplementarion.VectorFragment
 import com.johndev.aitrainer.databinding.ActivityMainBinding
 import com.johndev.aitrainer.regresion_automatic.AutomaticRegresionFragment
 import com.johndev.aitrainer.regresion_manual.ManualRegresionFragment
@@ -57,6 +58,15 @@ class MainActivity : AppCompatActivity() {
                         topAppBar.title = getString(R.string.automatic_regression)
                     }
                     val fragment = AutomaticRegresionFragment()
+                    openFragment(fragment)
+                }
+                R.id.action_vector_regresion -> {
+                    with(binding) {
+                        mainIntroduction.visibility = GONE
+                        mainContainer.visibility = VISIBLE
+                        topAppBar.title = getString(R.string.vector_regression)
+                    }
+                    val fragment = VectorFragment()
                     openFragment(fragment)
                 }
                 R.id.action_settings -> startActivity(Intent(this, SettingsActivity::class.java))

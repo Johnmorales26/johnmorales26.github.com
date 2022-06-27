@@ -1,20 +1,21 @@
-package com.johndev.aitrainer.regresion_automatic
+package com.johndev.aitrainer.VectorizedImplementarion
 
-import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.johndev.aitrainer.MainActivity
 import com.johndev.aitrainer.R
 import com.johndev.aitrainer.common.ChargeDatasetsFragment
 import com.johndev.aitrainer.common.ChartFragment
 import com.johndev.aitrainer.databinding.FragmentAutomaticRegresionBinding
+import com.johndev.aitrainer.databinding.FragmentVectorBinding
+import com.johndev.aitrainer.regresion_automatic.AutomaticCalculoFragment
+import com.johndev.aitrainer.regresion_automatic.AutomaticPrintFragment
 
-class AutomaticRegresionFragment : Fragment() {
+class VectorFragment : Fragment() {
 
-    private var _binding: FragmentAutomaticRegresionBinding? = null
+    private var _binding: FragmentVectorBinding? = null
     private val binding get() = _binding!!
     private lateinit var fragment: Fragment
 
@@ -22,7 +23,7 @@ class AutomaticRegresionFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentAutomaticRegresionBinding.inflate(inflater, container, false)
+        _binding = FragmentVectorBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -32,17 +33,17 @@ class AutomaticRegresionFragment : Fragment() {
         binding.bottomNavigation.setOnNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.action_charge_data -> {
-                    fragment = ChargeDatasetsFragment()
+                    fragment = VectorDatasetsFragment()
                     openFragment(fragment)
                     true
                 }
                 R.id.action_manual_operations -> {
-                    fragment = AutomaticCalculoFragment()
+                    fragment = VectorOperationsFragment()
                     openFragment(fragment)
                     true
                 }
                 R.id.action_manual_chart -> {
-                    fragment = ChartFragment()
+                    fragment = VectorChartsFragment()
                     openFragment(fragment)
                     true
                 }

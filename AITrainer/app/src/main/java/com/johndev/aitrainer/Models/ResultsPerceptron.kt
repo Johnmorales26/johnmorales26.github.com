@@ -1,15 +1,15 @@
 package com.johndev.aitrainer.Models
 
 data class ResultsPerceptron (val id: Int,
-                              val valueW: Float,
-                              val valorB: Float,
+                              val valueW: Double,
+                              val valorB: Double,
                               val iterations: Int? = null,
-                              val maxVal: Float? = null,
-                              val minVal: Float? = null,
-                              val valuesX: MutableList<Float>,
-                              val valuesY: MutableList<Float>,
-                              val valueJW: Float,
-                              val derivada: Float,
-                              val error: MutableList<Float>,
-                              val guess: MutableList<Float>,
-val costo: Float)
+                              val maxVal: Double? = null,
+                              val minVal: Double? = null,
+                              val valuesX: MutableList<Double>,
+                              val valuesY: MutableList<Double>,
+                              val valueJW: Double,
+                              val derivada: Double,
+                              val error: MutableList<Double>,
+                              val guess: MutableList<Double>,
+val costo: Double)

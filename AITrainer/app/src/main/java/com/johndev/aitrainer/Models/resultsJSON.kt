@@ -6,6 +6,6 @@ data class ResultsJSON(
     @SerializedName("id")
     val id: Int,
     @SerializedName("w")
-    val w: Float,
+    val w: Double,
     @SerializedName("jw")
-    val jw: Float)
+    val jw: Double)

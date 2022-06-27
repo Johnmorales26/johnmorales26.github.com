@@ -29,6 +29,13 @@
             app:entryValues="@array/themesColors_values"
             app:defaultValue="@string/preference_color_red"/>
 
+        <ListPreference
+            app:title="@string/preferences_decimal_numbers"
+            app:key="@string/key_preference_decimal_numbers"
+            app:entries="@array/number_of_decimals"
+            app:entryValues="@array/number_of_decimals_values"
+            app:defaultValue="@string/preferences_two_decimals"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory

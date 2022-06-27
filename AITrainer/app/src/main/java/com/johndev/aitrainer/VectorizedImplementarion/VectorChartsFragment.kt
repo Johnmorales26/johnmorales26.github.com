@@ -1,27 +1,30 @@
-package com.johndev.aitrainer.common
+package com.johndev.aitrainer.VectorizedImplementarion
 
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.Fragment
 import com.github.mikephil.charting.components.Description
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
 import com.johndev.aitrainer.Models.Automatic
+import com.johndev.aitrainer.Models.ChartVectorData
 import com.johndev.aitrainer.R
-import com.johndev.aitrainer.databinding.FragmentChartBinding
-import com.johndev.aitrainer.regresion_automatic.AutomaticCalculoFragment.Companion.resultsPerceptron
+import com.johndev.aitrainer.VectorizedImplementarion.VectorOperationsFragment.Companion.chartVectorData
+import com.johndev.aitrainer.databinding.FragmentVectorChartsBinding
+import com.johndev.aitrainer.databinding.FragmentVectorOperationsBinding
+import com.johndev.aitrainer.regresion_automatic.AutomaticCalculoFragment
 
-class ChartFragment : Fragment() {
+class VectorChartsFragment : Fragment() {
 
-    private var _binding: FragmentChartBinding? = null
+    private var _binding: FragmentVectorChartsBinding? = null
     private val binding get() = _binding!!
     private var valuesCosto: MutableList<Entry> = mutableListOf()
 
@@ -29,28 +32,18 @@ class ChartFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentChartBinding.inflate(inflater, container, false)
+        _binding = FragmentVectorChartsBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    @RequiresApi(Build.VERSION_CODES.M)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        sortChartData(500)
-
+        sortChartData(1)
     }
 
-    @RequiresApi(Build.VERSION_CODES.M)
     private fun setupChart() {
         val yValues: MutableList<Entry> = valuesCosto
         val setOne = LineDataSet(yValues, context?.getString(R.string.name_chart_j_epoch))
-
-        var colorArray: MutableList<Int> = mutableListOf(requireContext().getColor(R.color.color1),
-            requireContext().getColor(R.color.color2),
-            requireContext().getColor(R.color.color3),
-            requireContext().getColor(R.color.color4),
-            requireContext().getColor(R.color.color5))
 
         setOne.apply {
             fillAlpha = 110
@@ -67,7 +60,6 @@ class ChartFragment : Fragment() {
 
         with(binding) {
             chartLine.apply {
-                //setBackgroundColor(resources.getColor(R.color.line_chart_color_1))
                 setDrawBorders(true)
                 setBorderColor(Color.BLACK)
                 setBorderWidth(2F)
@@ -90,10 +82,9 @@ class ChartFragment : Fragment() {
         }
     }
 
-    @RequiresApi(Build.VERSION_CODES.M)
     private fun sortChartData(limit: Int = 500) {
-        val chartData = resultsPerceptron
-        val sortChartData: MutableList<Automatic> = mutableListOf()
+        val chartData = chartVectorData
+        val sortChartData: MutableList<ChartVectorData> = mutableListOf()
         var x = 0
         while (x < chartData.size) {
             if ((x % limit) == 0) sortChartData.add(chartData[x])
@@ -102,10 +93,9 @@ class ChartFragment : Fragment() {
         configureValues(sortChartData)
     }
 
-    @RequiresApi(Build.VERSION_CODES.M)
-    private fun configureValues(sortChartData: MutableList<Automatic>) {
+    private fun configureValues(sortChartData: MutableList<ChartVectorData>) {
         for (results in sortChartData){
-            valuesCosto.add(Entry(results.id.toFloat(), results.J.toFloat()))
+            valuesCosto.add(Entry(results.epoch.toFloat(), results.valueJ.toFloat()))
         }
         setupChart()
     }

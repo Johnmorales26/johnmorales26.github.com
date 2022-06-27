@@ -15,7 +15,6 @@ import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.johndev.aitrainer.Constants.DIFFERENCES_METHOD
-import com.johndev.aitrainer.Constants.MAGNITUDE_METHOD
 import com.johndev.aitrainer.Constants.NOT_VISIBLE_VIEW
 import com.johndev.aitrainer.Constants.VISIBLE_VIEW
 import com.johndev.aitrainer.MainActivity
@@ -26,9 +25,7 @@ import com.johndev.aitrainer.common.ChargeDatasetsFragment.Companion.valuesX
 import com.johndev.aitrainer.common.ChargeDatasetsFragment.Companion.valuesY
 import com.johndev.aitrainer.databinding.FragmentAutomaticCalculoBinding
 import com.johndev.aitriner.Adapters.AutomaticAdapter
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+import kotlinx.coroutines.*
 import java.util.*
 import kotlin.properties.Delegates
 
@@ -44,7 +41,7 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
     private var myVisibilityTest = VISIBLE_VIEW
     private var myVisibilityResults = VISIBLE_VIEW
     private var valueR by Delegates.notNull<Double>()
-
+    private var umbral: Double? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -56,22 +53,26 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        configureUmbral()
         configureButtons()
         configureAnswers()
-        configureChips()
     }
 
-    private fun configureChips() {
-        binding.chipDifference.setOnCheckedChangeListener { chip, isChecked ->
-            if (isChecked){
-                binding.chipMagnitude.isChecked = false
+    private fun configureUmbral() {
+        binding.etUmbral.addTextChangedListener(object : TextWatcher {
+            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+                umbral = if (binding.etUmbral.text.toString().trim().isBlank()) {
+                    binding.etUmbral.text = "1.0".trim().editable()
+                    1.0
+                } else {
+                    binding.etUmbral.text.toString().trim().toDouble()
+                }
             }
-        }
-        binding.chipMagnitude.setOnCheckedChangeListener { chip, isChecked ->
-            if (isChecked){
-                binding.chipDifference.isChecked = false
+            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
+                binding.btnCalcular.isEnabled = binding.etUmbral.text.toString().trim().isNotBlank()
             }
-        }
+            override fun afterTextChanged(s: Editable) {}
+        })
     }
 
     private fun configureAnswers() {
@@ -102,21 +103,12 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
                 etValueJ.text = getString(R.string.label_load).trim().editable()
                 etValueR.text = getString(R.string.label_load).trim().editable()
             }
-            if (binding.chipDifference.isChecked) {
-                lifecycleScope.launch {
-                    automaticMethodForDiferences(DIFFERENCES_METHOD)
-                    paintResults()
-                }
-            }
-            if (binding.chipMagnitude.isChecked) {
-                lifecycleScope.launch {
-                    automaticMethodForDiferences(MAGNITUDE_METHOD)
-                    paintResults()
-                }
+            lifecycleScope.launch {
+                automaticMethodForDiferences(DIFFERENCES_METHOD)
+                paintResults()
             }
         }
         binding.btnMore.setOnClickListener {
-            binding.searchView.visibility = VISIBLE
             binding.recyclerView.visibility = VISIBLE
             lifecycleScope.launch(Dispatchers.Default) {
                 val printList = printData()
@@ -128,14 +120,12 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
             if (myVisibility == VISIBLE_VIEW){
                 with(binding) {
                     cvInputData.visibility = GONE
-                    cvOptions.visibility = GONE
                     btnDividerOp.setImageResource(R.drawable.ic_arrow_drop_down)
                 }
                 myVisibility = NOT_VISIBLE_VIEW
             } else {
                 with(binding) {
                     cvInputData.visibility = VISIBLE
-                    cvOptions.visibility = VISIBLE
                     btnDividerOp.setImageResource(R.drawable.ic_arrow_drop_up)
                 }
                 myVisibility = VISIBLE_VIEW
@@ -161,14 +151,12 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
         binding.btnDividerRes.setOnClickListener {
             if (myVisibilityResults == VISIBLE_VIEW) {
                 with(binding) {
-                    searchView.visibility = GONE
                     recyclerView.visibility = GONE
                     btnDividerRes.setImageResource(R.drawable.ic_arrow_drop_down)
                 }
                 myVisibilityResults = NOT_VISIBLE_VIEW
             } else {
                 with(binding) {
-                    searchView.visibility = VISIBLE
                     recyclerView.visibility = VISIBLE
                     btnDividerRes.setImageResource(R.drawable.ic_arrow_drop_up)
                 }
@@ -183,8 +171,9 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
         val returnList: MutableList<Automatic> = mutableListOf()
         lifecycleScope.launch {
             while (x < resultsPerceptron.size) {
-                val adapterData = Automatic(resultsPerceptron[x].id, resultsPerceptron[x].W0, resultsPerceptron[x].W1,resultsPerceptron[x].J)
-                if (x in 0..10) {
+                val adapterData = Automatic(resultsPerceptron[x].id, resultsPerceptron[x].W0,
+                    resultsPerceptron[x].W1,resultsPerceptron[x].J, resultsPerceptron[x].R)
+                if (x in 9999..10001) {
                     returnList.add(adapterData)
                 }
                 if (x in latestValues..resultsPerceptron.size){
@@ -192,7 +181,6 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
                 }
                 x++
             }
-            Toast.makeText(context, "${resultsPerceptron.size}", Toast.LENGTH_SHORT).show()
         }
         return@withContext returnList
     }
@@ -200,53 +188,58 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
     private suspend fun automaticMethodForDiferences(Method: String) = withContext(Dispatchers.IO) {
         resultsPerceptron = mutableListOf()
         val random = Random()
-        var w0 = random.nextInt(1..2147483647).toFloat()
-        var w1 = random.nextInt(1..2147483647).toFloat()
-        var j = 0.0f
+        var w0 = 0.0//random.nextInt(1..2147483647).toFloat()
+        var w1 = 0.0//random.nextInt(1..2147483647).toFloat()
+        var j = 0.0
         var x = 0
-        var rest = 0f
-        var magnitude = 0f
+        var rest: Double
+        var magnitude: Double
         var stop: Boolean
         do {
-            //  Variables To Stop The Loop
-            val newMagnitude = neuronTraining.getResultingMagnitude(j, w1)
-            val newRest = neuronTraining.getDifferenceMagnitude(w0, w1)
             //  Variables For Cycle Calculation
             val newJ = neuronTraining.getJ(w1, w0, valuesX, valuesY)
             val newW0 = neuronTraining.getAproximateW0(w0, w1, valuesX, valuesY)
             val newW1 = neuronTraining.getAproximateW1(w0, w1, valuesX, valuesY)
             val guess = neuronTraining.resolveGuess(valuesX, w1, w0)
-            val error = neuronTraining.resolveError(guess, valuesY)
             //  Calculate Regression Line
             val ssRegresion = neuronTraining.getSSRegresion(valuesY, guess)
             val ssTotal = neuronTraining.getSSTotal(valuesY)
+            //  Variables To Stop The Loop
+            val newMagnitude = neuronTraining.getResultingMagnitude(j, newW1)
+            val newRest = neuronTraining.getDifferenceMagnitude(newW0, newW1)
             valueR = neuronTraining.getRSquared(ssRegresion, ssTotal)
-
             println("Iteracion: $x")
-            println("W0 = $w0")
-            println("W1 = $w1")
+            println("W0 = $newW0")
+            println("W1 = $newW1")
             println("J = $j")
+            stop = if (Method == DIFFERENCES_METHOD) {
+                //stopCycle(rest, newRest)
+                magnitude = neuronTraining.getMagnitude(neuronTraining.getAproximateW0Average(w0, w1, valuesX, valuesY),
+                    neuronTraining.getAproximateW1Average(w0, w1, valuesX, valuesY))
+                println("$umbral > $magnitude")
+                umbral!! < magnitude
+            } else {
+                //stopCycle(magnitude, newMagnitude)
+                magnitude = neuronTraining.getMagnitude(neuronTraining.getAproximateW0Average(w0, w1, valuesX, valuesY),
+                    neuronTraining.getAproximateW1Average(w0, w1, valuesX, valuesY))
+                println("$umbral > $magnitude")
+                umbral!! < magnitude
+            }
             w0 = newW0
             w1 = newW1
             j = newJ
-            stop = if (Method == DIFFERENCES_METHOD) {
-                stopCycle(rest, newRest)
-            } else {
-                stopCycle(magnitude, newMagnitude)
-            }
+            resultsPerceptron.add(Automatic(x, w0, w1, j, valueR))
+            printAutomatic.add(Automatic(x, w0, w1, j, valueR))
             rest = newRest
-            magnitude = newMagnitude
             println("Rest = $rest")
-            resultsPerceptron.add(Automatic(x, w0, w1, j))
-            printAutomatic.add(Automatic(x, w0, w1, j))
             x++
         } while (stop)
         val sound = MainActivity.sharedPreferences.getBoolean(getString(R.string.key_preference_enable_sound_active), true)
         if (sound){
             MediaPlayer.create(context, MainActivity.directionSound).start()
         }
-        finalW0 = w0.toDouble()
-        finalW1 = w1.toDouble()
+        finalW0 = w0
+        finalW1 = w1
     }
 
     private fun paintResults() {
@@ -289,10 +282,6 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
         return false
     }
 
-    private fun stopCycle(value: Float, auxValue: Float): Boolean {
-        return value != auxValue
-    }
-
     private fun String.editable(): Editable = Editable.Factory.getInstance().newEditable(this)
 
     private fun Random.nextInt(range: IntRange): Int {
@@ -301,7 +290,6 @@ class AutomaticCalculoFragment : Fragment(), SearchView.OnQueryTextListener {
 
     companion object {
         lateinit var resultsPerceptron: MutableList<Automatic>
-        //lateinit var chartData: MutableList<Automatic>
     }
 
 }

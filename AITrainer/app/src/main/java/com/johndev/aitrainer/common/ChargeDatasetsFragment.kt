@@ -73,8 +73,8 @@ class ChargeDatasetsFragment : Fragment(), OnDatasetListener {
                     val valueX = textElements[0].trim().toDouble()
                     val valueY = textElements[1].trim().toDouble()
                     dataset.add(Dataset(valueX, valueY))
-                    valuesX.add(valueX.toFloat())
-                    valuesY.add(valueY.toFloat())
+                    valuesX.add(valueX)
+                    valuesY.add(valueY)
                     println("Vuelta: $i------${dataset[i].dataX}, ${dataset[i].dataY}")
                     i++
                     line = reader.readLine()
@@ -119,8 +119,8 @@ class ChargeDatasetsFragment : Fragment(), OnDatasetListener {
     }
 
     companion object {
-        lateinit var valuesX: MutableList<Float>
-        lateinit var valuesY: MutableList<Float>
+        lateinit var valuesX: MutableList<Double>
+        lateinit var valuesY: MutableList<Double>
         lateinit var dataset: MutableList<Dataset>
     }
 
