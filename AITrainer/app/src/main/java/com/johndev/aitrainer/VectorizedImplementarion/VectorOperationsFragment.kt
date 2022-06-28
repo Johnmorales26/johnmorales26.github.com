@@ -158,7 +158,7 @@ class VectorOperationsFragment : Fragment() {
             println("Magnitude --> $magnitude")
             //  Index, Ws, J, R2
             printData.add(PrintDataVectores(index, valueJ, valueR))
-            chartVectorData.add(ChartVectorData(index, valueJ))
+            chartVectorData.add(ChartVectorData(index, valueJ, arrayW))
             index++
         } while (umbral!! < magnitude)
         return@withContext arrayUpdateW

@@ -1,24 +1,23 @@
-package com.johndev.aitrainer.regresion_automatic
+package com.johndev.aitrainer.VectorizedImplementarion
 
 import android.content.pm.PackageManager
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.Environment
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
 import com.johndev.aitrainer.BottomOptions.BottomOptionsFragment
 import com.johndev.aitrainer.MainActivity
-import com.johndev.aitrainer.MainActivity.Companion.printAutomatic
-import com.johndev.aitrainer.Models.ResultsAuto
+import com.johndev.aitrainer.Models.ResultsVector
 import com.johndev.aitrainer.R
 import com.johndev.aitrainer.VectorizedImplementarion.VectorOperationsFragment.Companion.chartVectorData
 import com.johndev.aitrainer.databinding.FragmentAutomaticPrintBinding
@@ -29,7 +28,7 @@ import java.io.BufferedWriter
 import java.io.File
 import java.io.FileWriter
 
-class AutomaticPrintFragment : Fragment() {
+class VectorPrintFragment : Fragment() {
 
     private var _binding: FragmentAutomaticPrintBinding? = null
     private val binding get() = _binding!!
@@ -75,11 +74,13 @@ class AutomaticPrintFragment : Fragment() {
     }
 
     private fun sortAnswer() {
-        val resultList: MutableList<ResultsAuto> = ArrayList()
+        val resultList: MutableList<ResultsVector> = ArrayList()
         var i = 0
-        while (i < printAutomatic.size){
-            resultList.add(ResultsAuto(printAutomatic[i].id, printAutomatic[i].W0,
-                printAutomatic[i].W1, printAutomatic[i].J))
+        while (i < chartVectorData.size){
+            resultList.add(
+                ResultsVector(
+                    chartVectorData[i].epoch, chartVectorData[i].arrayW, chartVectorData[i].valueJ)
+            )
             i++
         }
         when (binding.btnExtension.text) {
@@ -104,25 +105,44 @@ class AutomaticPrintFragment : Fragment() {
         }
     }
 
-    private suspend fun createJSON(resultList: MutableList<ResultsAuto>): String = withContext(Dispatchers.IO) {
+    private suspend fun createJSON(resultList: MutableList<ResultsVector>): String = withContext(
+        Dispatchers.IO) {
         val gson = Gson()
         val exportJSON = gson.toJson(resultList)
         Log.i("JSON EXPORT", exportJSON.toString())
         return@withContext exportJSON
     }
 
-    private suspend fun createTXT(resultList: MutableList<ResultsAuto>): String = withContext(Dispatchers.IO) {
+    private suspend fun createTXT(resultList: MutableList<ResultsVector>): String = withContext(
+        Dispatchers.IO) {
         var exportTXT = ""
         resultList.forEach {
-            exportTXT += "Iteraciones: ${it.ID} -- W: ${it.W0} -- JW: ${it.W1} -- J: ${it.J}\n"
+            var index = 0
+            var Ws = ""
+            it.ListWs.forEach { arrayW ->
+                arrayW.forEach { valueW ->
+                    Ws += "-- W$index: $valueW --"
+                    index++
+                }
+            }
+            exportTXT += "Epoch: ${it.ID} $Ws J: ${it.J}\n"
         }
         return@withContext exportTXT
     }
 
-    private suspend fun createCSV(resultList: MutableList<ResultsAuto>): String = withContext(Dispatchers.IO) {
+    private suspend fun createCSV(resultList: MutableList<ResultsVector>): String = withContext(
+        Dispatchers.IO) {
         var exportCSV = ""
         resultList.forEach {
-            exportCSV += "${it.ID}$separatorCSV${it.W0}$separatorCSV${it.W1}$separatorCSV${it.J}\n"
+            var index = 0
+            var Ws = ""
+            it.ListWs.forEach { arrayW ->
+                arrayW.forEach { valueW ->
+                    Ws += "$separatorCSV$valueW"
+                    index++
+                }
+            }
+            exportCSV += "${it.ID}${Ws}$separatorCSV${it.J}\n"
         }
         return@withContext exportCSV
     }

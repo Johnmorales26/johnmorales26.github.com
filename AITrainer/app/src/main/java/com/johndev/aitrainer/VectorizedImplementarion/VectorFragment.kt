@@ -48,7 +48,7 @@ class VectorFragment : Fragment() {
                     true
                 }
                 R.id.action_manual_print_data -> {
-                    fragment = AutomaticPrintFragment()
+                    fragment = VectorPrintFragment()
                     openFragment(fragment)
                     true
                 }
