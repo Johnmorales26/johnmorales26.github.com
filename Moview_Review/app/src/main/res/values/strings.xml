@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">TMDB Guide</string>
+
+    <string name="key_movie_passed">key_movie_passed</string>
+    <string name="key_actor_passed">key_actor_passed</string>
+    <string name="key_tv_url_passed">key_tv_url_passed</string>
+    <string name="key_tv_passed">key_tv_passed</string>
+    <string name="key_company_passed">key_company_passed</string>
+
+    <string name="label_biography">Biography</string>
+    <string name="label_birthday">Birthday</string>
+    <string name="label_deathday">Deathday</string>
+    <string name="label_place_of_birth">Place Of Birth:</string>
+    <string name="label_translated_languajes">Translated Languages</string>
+    <string name="label_production_companies">Production Companies</string>
+    <string name="label_general_vision">General Vision</string>
+    <string name="label_last_episode">Last Episode</string>
+    <string name="label_next_episode">Next Episode</string>
+    <string name="label_seasons">Seasons</string>
+    <string name="label_see_more">See More…</string>
+    <string name="label__popular">Popular</string>
+    <string name="label_currently_in_theaters">Currently In Theaters</string>
+    <string name="label_drama_this_year">This Year\'s Drama</string>
+    <string name="label_best_of_tom">Best Of Tom Cruise</string>
+    <string name="label_latest_tv">Latest TV</string>
+    <string name="label_broadcasting_daily">TV Broadcastindg Daily</string>
+    <string name="label_air_tv">TV On The Air</string>
+    <string name="label_tv_popular">TV Popular</string>
+    <string name="label_tv_top_rated">TV Top Rated</string>
+    <string name="label_search">Search</string>
+    <string name="label_company">Company</string>
+    <string name="label_movie">Movie</string>
+    <string name="label_tv">TV</string>
+    <string name="label_hometown">Hometown: %s</string>
+    <string name="label_headquarters">Headquarters: %s</string>
+    <string name="label_parent_company">Parent Company: %s</string>
+    <string name="label_episode">Episode %s</string>
+    <string name="label_season">Season %s</string>
+
+    <string name="alert_required">Required</string>
+</resources>

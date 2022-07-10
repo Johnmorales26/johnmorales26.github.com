@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TMDB Guide</string>
+
+    <string name="key_movie_passed">key_movie_passed</string>
+    <string name="key_actor_passed">key_actor_passed</string>
+    <string name="key_tv_url_passed">key_tv_url_passed</string>
+    <string name="key_tv_passed">key_tv_passed</string>
+    <string name="key_company_passed">key_company_passed</string>
+
+    <string name="label_biography">Biografia</string>
+    <string name="label_birthday">Cumpleaños</string>
+    <string name="label_deathday">Muerte</string>
+    <string name="label_place_of_birth">Lugar De Nacimiento:</string>
+    <string name="label_translated_languajes">Lenguajes Doblados</string>
+    <string name="label_production_companies">Compañias De Producción</string>
+    <string name="label_general_vision">Visión General</string>
+    <string name="label_last_episode">Último Episodio</string>
+    <string name="label_next_episode">Siguiente Episodio</string>
+    <string name="label_seasons">Temporadas</string>
+    <string name="label_see_more">Ver Más…</string>
+    <string name="label__popular">Popular</string>
+    <string name="label_currently_in_theaters">Actualmente En Cines</string>
+    <string name="label_drama_this_year">Dramas De Este Año</string>
+    <string name="label_best_of_tom">Mejores De Tom Cruise</string>
+    <string name="label_latest_tv">TV Más Reciente</string>
+    <string name="label_broadcasting_daily">TV Transmitiendo Al Día</string>
+    <string name="label_air_tv">TV En El Aire</string>
+    <string name="label_tv_popular">TV Popular</string>
+    <string name="label_tv_top_rated">TV Mejor Calificado</string>
+    <string name="label_search">Buscar</string>
+    <string name="label_company">Compañía</string>
+    <string name="label_movie">Película</string>
+    <string name="label_tv">TV</string>
+    <string name="label_hometown">Ciudad De Origen: %s</string>
+    <string name="label_headquarters">Sede: %s</string>
+    <string name="label_parent_company">Emporesa De Origen: %s</string>
+    <string name="label_episode">Episodio %s</string>
+    <string name="label_season">Temporada %s</string>
+
+    <string name="alert_required">Required</string>
+</resources>
