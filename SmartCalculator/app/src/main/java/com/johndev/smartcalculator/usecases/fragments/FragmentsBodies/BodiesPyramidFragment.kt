@@ -29,7 +29,7 @@ class BodiesPyramidFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val bodies = FunctionsGeometryBodies()
+        val bodies = FunctionsGeometryBodies(requireContext())
         binding.btnResult.setOnClickListener{
             if (validFields()){
                 val sideA = binding.etSideA.text.toString().toDouble()
@@ -43,18 +43,6 @@ class BodiesPyramidFragment : Fragment() {
                     tvVolume.text = volume
 
                     database = context?.let { it1 -> DatabaseOperationHistory(it1) }!!
-
-                    // Send data to History
-                    val operationHistory = OperationHistory(
-                        nameFigure = getString(R.string.bodies_content_pyramid),
-                        image = R.drawable.pyramid,
-                        sideA = sideA,
-                        height = height,
-                        area = area,
-                        lateralArea = lateralArea,
-                        volume = volume)
-                    val add = AddHistory()
-                    context?.let { it1 -> add.AddHistory(operationHistory, it1, binding.root) }
                 }
             }
         }

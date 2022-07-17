@@ -17,7 +17,7 @@ import com.johndev.smartcalculator.usecases.base.FiguresAndBodies
 import com.johndev.smartcalculator.usecases.base.Formulas
 import com.johndev.smartcalculator.usecases.base.Functionalities
 import com.johndev.smartcalculator.usecases.base.SecondaryMenus
-import com.johndev.smartcalculator.usecases.common.OperationsSecondaryActivity
+import com.johndev.smartcalculator.usecases.principalViews.OperationsSecondaryActivity
 
 class ContainerEcuationsFragment : Fragment(), OnClickListener {
 
@@ -65,13 +65,13 @@ class ContainerEcuationsFragment : Fragment(), OnClickListener {
         val data = mutableListOf(
             SecondaryMenus(
                 0,
-                R.drawable.lineal_ecuation,
+                R.drawable.ic_lineal_ecuations,
                 getString(R.string.menu_options_lineal_ecuations),
                 getString(R.string.formula_options_lineal_ecuation)
             ),
             SecondaryMenus(
                 1,
-                R.drawable.ic_quadratric_ecuations,
+                R.drawable.ic_quadratic_ecuations,
                 getString(R.string.menu_options_quadratics_ecuations),
                 getString(R.string.formula_options_quadratics_ecuations)
             )

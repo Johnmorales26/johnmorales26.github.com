@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.size.Scale
-import com.johndev.tmdb_guide.Provider.Services.Resources
 import com.johndev.tmdb_guide.R
+import com.johndev.tmdb_guide.common.utils.getImageResource
 import com.johndev.tmdb_guide.databinding.ItemEpisodeBinding
 
 class EpisodeAdapter(private val episodeList: List<Episode>):
@@ -24,13 +24,12 @@ class EpisodeAdapter(private val episodeList: List<Episode>):
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val episode = episodeList[position]
-        val resources = Resources()
         with(holder) {
             binding.let {
-                val imagePosterPath = resources.getImageResource(episode.still_path.toString())
+                val imagePosterPath = getImageResource(episode.still_path.toString())
                 it.imgEpisode.load(imagePosterPath) {
                     crossfade(true)
-                    scale(Scale.FILL)
+                    scale(Scale.FIT)
                     placeholder(R.drawable.ic_broken_image)
                 }
                 it.tvEpisodeNumber.text = context.getString(R.string.label_episode, episode.episode_number.toString().trim())

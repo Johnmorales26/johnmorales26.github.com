@@ -3,9 +3,147 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/drawable/ic_arrow_right.xml" value="0.2265" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/activity_calculator.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/activity_conversion.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/activity_formulas.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/activity_onboarding.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/activity_operation_history.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/activity_operations.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/activity_operations_secondary.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/dialog_next_update.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_bodies_cone.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_bodies_cube.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_bodies_cut_cone.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_bodies_cut_pyramid.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_bodies_cylinder.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_bodies_ellipsoid.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_bodies_pyramid.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_bodies_rectangular_prism.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_bodies_sphere.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_bodies_sphere_cap.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_bodies_sphere_segment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_bottom_options.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_bottom_visible_options.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_container_combinations.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_container_ecuations.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_container_fractions.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_container_m_c_d__m_c_m.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_container_number_generator.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_container_percent.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_container_prime_numbers.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_container_proportion.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_contanier_average.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_conversion_acceleration.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_conversion_angle.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_conversion_area.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_conversion_data_storage.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_ecuation_lineal.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_ecuation_quadratic.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_figures_circle.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_figures_circular_arc.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_figures_hexagon.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_figures_oval.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_figures_pentagon.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_figures_rectangle.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_figures_rhomb.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_figures_right_triangle.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_figures_square.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_figures_trapezoide.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_figures_triangle.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formula_cone.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formula_cuboide.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formula_cylinder.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formula_logaritmo_natural.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formula_paralelogramo.xml" value="0.2" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formula_pyramid.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formula_rectangle.xml" value="0.4" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formula_rhomb.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formula_spherical_cap.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formula_spherical_sector.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formula_spherical_segment.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formula_square.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formula_torus.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formula_trapezoide.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formula_triangle.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formula_triangular_prism.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formulas_cone_trunk.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formulas_fraction.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formulas_identidad.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formulas_logaritmo_decimal.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formulas_polinomios.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formulas_potenciacion.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formulas_radicacion.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formulas_shift_triangle.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formulas_spehre.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_formulas_sumatorias.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_fraction_simplifier.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_fraction_to_decimal.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_main_algebra.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_main_bodies.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_main_developer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_main_extra_options.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_main_figures.xml" value="0.13125" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_main_formulas.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_main_trading_history.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_main_updates.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_menu_date.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_menu_time.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_onboarding_algebra.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_onboarding_conversiones.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_onboarding_geometria.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_onboarding_others.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_onboarding_start.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_other_add_date.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_other_add_time.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_other_age.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_other_difference_date.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_other_difference_time.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/item_bottom_options.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/item_conversions.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/item_description_updates.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/item_extra_options.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/item_figures_bodies.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/item_formulas.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/item_formulas_algebra.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/item_functions.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/item_histoy_updates.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/item_operation_history.xml" value="0.2" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/item_secondary_menu.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/layout/list_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/menu/menu_bottom_nav.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/Desktop/Android Developer/SmartCalculator/app/src/main/res/xml/preferenes.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/drawable/background_image.xml" value="0.121" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/drawable/ic_add.xml" value="0.121" />
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/drawable/ic_arrow_forward.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/drawable/ic_percent.xml" value="0.121" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/activity_calculator.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/activity_conversion.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/activity_conversions.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/activity_formulas.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/activity_main.xml" value="0.23822463768115942" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/activity_onboarding.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/activity_operation_history.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/activity_operations.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/activity_operations_secondary.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/activity_splash.xml" value="0.2223731884057971" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_bodies_cone.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_bodies_cube.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_bodies_cut_cone.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_bodies_cut_pyramid.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_bodies_cylinder.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_bottom_options.xml" value="0.24909420289855072" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_container_combinations.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_container_m_c_d__m_c_m.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_container_number_generator.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_container_percent.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_container_prime_numbers.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_container_proportion.xml" value="0.18931159420289856" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_conversion_angle.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_ecuation_lineal.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_ecuation_quadratic.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_figures_triangle.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_cone.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_cuboide.xml" value="0.24094202898550723" />
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formula_cylinder.xml" value="0.25" />
@@ -32,15 +170,31 @@
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formulas_shift_triangle.xml" value="0.25" />
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formulas_spehre.xml" value="0.25" />
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_formulas_sumatorias.xml" value="0.23641304347826086" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_fraction_simplifier.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_fraction_to_decimal.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_main_algebra.xml" value="0.24094202898550723" />
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_main_developer.xml" value="0.22735507246376813" />
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_main_formulas.xml" value="0.25" />
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_main_trading_history.xml" value="0.2269021739130435" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_onboarding_algebra.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_onboarding_conversiones.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_onboarding_geometria.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_onboarding_others.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_onboarding_start.xml" value="0.2" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_other_age.xml" value="0.23822463768115942" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_other_body_mass.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/fragment_other_law_ohm.xml" value="0.24909420289855072" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/item_bottom_options.xml" value="0.24909420289855072" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/item_conversions.xml" value="0.264" />
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/item_extra_options.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/item_figures_bodies.xml" value="0.24909420289855072" />
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/item_formulas.xml" value="0.25" />
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/item_formulas_algebra.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/item_functions.xml" value="0.24909420289855072" />
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/item_operation_history.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/layout/item_secondary_menu.xml" value="0.24909420289855072" />
         <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/menu/menu_bottom_nav.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/JohnT/Desktop/SmartCalculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.121" />
         <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/drawable/background_splash.xml" value="0.16" />
         <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/drawable/splash_screen.xml" value="0.1" />
         <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/activity_edit_profile.xml" value="0.2164855072463768" />
@@ -74,6 +228,40 @@
         <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/item_operation_history.xml" value="0.2" />
         <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/layout/item_secondary_menu.xml" value="0.25" />
         <entry key="..\:/Users/JohnT/Documents/Apps/Profecional_en_Material_Design_Theming/SmartCalculator/app/src/main/res/menu/menu_bottom_nav.xml" value="0.25" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/drawable/ic_arrow_right.xml" value="0.2265" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/activity_calculator.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/activity_conversion.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/activity_formulas.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/activity_main.xml" value="0.18432971014492755" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/activity_operations.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/activity_operations_secondary.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/activity_settings.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/activity_splash.xml" value="0.2" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/dialog_next_update.xml" value="0.2" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_bodies_ellipsoid.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_bottom_options.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_bottom_visible_options.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_container_fractions.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_contanier_average.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_conversion_area.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_main_algebra.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/fragment_other_fibonacci.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/item_bottom_options.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/item_conversions.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/item_description_updates.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/item_extra_options.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/item_figures_bodies.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/item_formulas.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/item_formulas_algebra.xml" value="0.264" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/item_functions.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/item_histoy_updates.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/item_operation_history.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/item_secondary_menu.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/layout/list_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/menu/menu_bottom_nav.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2265" />
+        <entry key="..\:/Users/JohnT/OneDrive/Escritorio/Android Developer/SmartCalculator/app/src/main/res/xml/preferenes.xml" value="0.264" />
         <entry key="app/src/main/res/drawable/background_image.xml" value="0.2490740740740741" />
         <entry key="app/src/main/res/drawable/ic_add.xml" value="0.259375" />
         <entry key="app/src/main/res/drawable/ic_error.xml" value="0.1" />

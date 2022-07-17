@@ -1,7 +1,9 @@
 package com.johndev.tmdb_guide.SearchData.SearchTvShows
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
+import android.util.Pair
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -10,10 +12,11 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.johndev.tmdb_guide.Interfaces.OnPressedSearch
 import com.johndev.tmdb_guide.R
-import com.johndev.tmdb_guide.SearchData.SearchCommon.SearchAdapter
-import com.johndev.tmdb_guide.SearchData.SearchCommon.SearchData
+import com.johndev.tmdb_guide.common.adapters.SearchAdapter
+import com.johndev.tmdb_guide.common.entities.SearchData
 import com.johndev.tmdb_guide.SearchData.SearchCommon.SearchValues
 import com.johndev.tmdb_guide.TV.DetailsTV.DetailsTVActivity
+import com.johndev.tmdb_guide.common.utils.hideKeyBoard
 import com.johndev.tmdb_guide.databinding.FragmentSearchTVBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -44,6 +47,7 @@ class SearchTVFragment : Fragment(), OnPressedSearch {
     private fun configureButton(searchActor: SearchValues) {
         binding.btnSearch.setOnClickListener {
             if (validFields()) {
+                hideKeyBoard(requireContext(), binding.root)
                 adapter.deleteAll()
                 val company = binding.etAutoComplete.text.toString().lowercase(Locale.ROOT).trim()
                 binding.btnMore.visibility = View.VISIBLE
@@ -74,11 +78,15 @@ class SearchTVFragment : Fragment(), OnPressedSearch {
         }
     }
 
-    override fun onSearchPressed(data: SearchData) {
+    override fun onSearchPressed(data: SearchData, imgPhoto: View, tvName: View) {
         val intent = Intent(context, DetailsTVActivity::class.java).apply {
             putExtra(getString(R.string.key_tv_passed), data.id.toString().trim())
         }
-        startActivity(intent)
+        val imgPair: Pair<View, String> = Pair.create(imgPhoto, getString(R.string.tn_imgMovie))
+        val namePair: Pair<View, String> = Pair.create(tvName, getString(R.string.tn_tvTitle))
+        val options = ActivityOptions.makeSceneTransitionAnimation(activity, imgPair, namePair)
+            .toBundle()
+        startActivity(intent, options)
     }
 
     private fun validFields(): Boolean{

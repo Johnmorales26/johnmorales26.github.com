@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/common_padding_default"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".usecases.fragments.FragmentsOther.OtherDifferenceTimeFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvStartHour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/tv_start_hour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Theme.SmartCalculator.Common.HeadLine5"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilStartHour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_hour"
+        android:padding="@dimen/common_padding_min"
+        app:layout_constraintTop_toBottomOf="@id/tvStartHour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tilStartMinute"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etStartHour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilStartMinute"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_minute"
+        android:padding="@dimen/common_padding_min"
+        app:layout_constraintTop_toBottomOf="@id/tvStartHour"
+        app:layout_constraintStart_toEndOf="@id/tilStartHour"
+        app:layout_constraintEnd_toStartOf="@id/tilStartSecond"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etStartMinute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilStartSecond"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_second"
+        android:padding="@dimen/common_padding_min"
+        app:layout_constraintTop_toBottomOf="@id/tvStartHour"
+        app:layout_constraintStart_toEndOf="@id/tilStartMinute"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etStartSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvEndHour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/tv_end_hour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilStartHour"
+        style="@style/Theme.SmartCalculator.Common.HeadLine5"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEndHour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_hour"
+        android:padding="@dimen/common_padding_min"
+        app:layout_constraintTop_toBottomOf="@id/tvEndHour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tilEndMinute"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEndHour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEndMinute"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_minute"
+        android:padding="@dimen/common_padding_min"
+        app:layout_constraintTop_toBottomOf="@id/tvEndHour"
+        app:layout_constraintStart_toEndOf="@id/tilEndHour"
+        app:layout_constraintEnd_toStartOf="@id/tilEndSecond"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEndMinute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEndSecond"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_second"
+        android:padding="@dimen/common_padding_min"
+        app:layout_constraintTop_toBottomOf="@id/tvEndHour"
+        app:layout_constraintStart_toEndOf="@id/tilEndMinute"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEndSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilEndHour"
+        style="@style/Theme.SmartCalculator.CardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/common_padding_default"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hint_difference"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Theme.SmartCalculator.Common.Subtitle1"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hint_value_result_simbol"
+                android:gravity="center"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Theme.SmartCalculator.Common.Subtitle2"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnResult"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/hint_value_result"
+        android:layout_marginEnd="@dimen/common_padding_min"
+        android:layout_marginHorizontal="@dimen/common_padding_min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvResult"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

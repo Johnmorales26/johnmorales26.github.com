@@ -17,7 +17,7 @@ import com.johndev.smartcalculator.usecases.base.FiguresAndBodies
 import com.johndev.smartcalculator.usecases.base.Formulas
 import com.johndev.smartcalculator.usecases.base.Functionalities
 import com.johndev.smartcalculator.usecases.base.SecondaryMenus
-import com.johndev.smartcalculator.usecases.common.OperationsActivity
+import com.johndev.smartcalculator.usecases.principalViews.OperationsActivity
 
 class MainBodiesFragment : Fragment(), OnClickListener {
 
@@ -41,7 +41,6 @@ class MainBodiesFragment : Fragment(), OnClickListener {
             layoutManager = LinearLayoutManager(context)
             adapter = figuresAndBodiesAdapter
         }
-
     }
 
     override fun onDestroyView() {
@@ -68,17 +67,17 @@ class MainBodiesFragment : Fragment(), OnClickListener {
 
     private fun data(): MutableList<FiguresAndBodies> {
         val data = mutableListOf(
-            FiguresAndBodies(0, getString(R.string.bodies_content_cube), R.drawable.cubo),
-            FiguresAndBodies(1, getString(R.string.bodies_content_prism), R.drawable.prisma_rectangular),
-            FiguresAndBodies(2, getString(R.string.bodies_content_pyramid), R.drawable.pyramid),
-            FiguresAndBodies(3, getString(R.string.bodies_content_cut_pyramid), R.drawable.pyramid_cut),
-            FiguresAndBodies(4, getString(R.string.bodies_content_cone), R.drawable.figura_cono_formulas),
-            FiguresAndBodies(5, getString(R.string.bodies_content_cone_cut), R.drawable.figura_cono_formulas),
+            FiguresAndBodies(0, getString(R.string.bodies_content_cube), R.drawable.ic_cube),
+            FiguresAndBodies(1, getString(R.string.bodies_content_prism), R.drawable.ic_rectangle_prism),
+            FiguresAndBodies(2, getString(R.string.bodies_content_pyramid), R.drawable.ic_pyramid),
+            FiguresAndBodies(3, getString(R.string.bodies_content_cut_pyramid), R.drawable.ic_pyramid),
+            FiguresAndBodies(4, getString(R.string.bodies_content_cone), R.drawable.ic_cone),
+            FiguresAndBodies(5, getString(R.string.bodies_content_cone_cut), R.drawable.ic_cone),
             FiguresAndBodies(6, getString(R.string.bodies_content_cylinder), R.drawable.cylinder),
-            FiguresAndBodies(7, getString(R.string.bodies_content_sphere), R.drawable.sphere),
-            FiguresAndBodies(8, getString(R.string.bodies_content_sphere_cap), R.drawable.sphere_cap),
-            FiguresAndBodies(9, getString(R.string.bodies_content_sphere_segment), R.drawable.segmento_esfera),
-            FiguresAndBodies(10, getString(R.string.bodies_content_ellipsoid), R.drawable.elipsoide)
+            FiguresAndBodies(7, getString(R.string.bodies_content_sphere), R.drawable.ic_sphere),
+            FiguresAndBodies(8, getString(R.string.bodies_content_sphere_cap), R.drawable.ic_sphere_tapa),
+            FiguresAndBodies(9, getString(R.string.bodies_content_sphere_segment), R.drawable.ic_sphere_segment),
+            FiguresAndBodies(10, getString(R.string.bodies_content_ellipsoid), R.drawable.ic_ellipsoid)
         )
         return data
     }

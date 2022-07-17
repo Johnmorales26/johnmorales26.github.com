@@ -5,16 +5,16 @@
             android:shape="oval">
             <!--<solid android:color="@color/purple_500"/>-->
             <gradient
-                android:startColor="@color/colorPrimaryLight"
-                android:centerColor="@color/colorPrimary"
-                android:endColor="@color/colorPrimaryDark"
+                android:startColor="@color/primaryLightColor"
+                android:centerColor="@color/primaryColor"
+                android:endColor="@color/primaryDarkColor"
                 android:gradientRadius="100%p"
                 android:type="radial"
                 android:centerX="0.5"
                 android:centerY="0.5"/>
             <stroke
                 android:width="@dimen/form_stroke"
-                android:color="@color/colorPrimaryDark"/>
+                android:color="@color/primaryDarkColor"/>
             <size
                 android:height="@dimen/form_size"
                 android:width="@dimen/form_size"/>

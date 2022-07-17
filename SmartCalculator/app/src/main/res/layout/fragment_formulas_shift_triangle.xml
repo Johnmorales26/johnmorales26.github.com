@@ -18,6 +18,9 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
+        android:layout_marginVertical="@dimen/common_padding_min"
         style="@style/Theme.SmartCalculator.CardView.Formulas">
 
         <LinearLayout
@@ -25,13 +28,13 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvFormulaArea"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tv_formula_area"
                 android:padding="@dimen/common_padding_min"
-                style="@style/Theme.SmartCalculator.HeadLine6"/>
+                style="@style/Theme.SmartCalculator.Common.HeadLine5"/>
 
 
             <io.github.kexanie.library.MathView
@@ -50,6 +53,9 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
+        android:layout_marginVertical="@dimen/common_padding_min"
         style="@style/Theme.SmartCalculator.CardView.Formulas">
 
         <LinearLayout
@@ -57,13 +63,13 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvOtherFormulas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tv_other_formulas"
                 android:padding="@dimen/common_padding_min"
-                style="@style/Theme.SmartCalculator.HeadLine6"/>
+                style="@style/Theme.SmartCalculator.Common.HeadLine5"/>
 
 
             <io.github.kexanie.library.MathView

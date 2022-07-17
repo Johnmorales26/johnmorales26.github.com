@@ -1,11 +1,13 @@
 package com.johndev.tmdb_guide.Interfaces
 
-import com.johndev.tmdb_guide.Actors.KnownFor
-import com.johndev.tmdb_guide.PopularMovies.MoviePopular
+import android.view.View
+import com.johndev.tmdb_guide.common.entities.DataRequestEntity
+import com.johndev.tmdb_guide.common.entities.KnownFor
+import com.johndev.tmdb_guide.common.entities.MoviePopular
 
 interface OnPressedMovie {
 
-    fun OnMoviePressed(movie: MoviePopular)
+    fun OnMoviePressed(movie: DataRequestEntity, imgPhoto: View)
     fun OnMovieKnowPressed(movie: KnownFor)
 
 }

@@ -27,7 +27,7 @@ class FiguresCircleFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val figures = FunctionsGeometryFigures()
+        val figures = FunctionsGeometryFigures(requireContext())
         binding.btnResult.setOnClickListener{
             if (validFields()){
                 val valueA = binding.etSideA.text.toString().toDouble()

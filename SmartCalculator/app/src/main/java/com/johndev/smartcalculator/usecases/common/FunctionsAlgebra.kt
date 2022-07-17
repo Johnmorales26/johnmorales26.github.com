@@ -1,10 +1,14 @@
 package com.johndev.smartcalculator.usecases.common
 
+import android.content.Context
 import java.lang.Math.*
 import java.text.DecimalFormat
 import kotlin.math.pow
 
-class FunctionsAlgebra {
+class FunctionsAlgebra(val context: Context) {
+    
+    val viewDecimals = ViewDecimals(context)
+    
     //      First Screen
     //  Percent
     fun discountTotal(valueA: Double, valueB: Double): String {
@@ -61,11 +65,11 @@ class FunctionsAlgebra {
 
     //  Percent of A since B
     fun percentOfAsinceB(valueA: Double, valueB: Double): String {
-        return two_Decimals((valueA * 100) / valueB)
+        return viewDecimals.selectedDecimals((valueA * 100) / valueB)
     }
 
     fun percentOfAsinceBOperation(valueA: Double, valueB: Double): String {
-        val result = two_Decimals((valueA * 100) / valueB)
+        val result = viewDecimals.selectedDecimals((valueA * 100) / valueB)
         return ("x = ((${valueA} * 100) / ${valueB}) \n\n " +
                 "x = ((${valueA * 100}) / ${valueB}) \n\n" +
                 "x = $result")
@@ -73,8 +77,8 @@ class FunctionsAlgebra {
 
     //      Second Screen
     //  Arithmetic
-    fun arithmetic(valueA: Double, valueB: Double): String {
-        return ((valueA + valueB) / 2).toString()
+    fun arithmetic(valueA: Double, valueB: Double): Double {
+        return ((valueA + valueB) / 2)
     }
     fun arithmeticOperations(valueA: Double, valueB: Double): String {
         return ("Arithmetic \n" +
@@ -84,8 +88,8 @@ class FunctionsAlgebra {
     }
 
     //  Geometric
-    fun geometric(valueA: Double, valueB: Double): String {
-        return (2 / ((1 / valueA) + (1 / valueB))).toString()
+    fun geometric(valueA: Double, valueB: Double): Double {
+        return (2 / ((1 / valueA) + (1 / valueB)))
     }
     fun geometricOperations(valueA: Double, valueB: Double): String {
         return ("Geometric \n" +
@@ -95,8 +99,8 @@ class FunctionsAlgebra {
     }
 
     //  Harmonic
-    fun harmonic(valueA: Double, valueB: Double): String {
-        return (2 / ((1 / valueA) + (1 / valueB))).toString()
+    fun harmonic(valueA: Double, valueB: Double): Double {
+        return (2 / ((1 / valueA) + (1 / valueB)))
     }
     fun harmonicOperations(valueA: Double, valueB: Double): String {
         return ("Harmonic \n" +
@@ -113,19 +117,19 @@ class FunctionsAlgebra {
     }
     //  Proportion
     fun directlyProportional(valueA: Double, valueB: Double, valueX: Double): String {
-        return two_Decimals(((valueB * valueX) / valueA))
+        return viewDecimals.selectedDecimals(((valueB * valueX) / valueA))
     }
 
     fun indirectlyProportional(valueA: Double, valueB: Double, valueX: Double): String {
         val result = ((valueA * valueB) / valueX)
-        return two_Decimals(result)
+        return viewDecimals.selectedDecimals(result)
     }
 
     //      Fourth Screen
     //  linealEcuation
     fun linealEquation(valueA: Double, valueB: Double): String {
         val signChange = "-$valueB"
-        return two_Decimals(signChange.toDouble() / valueA)
+        return viewDecimals.selectedDecimals(signChange.toDouble() / valueA)
     }
     fun linealEquationOperation(valueA: Double, valueB: Double): String {
         return "${valueA}x + ${valueB} = 0"
@@ -136,7 +140,7 @@ class FunctionsAlgebra {
     }
 
     fun quadraticEquationPositive(valueA: Double, valueB: Double, valueC: Double): String {
-        return two_Decimals((-(valueB) + squareRoot(valueA, valueB, valueC)) / (2 * valueA))
+        return viewDecimals.selectedDecimals((-(valueB) + squareRoot(valueA, valueB, valueC)) / (2 * valueA))
     }
 
     fun quadraticEquationOperation(valueA: Double, valueB: Double, valueC: Double): String {
@@ -144,7 +148,7 @@ class FunctionsAlgebra {
     }
 
     fun quadraticEquationNegative(valueA: Double, valueB: Double, valueC: Double): String {
-        return two_Decimals((-(valueB) - squareRoot(valueA, valueB, valueC)) / (2 * valueA))
+        return viewDecimals.selectedDecimals((-(valueB) - squareRoot(valueA, valueB, valueC)) / (2 * valueA))
     }
 
     //  Fractions
@@ -331,10 +335,5 @@ class FunctionsAlgebra {
         }
         return lista.toString()
     }
-    private fun two_Decimals(value: Double):String{
-        val number = java.lang.Double.valueOf(value)
-        val dec = DecimalFormat("#,###.00")
-        val formating = dec.format(number)
-        return formating
-    }
+    
 }

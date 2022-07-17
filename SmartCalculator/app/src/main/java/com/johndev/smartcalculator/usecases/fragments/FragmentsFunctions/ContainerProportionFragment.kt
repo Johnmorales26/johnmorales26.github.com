@@ -11,6 +11,7 @@ import android.widget.Toast
 import com.johndev.smartcalculator.R
 import com.johndev.smartcalculator.databinding.FragmentContainerProportionBinding
 import com.johndev.smartcalculator.usecases.common.FunctionsAlgebra
+import com.johndev.smartcalculator.usecases.fragments.BottomSheetOptions.BottomOptionsFragment
 
 class ContainerProportionFragment : Fragment() {
 
@@ -20,48 +21,49 @@ class ContainerProportionFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
 
         _binding = FragmentContainerProportionBinding.inflate(inflater, container, false)
 
-        binding.btnMenuCalculate.setOnClickListener { view1 ->
-            val popupMenu = activity?.let { PopupMenu(it, view1) }
-            popupMenu?.menuInflater?.inflate(R.menu.menu_options_proportion, popupMenu.menu)
-            popupMenu?.setOnMenuItemClickListener (::manageItemClick)
-            popupMenu?.setOnDismissListener(::manageDismiss)
-            popupMenu?.show()
+        binding.btnMenuCalculate.setOnClickListener {
+            val fragment = BottomOptionsFragment(
+                onSubmitClickListener = { data ->
+                    binding.btnMenuCalculate.text = data.name.trim()
+                    binding.tvFormula.text = data.icon.trim()
+                    manageItemClick(data.name.trim())
+                }
+            )
+            val sendData = Bundle()
+            sendData.putString("option", getString(R.string.functions_content_proportion))
+            fragment.arguments = sendData
+            fragmentManager?.let { it1 -> fragment.show(it1.beginTransaction(), BottomOptionsFragment::class.java.simpleName) }
         }
 
-        val algebra = FunctionsAlgebra()
+        val algebra = FunctionsAlgebra(requireContext())
         binding.btnResult.setOnClickListener{
             if (validFields()){
                 val valueA = binding.etVariableA.text.toString().toDouble()
                 val valueB = binding.etVariableB.text.toString().toDouble()
                 val valueX = binding.etVariableX.text.toString().toDouble()
                 if (binding.btnMenuCalculate.text == getString(R.string.menu_options_directly_proportional)){
-                        binding.tvResultado.text = algebra.directlyProportional(valueA, valueB, valueX)
+                    binding.tvResultado.text = algebra.directlyProportional(valueA, valueB, valueX)
                 }else{
                     binding.tvResultado.text = algebra.indirectlyProportional(valueA, valueB, valueX)
                 }
             }
         }
-
         return binding.root
     }
 
-    private fun manageDismiss(popupMenu: PopupMenu) {
-        showMessage("Menú cerrado")
-    }
-
-    private fun manageItemClick(menuItem: MenuItem): Boolean {
-        return when(menuItem.itemId){
-            R.id.action_directly_proportional -> {
+    private fun manageItemClick(option: String): Boolean {
+        return when(option){
+            getString(R.string.menu_options_directly_proportional) -> {
                 binding.tvFormula.text = getString(R.string.formula_options_directly_proportional)
                 binding.btnMenuCalculate.text = getString(R.string.menu_options_directly_proportional)
                 true
             }
-            R.id.action_indirectly_proportional -> {
+            getString(R.string.menu_options_indirectly_proportional) -> {
                 binding.tvFormula.text = getString(R.string.formula_options_indirectly_proportionalb)
                 binding.btnMenuCalculate.text = getString(R.string.menu_options_indirectly_proportional)
                 true

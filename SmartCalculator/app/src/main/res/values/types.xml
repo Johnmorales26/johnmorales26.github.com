@@ -1,68 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.SmartCalculator.HeadLine1" parent="TextAppearance.MaterialComponents.Headline1">
-        <item name="fontFamily">@font/rubik_light</item>
-        <item name="android:fontFamily">@font/rubik_light</item>
-        <item name="android:textSize">97sp</item>
+    <style name="TextAppearance.SmartCalculator.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/playfair_display</item>
+        <item name="android:fontFamily">@font/playfair_display</item>
+        <item name="android:textSize">96sp</item>
     </style>
-    <style name="Theme.SmartCalculator.HeadLine2" parent="TextAppearance.MaterialComponents.Headline2">
-        <item name="fontFamily">@font/rubik_light</item>
-        <item name="android:fontFamily">@font/rubik_light</item>
+    <style name="TextAppearance.SmartCalculator.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/playfair_display</item>
+        <item name="android:fontFamily">@font/playfair_display</item>
         <item name="android:textSize">61sp</item>
     </style>
-    <style name="Theme.SmartCalculator.HeadLine3" parent="TextAppearance.MaterialComponents.Headline3">
-        <item name="fontFamily">@font/rubik_light</item>
-        <item name="android:fontFamily">@font/rubik_light</item>
-        <item name="android:textSize">48sp</item>
+    <style name="TextAppearance.SmartCalculator.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/playfair_display</item>
+        <item name="android:fontFamily">@font/playfair_display</item>
+        <item name="android:textSize">49sp</item>
     </style>
-    <style name="Theme.SmartCalculator.HeadLine4" parent="TextAppearance.MaterialComponents.Headline4">
-        <item name="fontFamily">@font/rubik_light</item>
-        <item name="android:fontFamily">@font/rubik_light</item>
-        <item name="android:textSize">34sp</item>
+    <style name="TextAppearance.SmartCalculator.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/playfair_display</item>
+        <item name="android:fontFamily">@font/playfair_display</item>
+        <item name="android:textSize">35sp</item>
     </style>
-    <style name="Theme.SmartCalculator.HeadLine5" parent="TextAppearance.MaterialComponents.Headline5">
-        <item name="fontFamily">@font/rubik_light</item>
-        <item name="android:fontFamily">@font/rubik_light</item>
-        <item name="android:textSize">24sp</item>
+    <style name="TextAppearance.SmartCalculator.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/playfair_display</item>
+        <item name="android:fontFamily">@font/playfair_display</item>
+        <item name="android:textSize">25sp</item>
     </style>
-    <style name="Theme.SmartCalculator.HeadLine6" parent="TextAppearance.MaterialComponents.Headline6">
-        <item name="fontFamily">@font/rubik_light</item>
-        <item name="android:fontFamily">@font/rubik_light</item>
-        <item name="android:textSize">20sp</item>
+    <style name="TextAppearance.SmartCalculator.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/playfair_display</item>
+        <item name="android:fontFamily">@font/playfair_display</item>
+        <item name="android:textSize">21sp</item>
     </style>
-    <style name="Theme.SmartCalculator.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
-        <item name="fontFamily">@font/rubik_light</item>
-        <item name="android:fontFamily">@font/rubik_light</item>
+    <style name="TextAppearance.SmartCalculator.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/playfair_display</item>
+        <item name="android:fontFamily">@font/playfair_display</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TextAppearance.SmartCalculator.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/playfair_display</item>
+        <item name="android:fontFamily">@font/playfair_display</item>
         <item name="android:textSize">16sp</item>
     </style>
-    <style name="Theme.SmartCalculator.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
-        <item name="fontFamily">@font/rubik_light</item>
-        <item name="android:fontFamily">@font/rubik_light</item>
+    <style name="TextAppearance.SmartCalculator.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/crimson_pro</item>
+        <item name="android:fontFamily">@font/crimson_pro</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TextAppearance.SmartCalculator.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/crimson_pro</item>
+        <item name="android:fontFamily">@font/crimson_pro</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="TextAppearance.SmartCalculator.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/crimson_pro</item>
+        <item name="android:fontFamily">@font/crimson_pro</item>
         <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.04</item>
     </style>
-    <style name="Theme.SmartCalculator.Body1" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="fontFamily">@font/crimson_text</item>
-        <item name="android:fontFamily">@font/crimson_text</item>
-        <item name="android:textSize">17sp</item>
+    <style name="TextAppearance.SmartCalculator.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/crimson_pro</item>
+        <item name="android:fontFamily">@font/crimson_pro</item>
+        <item name="android:textSize">13sp</item>
     </style>
-    <style name="Theme.SmartCalculator.Body2" parent="TextAppearance.MaterialComponents.Body2">
-        <item name="fontFamily">@font/crimson_text</item>
-        <item name="android:fontFamily">@font/crimson_text</item>
-        <item name="android:textSize">15sp</item>
-    </style>
-    <style name="Theme.SmartCalculator.Button" parent="TextAppearance.MaterialComponents.Button">
-        <item name="fontFamily">@font/crimson_text</item>
-        <item name="android:fontFamily">@font/crimson_text</item>
-        <item name="android:textSize">15sp</item>
-    </style>
-    <style name="Theme.SmartCalculator.Caption" parent="TextAppearance.MaterialComponents.Caption">
-        <item name="fontFamily">@font/crimson_text</item>
-        <item name="android:fontFamily">@font/crimson_text</item>
+    <style name="TextAppearance.SmartCalculator.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/crimson_pro</item>
+        <item name="android:fontFamily">@font/crimson_pro</item>
         <item name="android:textSize">12sp</item>
-    </style>
-    <style name="Theme.SmartCalculator.Overline" parent="TextAppearance.MaterialComponents.Overline">
-        <item name="fontFamily">@font/crimson_text</item>
-        <item name="android:fontFamily">@font/crimson_text</item>
-        <item name="android:textSize">10sp</item>
     </style>
 </resources>

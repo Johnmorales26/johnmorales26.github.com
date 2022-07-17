@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/common_padding_default"
+    tools:context=".usecases.fragments.FragmentsOther.OtherAddDateFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvStartDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/tv_start_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Theme.SmartCalculator.Common.HeadLine5"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilStartDay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_day"
+        android:padding="@dimen/common_padding_min"
+        app:endIconMode="clear_text"
+        app:layout_constraintTop_toBottomOf="@id/tvStartDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tilStartYear"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etStartDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilStartYear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_year"
+        android:padding="@dimen/common_padding_min"
+        app:layout_constraintTop_toTopOf="@id/tilStartDay"
+        app:layout_constraintStart_toEndOf="@id/tilStartDay"
+        app:layout_constraintEnd_toStartOf="@id/btnMont"
+        app:layout_constraintBottom_toBottomOf="@id/tilStartDay"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etStartYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMont"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/month_year_january"
+        app:icon="@drawable/ic_arrow_down"
+        app:iconGravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tilStartYear"
+        app:layout_constraintBottom_toBottomOf="@id/tilStartYear"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvOption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/tv_sum_rest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilStartDay"
+        style="@style/Theme.SmartCalculator.Common.HeadLine5"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilDayOp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_day"
+        android:padding="@dimen/common_padding_min"
+        app:layout_constraintTop_toBottomOf="@id/tvOption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tilMonthOp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDayOp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilMonthOp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_month"
+        android:padding="@dimen/common_padding_min"
+        app:layout_constraintTop_toBottomOf="@id/tvOption"
+        app:layout_constraintEnd_toStartOf="@+id/tilYearOp"
+        app:layout_constraintStart_toEndOf="@id/tilDayOp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMonthOp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilYearOp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_year"
+        android:padding="@dimen/common_padding_min"
+        app:layout_constraintTop_toBottomOf="@id/tvOption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tilMonthOp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etYearOp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvOption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilDayOp"
+        style="@style/Theme.SmartCalculator.CardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/common_padding_default"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="@string/hint_method"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Theme.SmartCalculator.Common.Subtitle1"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOptionOp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_sum"
+                app:icon="@drawable/ic_arrow_down"
+                app:iconGravity="end"
+                android:gravity="center"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvOption"
+        style="@style/Theme.SmartCalculator.CardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/common_padding_default"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:text="@string/tv_end_hour"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Theme.SmartCalculator.Common.Subtitle1"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvResult"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:text="@string/hint_value_result_simbol"
+                android:gravity="end"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Theme.SmartCalculator.Common.Subtitle2"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnResult"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/hint_value_result"
+        android:layout_marginEnd="@dimen/common_padding_min"
+        android:layout_marginHorizontal="@dimen/common_padding_min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvResult"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/common_padding_default"
+    tools:context=".usecases.fragments.FragmentsConversion.ConversionDataStorageFragment">
+
+    <LinearLayout
+        android:id="@+id/llcontainerHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:layout_gravity="center"
+            android:hint="@string/hint_value"
+            android:layout_marginEnd="@dimen/common_padding_min"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:layout_gravity="center"
+            android:text="@string/storage_option_megabit"
+            app:icon="@drawable/ic_arrow_down"
+            app:iconGravity="end"
+            android:layout_marginStart="@dimen/common_padding_min"
+            android:layout_marginHorizontal="@dimen/common_padding_min"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/llcontainerBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/common_padding_min"
+        android:paddingBottom="@dimen/common_padding_bottom_scroll"
+        android:layout_marginBottom="@dimen/common_padding_bottom_scroll"
+        app:layout_constraintTop_toBottomOf="@id/llcontainerHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/tilValue"
+            tools:listitem="@layout/item_conversions"/>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/efab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_padding_min"
+        android:layout_marginEnd="@dimen/common_padding_min"
+        android:src="@drawable/ic_filter_list"
+        android:contentDescription="@string/description_floating_action_button_conversion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

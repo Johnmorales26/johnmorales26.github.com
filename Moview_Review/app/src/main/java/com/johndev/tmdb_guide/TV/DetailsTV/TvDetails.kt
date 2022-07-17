@@ -1,7 +1,7 @@
 package com.johndev.tmdb_guide.TV.DetailsTV
 
-import com.johndev.tmdb_guide.Movies.Genre
-import com.johndev.tmdb_guide.Movies.ProductionCompanies
+import com.johndev.tmdb_guide.common.entities.Genre
+import com.johndev.tmdb_guide.common.entities.ProductionCompanies
 
 data class TvDetails(
     var adult: Boolean?,

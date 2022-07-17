@@ -8,16 +8,16 @@
     android:padding="@dimen/common_padding_default"
     tools:context=".usecases.fragments.FragmentsFigures.FiguresRightTriangleFragment">
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvInput"
-        style="@style/MyTextViewHeadLine6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="@string/tv_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Theme.SmartCalculator.Common.HeadLine5"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilSideA"
@@ -55,16 +55,16 @@
             android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvOutput"
-        style="@style/MyTextViewHeadLine6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="@string/tv_output"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tilSideB" />
+        app:layout_constraintTop_toBottomOf="@id/tilSideB"
+        style="@style/Theme.SmartCalculator.Common.HeadLine5"/>
 
     <!-- View Angulos -->
 
@@ -72,6 +72,8 @@
         android:id="@+id/cvArea"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvOutput"
@@ -83,27 +85,22 @@
             android:padding="@dimen/common_padding_default"
             android:orientation="horizontal">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/prefix_value_area"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                style="@style/Theme.SmartCalculator.Common.Subtitle1"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvArea"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/hint_value_result_simbol"
                 android:gravity="end"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                android:layout_gravity="center"
+                style="@style/Theme.SmartCalculator.Common.Subtitle2"/>
 
         </LinearLayout>
 
@@ -113,6 +110,8 @@
         android:id="@+id/cvPermeter"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cvArea"
@@ -124,27 +123,22 @@
             android:padding="@dimen/common_padding_default"
             android:orientation="horizontal">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/prefix_value_perimeter"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                style="@style/Theme.SmartCalculator.Common.Subtitle1"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvPerimeter"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/hint_value_result_simbol"
                 android:gravity="end"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                android:layout_gravity="center"
+                style="@style/Theme.SmartCalculator.Common.Subtitle2"/>
 
         </LinearLayout>
 
@@ -154,6 +148,8 @@
         android:id="@+id/cvHipotenusa"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cvPermeter"
@@ -165,27 +161,22 @@
             android:padding="@dimen/common_padding_default"
             android:orientation="horizontal">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/prefix_value_hypotenuse"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                style="@style/Theme.SmartCalculator.Common.Subtitle1"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvHypotenuse"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/hint_value_result_simbol"
                 android:gravity="end"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                android:layout_gravity="center"
+                style="@style/Theme.SmartCalculator.Common.Subtitle2"/>
 
         </LinearLayout>
 
@@ -195,6 +186,8 @@
         android:id="@+id/cvAnguloA"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cvHipotenusa"
@@ -206,27 +199,22 @@
             android:padding="@dimen/common_padding_default"
             android:orientation="horizontal">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/prefix_value_angle_a"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                style="@style/Theme.SmartCalculator.Common.Subtitle1"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvAngleA"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/hint_value_result_simbol"
                 android:gravity="end"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                android:layout_gravity="center"
+                style="@style/Theme.SmartCalculator.Common.Subtitle2"/>
 
         </LinearLayout>
 
@@ -236,6 +224,8 @@
         android:id="@+id/cvAngleB"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cvAnguloA"
@@ -247,27 +237,22 @@
             android:padding="@dimen/common_padding_default"
             android:orientation="horizontal">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/prefix_value_angle_b"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                style="@style/Theme.SmartCalculator.Common.Subtitle1"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvAngleB"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/hint_value_result_simbol"
                 android:gravity="end"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                android:layout_gravity="center"
+                style="@style/Theme.SmartCalculator.Common.Subtitle2"/>
 
         </LinearLayout>
 

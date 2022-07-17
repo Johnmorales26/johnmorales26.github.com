@@ -1,6 +1,6 @@
 package com.johndev.tmdb_guide.Interfaces
 
-import com.johndev.tmdb_guide.SearchData.SearchCompany.CompanySearch
+import com.johndev.tmdb_guide.common.entities.CompanySearch
 
 interface OnPressedCompany {
 

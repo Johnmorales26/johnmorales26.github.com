@@ -17,7 +17,7 @@ import com.johndev.smartcalculator.usecases.base.FiguresAndBodies
 import com.johndev.smartcalculator.usecases.base.Formulas
 import com.johndev.smartcalculator.usecases.base.Functionalities
 import com.johndev.smartcalculator.usecases.base.SecondaryMenus
-import com.johndev.smartcalculator.usecases.common.OperationsSecondaryActivity
+import com.johndev.smartcalculator.usecases.principalViews.OperationsSecondaryActivity
 
 class ContainerFractionsFragment : Fragment(), OnClickListener {
 
@@ -69,12 +69,12 @@ class ContainerFractionsFragment : Fragment(), OnClickListener {
         val data = mutableListOf(
             SecondaryMenus(
                 0,
-                R.drawable.simplify_fractions,
+                R.drawable.ic_simplificator_fraction,
                 getString(R.string.menu_options_fraction_simplifier)
             ),
             SecondaryMenus(
                 1,
-                R.drawable.decimal_to_fraction,
+                R.drawable.ic_decimal_fraction,
                 getString(R.string.menu_options_decimal_to_fraction)
             )
         )

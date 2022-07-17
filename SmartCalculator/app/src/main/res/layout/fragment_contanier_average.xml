@@ -12,6 +12,8 @@
         android:id="@+id/cvArithmetic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,27 +25,22 @@
             android:padding="@dimen/common_padding_default"
             android:orientation="horizontal">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/hint_value_arithmetic"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                style="@style/Theme.SmartCalculator.Common.Subtitle1"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvArithmeticResult"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/hint_value_result_simbol"
                 android:gravity="end"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                android:layout_gravity="center"
+                style="@style/Theme.SmartCalculator.Common.Subtitle2"/>
 
         </LinearLayout>
 
@@ -53,6 +50,8 @@
         android:id="@+id/cvGeometric"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
         app:layout_constraintTop_toBottomOf="@id/cvArithmetic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,27 +63,22 @@
             android:padding="@dimen/common_padding_default"
             android:orientation="horizontal">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/hint_value_geometric"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                style="@style/Theme.SmartCalculator.Common.Subtitle1"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvGeometricResult"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/hint_value_result_simbol"
                 android:gravity="end"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                android:layout_gravity="center"
+                style="@style/Theme.SmartCalculator.Common.Subtitle2"/>
 
         </LinearLayout>
 
@@ -94,6 +88,8 @@
         android:id="@+id/cvHarmonic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
         app:layout_constraintTop_toBottomOf="@id/cvGeometric"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -105,33 +101,28 @@
             android:padding="@dimen/common_padding_default"
             android:orientation="horizontal">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/hint_value_harmonic"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                style="@style/Theme.SmartCalculator.Common.Subtitle1"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvHarmonicResult"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/hint_value_result_simbol"
                 android:gravity="end"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                android:layout_gravity="center"
+                style="@style/Theme.SmartCalculator.Common.Subtitle2"/>
 
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvResultText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -139,14 +130,14 @@
         android:padding="@dimen/common_padding_default"
         app:layout_constraintTop_toBottomOf="@id/cvHarmonic"
         app:layout_constraintStart_toStartOf="parent"
-        style="@style/TextAppearance.MaterialComponents.Subtitle1"/>
+        style="@style/Theme.SmartCalculator.Common.HeadLine5"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilVariableA"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:paddingHorizontal="@dimen/common_padding_min"
-        android:hint="@string/prefix_value_one"
+        android:hint="@string/hint_value_a"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tilVariableB"
         app:layout_constraintTop_toBottomOf="@id/tvResultText"
@@ -163,7 +154,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:paddingHorizontal="@dimen/common_padding_min"
-        android:hint="@string/prefix_value_two"
+        android:hint="@string/hint_value_b"
         app:layout_constraintStart_toEndOf="@id/tilVariableA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvResultText"

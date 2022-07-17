@@ -29,9 +29,9 @@
             android:layout_height="wrap_content"
             android:text="Season 1"
             android:padding="@dimen/common_padding_min"
-            android:textAppearance="?attr/textAppearanceHeadline6"
             android:layout_gravity="center"
-            android:gravity="center"/>
+            android:gravity="center"
+            style="@style/TextAppearance.TMDB.Headline6"/>
 
     </LinearLayout>
 

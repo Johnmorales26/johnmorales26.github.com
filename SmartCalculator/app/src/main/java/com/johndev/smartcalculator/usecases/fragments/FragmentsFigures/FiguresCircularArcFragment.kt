@@ -26,7 +26,7 @@ class FiguresCircularArcFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val figures = FunctionsGeometryFigures()
+        val figures = FunctionsGeometryFigures(requireContext())
         binding.btnResult.setOnClickListener{
             if (validFields()){
                 val angleA = binding.etAngleA.text.toString().toDouble()

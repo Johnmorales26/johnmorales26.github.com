@@ -8,19 +8,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.johndev.smartcalculator.R
-import com.johndev.smartcalculator.databinding.FragmentMainAlgebraBinding
 import com.johndev.smartcalculator.databinding.FragmentMainFiguresBinding
 import com.johndev.smartcalculator.usecases.Adapters.FiguresAndBodiesAdapter
-import com.johndev.smartcalculator.usecases.Adapters.FunctionalitiesAdapter
 import com.johndev.smartcalculator.usecases.Interfaces.OnClickListener
 import com.johndev.smartcalculator.usecases.base.FiguresAndBodies
 import com.johndev.smartcalculator.usecases.base.Formulas
 import com.johndev.smartcalculator.usecases.base.Functionalities
 import com.johndev.smartcalculator.usecases.base.SecondaryMenus
-import com.johndev.smartcalculator.usecases.common.OperationsActivity
+import com.johndev.smartcalculator.usecases.principalViews.OperationsActivity
 
 class MainFiguresFragment : Fragment(), OnClickListener {
 
@@ -71,17 +68,17 @@ class MainFiguresFragment : Fragment(), OnClickListener {
 
     private fun data(): MutableList<FiguresAndBodies> {
         val data = mutableListOf(
-            FiguresAndBodies(0, getString(R.string.figures_content_triangle), R.drawable.triangulo_equilatero),
-            FiguresAndBodies(1, getString(R.string.figures_content_triangle_rectangle), R.drawable.triangulo_isoseles),
-            FiguresAndBodies(2, getString(R.string.figures_content_square), R.drawable.square),
-            FiguresAndBodies(3, getString(R.string.figures_content_rectangle), R.drawable.rectangulo),
-            FiguresAndBodies(4, getString(R.string.figures_content_trapezoid), R.drawable.trapecio),
-            FiguresAndBodies(5, getString(R.string.figures_content_rhomb), R.drawable.rombo),
-            FiguresAndBodies(6, getString(R.string.figures_content_pentagon), R.drawable.pentagono),
-            FiguresAndBodies(7, getString(R.string.figures_content_hexagon), R.drawable.hexagono),
-            FiguresAndBodies(8, getString(R.string.figures_content_circle), R.drawable.circulo),
-            FiguresAndBodies(9, getString(R.string.figures_content_circular_arc), R.drawable.arco_circular),
-            FiguresAndBodies(10, getString(R.string.figures_content_oval), R.drawable.ovalo)
+            FiguresAndBodies(0, getString(R.string.figures_content_triangle), R.drawable.ic_triangle),
+            FiguresAndBodies(1, getString(R.string.figures_content_triangle_rectangle), R.drawable.ic_triangle_rectangle),
+            FiguresAndBodies(2, getString(R.string.figures_content_square), R.drawable.ic_square),
+            FiguresAndBodies(3, getString(R.string.figures_content_rectangle), R.drawable.ic_rectangle),
+            FiguresAndBodies(4, getString(R.string.figures_content_trapezoid), R.drawable.ic_trapezoid),
+            FiguresAndBodies(5, getString(R.string.figures_content_rhomb), R.drawable.ic_rhomb),
+            FiguresAndBodies(6, getString(R.string.figures_content_pentagon), R.drawable.ic_pentagon),
+            FiguresAndBodies(7, getString(R.string.figures_content_hexagon), R.drawable.ic_hexagon),
+            FiguresAndBodies(8, getString(R.string.figures_content_circle), R.drawable.ic_circle),
+            FiguresAndBodies(9, getString(R.string.figures_content_circular_arc), R.drawable.ic_circle_arch),
+            FiguresAndBodies(10, getString(R.string.figures_content_oval), R.drawable.ic_oval)
         )
         return data
     }

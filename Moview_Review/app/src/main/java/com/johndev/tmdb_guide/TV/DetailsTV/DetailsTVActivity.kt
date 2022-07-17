@@ -10,12 +10,12 @@ import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
-import com.johndev.tmdb_guide.Constans
-import com.johndev.tmdb_guide.DetailsMovie.CompaniesProductionAdapter
-import com.johndev.tmdb_guide.DetailsMovie.GenresMovieAdapter
+import com.johndev.tmdb_guide.common.utils.Constans
+import com.johndev.tmdb_guide.common.adapters.CompaniesProductionAdapter
+import com.johndev.tmdb_guide.common.adapters.GenresMovieAdapter
 import com.johndev.tmdb_guide.Interfaces.OnPressedSeason
-import com.johndev.tmdb_guide.Movies.Genre
-import com.johndev.tmdb_guide.Movies.ProductionCompanies
+import com.johndev.tmdb_guide.common.entities.Genre
+import com.johndev.tmdb_guide.common.entities.ProductionCompanies
 import com.johndev.tmdb_guide.R
 import com.johndev.tmdb_guide.databinding.ActivityDetailsTvactivityBinding
 
@@ -32,6 +32,7 @@ class DetailsTVActivity : AppCompatActivity(), OnPressedSeason {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailsTvactivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.topAppBar.setNavigationOnClickListener { finish() }
         val idTV = intent.getStringExtra(getString(R.string.key_tv_passed))
         val url = "tv/${idTV}"
         getDetailsTV(url)
@@ -53,6 +54,7 @@ class DetailsTVActivity : AppCompatActivity(), OnPressedSeason {
     private fun updateUI(tvModel: TvDetails) {
         val imagePosterPath = "${Constans.IMAGES_URL}${tvModel.poster_path}"
         val imageBackdropPath = "${Constans.IMAGES_URL}${tvModel.backdrop_path}"
+        binding.topAppBar.title = tvModel.name.toString().trim()
         //  Upadte Images
         binding.imgBackdrop.load(imageBackdropPath) {
             crossfade(true)
@@ -71,7 +73,7 @@ class DetailsTVActivity : AppCompatActivity(), OnPressedSeason {
         //  Genres
         setupRecyclerViewGenres(tvModel.genres)
         //  Companies
-        setupRecyclerViewCompanies(tvModel.production_companies)
+        setupRecyclerViewCompanies(tvModel.production_companies as MutableList<ProductionCompanies>)
         //  Overview
         binding.tvOverview.text = tvModel.overview.toString().trim()
         //  Seasons
@@ -95,7 +97,7 @@ class DetailsTVActivity : AppCompatActivity(), OnPressedSeason {
         }
     }
 
-    private fun setupRecyclerViewCompanies(companies: List<ProductionCompanies?>?) {
+    private fun setupRecyclerViewCompanies(companies: MutableList<ProductionCompanies>) {
         binding.let {
             adapterCompanies = CompaniesProductionAdapter(companies)
             it.rvCompanies.apply {

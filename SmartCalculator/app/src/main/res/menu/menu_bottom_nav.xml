@@ -10,18 +10,19 @@
         android:title="@string/menu_bottom_nav_formulas"
         android:icon="@drawable/ic_functions"/>
 
-    <!--<item
-        android:id="@+id/action_calculator"
-        android:title="@string/menu_bottom_nav_calculator"
-        android:icon="@drawable/ic_calculate"/>-->
-
-    <item
-        android:id="@+id/action_history_operations"
-        android:title="@string/menu_bottom_nav_history_operations"
-        android:icon="@drawable/ic_history"/>
-
     <item
         android:id="@+id/action_developer"
         android:title="@string/menu_bottom_nav_about_developer"
         android:icon="@drawable/ic_person"/>
+
+    <item
+        android:id="@+id/action_history_updates"
+        android:title="@string/menu_bottom_nav_history_updates"
+        android:icon="@drawable/ic_system_update"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/menu_bottom_nav_settings"
+        android:icon="@drawable/ic_settings"/>
+
 </menu>

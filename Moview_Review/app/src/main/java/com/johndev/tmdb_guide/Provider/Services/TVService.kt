@@ -7,11 +7,11 @@ import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
-import com.johndev.tmdb_guide.Constans.API_KEY
-import com.johndev.tmdb_guide.Constans.API_KEY_INDEX_SEARCH
-import com.johndev.tmdb_guide.Constans.API_LANGUAJE
-import com.johndev.tmdb_guide.Constans.API_PAGE
-import com.johndev.tmdb_guide.Constans.URL_BASE
+import com.johndev.tmdb_guide.common.utils.Constans.API_KEY
+import com.johndev.tmdb_guide.common.utils.Constans.API_KEY_INDEX_SEARCH
+import com.johndev.tmdb_guide.common.utils.Constans.API_LANGUAJE
+import com.johndev.tmdb_guide.common.utils.Constans.API_PAGE
+import com.johndev.tmdb_guide.common.utils.Constans.URL_BASE
 import com.johndev.tmdb_guide.TV.CardTVAdapter
 import com.johndev.tmdb_guide.TV.PagesTV
 import kotlinx.coroutines.Dispatchers

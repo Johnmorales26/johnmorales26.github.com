@@ -12,6 +12,9 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
+        android:layout_marginVertical="@dimen/common_padding_min"
         style="@style/Theme.SmartCalculator.CardView.Formulas">
 
         <LinearLayout
@@ -19,13 +22,13 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvFormulaArea"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/formula_natural_logarithm"
                 android:padding="@dimen/common_padding_min"
-                style="@style/Theme.SmartCalculator.HeadLine6"/>
+                style="@style/Theme.SmartCalculator.Common.HeadLine5"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvFormulas"

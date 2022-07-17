@@ -7,14 +7,14 @@ import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
-import com.johndev.tmdb_guide.Actors.ActorsAdapter
-import com.johndev.tmdb_guide.Actors.PageActors
-import com.johndev.tmdb_guide.Constans.API_KEY
-import com.johndev.tmdb_guide.Constans.API_KEY_INDEX_SEARCH
-import com.johndev.tmdb_guide.Constans.API_LANGUAJE
-import com.johndev.tmdb_guide.Constans.API_PAGE
-import com.johndev.tmdb_guide.Constans.API_PERSON
-import com.johndev.tmdb_guide.Constans.URL_BASE
+import com.johndev.tmdb_guide.common.adapters.ActorsAdapter
+import com.johndev.tmdb_guide.common.entities.PageActors
+import com.johndev.tmdb_guide.common.utils.Constans.API_KEY
+import com.johndev.tmdb_guide.common.utils.Constans.API_KEY_INDEX_SEARCH
+import com.johndev.tmdb_guide.common.utils.Constans.API_LANGUAJE
+import com.johndev.tmdb_guide.common.utils.Constans.API_PAGE
+import com.johndev.tmdb_guide.common.utils.Constans.API_PERSON
+import com.johndev.tmdb_guide.common.utils.Constans.URL_BASE
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

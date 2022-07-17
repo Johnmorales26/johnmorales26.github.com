@@ -22,7 +22,8 @@
             android:layout_weight="40"
             android:layout_gravity="center"
             android:gravity="center"
-            tools:text="Cantonese"/>
+            tools:text="Cantonese"
+            style="@style/TextAppearance.TMDB.Subtitle1"/>
 
         <View
             android:layout_width="match_parent"
@@ -38,7 +39,8 @@
             android:layout_weight="40"
             android:layout_gravity="center"
             android:gravity="center"
-            tools:text="广州话 / 廣州話"/>
+            tools:text="广州话 / 廣州話"
+            style="@style/TextAppearance.TMDB.Subtitle1"/>
 
     </LinearLayout>
 

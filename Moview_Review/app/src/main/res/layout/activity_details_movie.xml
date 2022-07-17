@@ -1,239 +1,277 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView
+<androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    tools:context=".DetailsMovie.DetailsMovieActivity">
+    style="@style/BackgroundActivities"
+    tools:context=".detailsMovieModel.view.DetailsMovieActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/clContainer"
-            android:layout_width="match_parent"
-            android:layout_height="600dp"
-            android:orientation="vertical"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/imgBackdrop"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:contentDescription="@null"/>
-
-            <ImageView
-                android:id="@+id/imgBackdropVisible"
-                android:layout_width="200dp"
-                android:layout_height="250dp"
-                android:contentDescription="@null"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/tvTitle"/>
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/tvTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:textAppearance="?attr/textAppearanceHeadline4"
-                android:textColor="@color/primaryTextColor"
-                android:textStyle="bold"
-                android:gravity="center"
-                tools:text="Rapido Y Furioso"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imgBackdropVisible"
-                app:layout_constraintBottom_toTopOf="@id/tvTagline"/>
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/tvTagline"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:textAppearance="?attr/textAppearanceHeadline6"
-                android:textColor="@color/primaryTextColor"
-                android:textStyle="bold"
-                android:gravity="center"
-                tools:text="Rapido Y Furioso"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvTitle"
-                app:layout_constraintBottom_toTopOf="@id/rvGenres"/>
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvGenres"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/common_padding_min"
-                tools:listitem="@layout/item_genres_movie"
-                tools:visibility="gone"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvTitle"
-                app:layout_constraintBottom_toBottomOf="parent"/>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <LinearLayout
-            android:id="@+id/cvRating"
+        <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/clContainer"
-            android:baselineAligned="false">
+            android:theme="@style/Theme.SmartCalculator.AppBarOverlay">
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="50"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="horizontal">
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:navigationIcon="@drawable/ic_arrow_back"
+                app:popupTheme="@style/Theme.TMDB.AppBar"/>
 
-                <ImageView
-                    android:id="@+id/imgRate1"
-                    android:layout_width="20dp"
-                    android:layout_margin="@dimen/common_padding_nano"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:src="@drawable/ic_star" />
+        </com.google.android.material.appbar.AppBarLayout>
 
-                <ImageView
-                    android:id="@+id/imgRate2"
-                    android:layout_width="20dp"
-                    android:layout_margin="@dimen/common_padding_nano"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:src="@drawable/ic_star" />
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/containerFunctions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-                <ImageView
-                    android:id="@+id/imgRate3"
-                    android:layout_width="20dp"
-                    android:layout_margin="@dimen/common_padding_nano"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:src="@drawable/ic_star" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/imgRate4"
-                    android:layout_width="20dp"
-                    android:layout_margin="@dimen/common_padding_nano"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:src="@drawable/ic_star" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="parent">
 
-                <ImageView
-                    android:id="@+id/imgRate5"
-                    android:layout_width="20dp"
-                    android:layout_margin="@dimen/common_padding_nano"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:src="@drawable/ic_star" />
+                    <ImageView
+                        android:id="@+id/imgBackdrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:contentDescription="@null"/>
 
-            </LinearLayout>
+                    <ImageView
+                        android:id="@+id/imgBackdropVisible"
+                        android:transitionName="@string/tn_imgMovie"
+                        android:layout_width="200dp"
+                        android:layout_height="250dp"
+                        android:contentDescription="@null"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/tvTitle"/>
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="50"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="horizontal">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvTitle"
+                        android:transitionName="@string/tn_tvTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textAppearance="?attr/textAppearanceHeadline4"
+                        android:textColor="@color/primaryTextColor"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        tools:text="Rapido Y Furioso"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imgBackdropVisible"
+                        app:layout_constraintBottom_toTopOf="@id/tvTagline"/>
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:src="@drawable/ic_star" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvTagline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textColor="@color/primaryTextColor"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        tools:text="Rapido Y Furioso"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                        app:layout_constraintBottom_toTopOf="@id/rvGenres"/>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvGenres"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/common_padding_min"
+                        tools:listitem="@layout/item_genres_movie"
+                        tools:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:paddingHorizontal="@dimen/common_padding_default"
+                    app:layout_constraintTop_toBottomOf="@+id/clContainer">
+
+                    <LinearLayout
+                        android:id="@+id/cvRating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imgRate1"
+                                android:layout_width="20dp"
+                                android:layout_margin="@dimen/common_padding_nano"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:src="@drawable/ic_star" />
+
+                            <ImageView
+                                android:id="@+id/imgRate2"
+                                android:layout_width="20dp"
+                                android:layout_margin="@dimen/common_padding_nano"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:src="@drawable/ic_star" />
+
+                            <ImageView
+                                android:id="@+id/imgRate3"
+                                android:layout_width="20dp"
+                                android:layout_margin="@dimen/common_padding_nano"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:src="@drawable/ic_star" />
+
+                            <ImageView
+                                android:id="@+id/imgRate4"
+                                android:layout_width="20dp"
+                                android:layout_margin="@dimen/common_padding_nano"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:src="@drawable/ic_star" />
+
+                            <ImageView
+                                android:id="@+id/imgRate5"
+                                android:layout_width="20dp"
+                                android:layout_margin="@dimen/common_padding_nano"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:src="@drawable/ic_star" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:src="@drawable/ic_star" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/tvVoteAverage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textAppearance="?attr/textAppearanceCaption"
+                                    tools:text="8.2"/>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/tvVoteCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textAppearance="?attr/textAppearanceCaption"
+                                    tools:text="2300"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
 
                     <com.google.android.material.textview.MaterialTextView
-                        android:id="@+id/tvVoteAverage"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tvOverview"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:textAppearance="?attr/textAppearanceCaption"
-                        tools:text="8.2"/>
+                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceSubtitle2"
+                        android:padding="@dimen/common_padding_min"
+                        tools:text="@string/app_name"
+                        app:layout_constraintTop_toBottomOf="@+id/cvRating"/>
 
                     <com.google.android.material.textview.MaterialTextView
-                        android:id="@+id/tvVoteCount"
+                        android:id="@+id/tvLanguajesTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_translated_languajes"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        app:layout_constraintTop_toBottomOf="@+id/tvOverview"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvLanguajes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:textAppearance="?attr/textAppearanceCaption"
-                        tools:text="2300"/>
+                        tools:visibility="gone"
+                        tools:listitem="@layout/item_spoken_languajes"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvLanguajesTitle"/>
 
-                </LinearLayout>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvCompaniesTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_production_companies"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        app:layout_constraintTop_toBottomOf="@+id/rvLanguajes"/>
 
-            </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvCompanies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:visibility="gone"
+                        tools:listitem="@layout/item_companies_production"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvCompaniesTitle"/>
 
-        </LinearLayout>
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/tvOverview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textAppearance="?attr/textAppearanceSubtitle2"
-            android:padding="@dimen/common_padding_min"
-            tools:text="@string/app_name"
-            app:layout_constraintTop_toBottomOf="@+id/cvRating"/>
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/tvLanguajesTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/label_translated_languajes"
-            android:textAppearance="?attr/textAppearanceHeadline6"
-            app:layout_constraintTop_toBottomOf="@+id/tvOverview"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvLanguajes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:visibility="gone"
-            tools:listitem="@layout/item_spoken_languajes"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvLanguajesTitle"/>
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/tvCompaniesTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/label_production_companies"
-            android:textAppearance="?attr/textAppearanceHeadline6"
-            app:layout_constraintTop_toBottomOf="@+id/rvLanguajes"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvCompanies"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:visibility="gone"
-            tools:listitem="@layout/item_companies_production"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvCompaniesTitle"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.core.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

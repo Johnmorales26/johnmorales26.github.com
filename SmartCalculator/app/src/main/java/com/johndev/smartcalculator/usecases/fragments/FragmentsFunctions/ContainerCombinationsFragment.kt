@@ -38,7 +38,7 @@ class ContainerCombinationsFragment : Fragment() {
             }
         }
 
-        val algebra = FunctionsAlgebra()
+        val algebra = FunctionsAlgebra(requireContext())
         binding.btnResult.setOnClickListener {
             val optionOrg = binding.tvOptionOrdered.text
             val optionRep = binding.tvOptionRepeatable.text

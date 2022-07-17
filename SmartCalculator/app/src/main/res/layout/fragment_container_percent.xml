@@ -8,7 +8,7 @@
     android:padding="@dimen/common_padding_default"
     tools:context=".usecases.fragments.FragmentsFunctions.ContainerPercentFragment">
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvFormula"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        style="@style/TextAppearance.MaterialComponents.Subtitle2"/>
+        style="@style/Theme.SmartCalculator.Common.HeadLine5"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnMenuCalculate"
@@ -80,6 +80,8 @@
             android:visibility="visible"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            app:strokeColor="@color/secondaryColor"
+            app:strokeWidth="@dimen/border_cardview"
             app:layout_constraintTop_toBottomOf="@+id/tilVariableA"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/cvViewOneRight"
@@ -91,27 +93,22 @@
                 android:padding="@dimen/common_padding_default"
                 android:orientation="horizontal">
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="25"
                     android:text="@string/prefix_value_x"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    style="@style/TextAppearance.MaterialComponents.Body1"/>
+                    style="@style/Theme.SmartCalculator.Common.Subtitle1"/>
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tvResult"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="75"
                     android:gravity="end"
                     android:text="@string/hint_value_result_simbol"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    style="@style/TextAppearance.MaterialComponents.Body1"/>
+                    android:layout_gravity="center"
+                    style="@style/Theme.SmartCalculator.Common.Subtitle2"/>
 
             </LinearLayout>
 
@@ -122,6 +119,8 @@
             android:visibility="visible"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            app:strokeColor="@color/secondaryColor"
+            app:strokeWidth="@dimen/border_cardview"
             app:layout_constraintTop_toBottomOf="@+id/tilVariableA"
             app:layout_constraintStart_toEndOf="@id/cvViewOneLeft"
             app:layout_constraintEnd_toEndOf="parent"
@@ -133,27 +132,22 @@
                 android:padding="@dimen/common_padding_default"
                 android:orientation="horizontal">
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="25"
                     android:text="@string/prefix_value_percent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    style="@style/TextAppearance.MaterialComponents.Body1"/>
+                    style="@style/Theme.SmartCalculator.Common.Subtitle1"/>
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tvPercent"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="75"
                     android:gravity="end"
                     android:text="@string/hint_value_result_simbol"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    style="@style/TextAppearance.MaterialComponents.Body1"/>
+                    android:layout_gravity="center"
+                    style="@style/Theme.SmartCalculator.Common.Subtitle2"/>
 
             </LinearLayout>
 
@@ -205,7 +199,6 @@
             android:layout_width="wrap_content"
             android:layout_height="1dp"
             android:layout_marginTop="@dimen/common_padding_min"
-            android:backgroundTint="@color/colorBackground"
             app:layout_constraintTop_toBottomOf="@id/cvViewOneRight"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>

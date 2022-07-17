@@ -29,7 +29,7 @@ class BodiesCutConeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val bodies = FunctionsGeometryBodies()
+        val bodies = FunctionsGeometryBodies(requireContext())
         binding.btnResult.setOnClickListener{
             if (validFields()){
                 val radioA = binding.etRadioA.text.toString().toDouble()

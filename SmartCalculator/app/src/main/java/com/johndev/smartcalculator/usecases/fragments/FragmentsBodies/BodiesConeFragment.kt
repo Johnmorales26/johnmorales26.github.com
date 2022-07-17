@@ -5,12 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.johndev.smartcalculator.MainActivity.Companion.sharedPreferences
 import com.johndev.smartcalculator.R
 import com.johndev.smartcalculator.databinding.FragmentBodiesConeBinding
 import com.johndev.smartcalculator.provider.services.DatabaseOperationHistory
 import com.johndev.smartcalculator.usecases.base.OperationHistory
 import com.johndev.smartcalculator.usecases.common.AddHistory
 import com.johndev.smartcalculator.usecases.common.FunctionsGeometryBodies
+import com.johndev.smartcalculator.usecases.common.ViewDecimals
 
 class BodiesConeFragment : Fragment() {
 
@@ -29,14 +31,17 @@ class BodiesConeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val bodies = FunctionsGeometryBodies()
+        val bodies = FunctionsGeometryBodies(requireContext())
         binding.btnResult.setOnClickListener{
             if (validFields()){
+                val viewDecimals = ViewDecimals(requireContext())
                 val radio = binding.etRadio.text.toString().toDouble()
                 val height = binding.etHeight.text.toString().toDouble()
-                val area = bodies.totalAreaCone(radio, height)
-                val lateralArea = bodies.lateralAreaCone(radio, height)
-                val volume = bodies.volumeCone(radio, height)
+
+                val area = viewDecimals.selectedDecimals(bodies.totalAreaCone(radio, height).toDouble())
+                val lateralArea = viewDecimals.selectedDecimals(bodies.lateralAreaCone(radio, height).toDouble())
+                val volume = viewDecimals.selectedDecimals(bodies.volumeCone(radio, height).toDouble())
+
                 with(binding){
                     tvArea.text = area
                     tvLateralArea.text = lateralArea

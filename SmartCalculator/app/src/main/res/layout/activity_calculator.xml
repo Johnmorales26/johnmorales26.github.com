@@ -3,235 +3,448 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/common_padding_min"
-    tools:context=".usecases.common.CalculatorActivity">
+    style="@style/BackgroundScreens"
+    tools:context=".usecases.principalViews.CalculatorActivity">
 
     <TextView
-        android:id="@+id/tvOperation"
-        android:layout_height="wrap_content"
-        android:layout_width="0dp"
-        tools:text="5x2"
+        android:id="@+id/idTVSecondary"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:maxLines="1"
+        tools:ignore="RtlCompat"
+        tools:text="4x2"
         app:layout_constraintTop_toTopOf="parent"
-        style="@style/MyTextViewHeadLine6"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintBottom_toTopOf="@id/idTVprimary"
+        style="@style/MyTextViewHeadLine3"/>
 
     <TextView
-        android:id="@+id/tvResult"
+        android:id="@+id/idTVprimary"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:maxLines="1"
+        tools:text="8"
+        app:layout_constraintTop_toBottomOf="@+id/idTVSecondary"
+        app:layout_constraintBottom_toTopOf="@id/cvContainer"
+        style="@style/MyTextViewHeadLine6"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvContainer"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:gravity="center_vertical|end"
-        tools:text="10.0"
-        app:layout_constraintTop_toBottomOf="@id/tvOperation"
-        app:layout_constraintBottom_toTopOf="@id/llTop"
-        style="@style/MyTextViewHeadLine3"
-        tools:ignore="MissingConstraints"/>
+        app:cardCornerRadius="4dp"
+        app:cardElevation="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/idTVprimary">
 
-    <LinearLayout
-        android:id="@+id/llBottom"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        style="@style/MyLinealLayout"
-        tools:ignore="MissingConstraints"
-        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:id="@+id/llContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:padding="@dimen/common_padding_min"
+            style="@style/MyLLButtons">
 
-        <Button
-            android:id="@+id/btnPoint"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25"
-            android:text="@string/calc_btn_point"
-            style="@style/MyOperationButton"
-            tools:ignore="MissingConstraints"/>
-        <Button
-            android:id="@+id/btnZero"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25"
-            android:text="@string/calc_btn_zero"
-            style="@style/MyNumberButtons"
-            tools:ignore="MissingConstraints"/>
-        <Button
-            android:id="@+id/btnResult"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="50"
-            android:text="@string/calc_btn_result"
-            style="@style/MyOperationButton"
-            tools:ignore="MissingConstraints"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="7">
 
-    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
-    <LinearLayout
-        android:id="@+id/llPreBottom"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        style="@style/MyLinealLayout"
-        tools:ignore="MissingConstraints"
-        app:layout_constraintBottom_toTopOf="@id/llBottom">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
 
-        <Button
-            android:id="@+id/btnOne"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25"
-            android:text="@string/calc_btn_One"
-            style="@style/MyNumberButtons"
-            tools:ignore="MissingConstraints"/>
-        <Button
-            android:id="@+id/btnTwo"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25"
-            android:text="@string/calc_btn_Two"
-            style="@style/MyNumberButtons"
-            tools:ignore="MissingConstraints"/>
-        <Button
-            android:id="@+id/btnThree"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25"
-            android:text="@string/calc_btn_three"
-            style="@style/MyNumberButtons"
-            tools:ignore="MissingConstraints"/>
-        <Button
-            android:id="@+id/btnSum"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25"
-            android:layout_marginEnd="@dimen/common_padding_min"
-            android:onClick="onClickButton"
-            android:text="@string/calc_btn_sum"
-            android:textSize="@dimen/calc_btn_text_size"
-            android:layout_marginStart="@dimen/common_padding_min"
-            android:backgroundTint="@color/colorPrimaryDark"
-            android:textColor="@color/colorSurface"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/bac"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_clear"
+                            style="@style/MyOperationButton"/>
 
-    </LinearLayout>
+                        <ImageButton
+                            android:id="@+id/bc"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:padding="@dimen/common_padding_min"
+                            android:src="@drawable/ic_backspace"
+                            style="@style/MyOperationButton"/>
 
-    <LinearLayout
-        android:id="@+id/llMiddle"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        style="@style/MyLinealLayout"
-        tools:ignore="MissingConstraints"
-        app:layout_constraintBottom_toTopOf="@id/llPreBottom">
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/bbrac1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_opening_parenthesis"
+                            style="@style/MyOperationButton"/>
 
-        <Button
-            android:id="@+id/btnFour"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25"
-            android:text="@string/calc_btn_four"
-            style="@style/MyNumberButtons"
-            tools:ignore="MissingConstraints"/>
-        <Button
-            android:id="@+id/btnFive"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25"
-            android:text="@string/calc_btn_five"
-            style="@style/MyNumberButtons"
-            tools:ignore="MissingConstraints"/>
-        <Button
-            android:id="@+id/btnSix"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25"
-            android:text="@string/calc_btn_six"
-            style="@style/MyNumberButtons"
-            tools:ignore="MissingConstraints"/>
-        <Button
-            android:id="@+id/btnMin"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25"
-            android:text="@string/calc_btn_min"
-            style="@style/MyOperationButton"
-            tools:ignore="MissingConstraints"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/bbrac2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_closing_parentheses"
+                            style="@style/MyOperationButton"/>
 
-    </LinearLayout>
+                    </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/llPreTop"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        style="@style/MyLinealLayout"
-        tools:ignore="MissingConstraints"
-        app:layout_constraintBottom_toTopOf="@id/llMiddle">
+                </LinearLayout>
 
-        <Button
-            android:id="@+id/btnSeven"
-            android:layout_width="0dp"
-            android:layout_weight="25"
-            android:layout_height="match_parent"
-            android:text="@string/calc_btn_seven"
-            style="@style/MyNumberButtons"
-            tools:ignore="MissingConstraints"/>
-        <Button
-            android:id="@+id/btnEight"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25"
-            android:text="@string/calc_btn_eight"
-            style="@style/MyNumberButtons"
-            tools:ignore="MissingConstraints"/>
-        <Button
-            android:id="@+id/btnNine"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25"
-            android:text="@string/calc_btn_nine"
-            style="@style/MyNumberButtons"
-            tools:ignore="MissingConstraints"/>
-        <Button
-            android:id="@+id/btnMul"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25"
-            android:text="@string/calc_btn_mul"
-            style="@style/MyOperationButton"
-            tools:ignore="MissingConstraints"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
-    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
 
-    <LinearLayout
-        android:id="@+id/llTop"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        style="@style/MyLinealLayout"
-        tools:ignore="MissingConstraints"
-        app:layout_constraintBottom_toTopOf="@id/llPreTop">
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/bsin"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_sin"
+                            style="@style/MyOperationButton"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/bcos"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_cos"
+                            style="@style/MyOperationButton"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btan"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_tan"
+                            style="@style/MyOperationButton"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/blog"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_log"
+                            style="@style/MyOperationButton"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/bln"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_ln"
+                            style="@style/MyOperationButton"/>
 
 
-        <Button
-            android:id="@+id/btnClear"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="50"
-            style="@style/MyDeleteButton"
-            tools:ignore="MissingConstraints"/>
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnDelete"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25"
-            android:onClick="onClickButton"
-            android:layout_marginStart="@dimen/common_padding_min"
-            app:icon="@drawable/ic_backspace"
-            app:iconGravity="textStart"
-            app:iconPadding="@dimen/common_padding_min"/>
-        <Button
-            android:id="@+id/btnDiv"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25"
-            android:text="@string/calc_btn_div"
-            style="@style/MyOperationButton"
-            tools:ignore="MissingConstraints"/>
+                    </LinearLayout>
 
-    </LinearLayout>
+                </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/bfact"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_x_admiration"
+                            style="@style/MyOperationButton"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/bsquare"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_x_square"
+                            style="@style/MyOperationButton"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/bsqrt"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_square"
+                            style="@style/MyOperationButton"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/binv"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_1_x"
+                            style="@style/MyOperationButton"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/bdiv"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_div"
+                            style="@style/MyOperationButton"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/b7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_seven"
+                            style="@style/MyNumberButtons"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/b8"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_eight"
+                            style="@style/MyNumberButtons"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/b9"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_nine"
+                            style="@style/MyNumberButtons"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/bmul"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_mul"
+                            style="@style/MyOperationButton"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/b4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_four"
+                            style="@style/MyNumberButtons"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/b5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_five"
+                            style="@style/MyNumberButtons"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/b6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_six"
+                            style="@style/MyNumberButtons"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/bminus"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_min"
+                            style="@style/MyOperationButton"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/b1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_One"
+                            style="@style/MyNumberButtons"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/b2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_Two"
+                            style="@style/MyNumberButtons"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/b3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_three"
+                            style="@style/MyNumberButtons"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/bplus"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_sum"
+                            style="@style/MyOperationButton"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/bpi"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:padding="6dp"
+                            android:text="π"
+                            style="@style/MyOperationButton"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/b0"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_zero"
+                            style="@style/MyOperationButton"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/bdot"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_point"
+                            style="@style/MyOperationButton"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/bequal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:text="@string/calc_btn_result"
+                            style="@style/MyOperationButton"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

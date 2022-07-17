@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/fm_label_algebra"
@@ -31,7 +31,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    style="@style/Theme.SmartCalculator.HeadLine5"/>
+                    style="@style/Theme.SmartCalculator.MainPages.Title"/>
 
                 <ImageButton
                     android:id="@+id/btnAlgebra"
@@ -39,7 +39,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/common_padding_min"
                     android:src="@drawable/ic_arrow_down"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/primaryColor"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
@@ -59,14 +59,13 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorFormulas"
             style="@style/Theme.SmartCalculator.CardView">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/functions_content_forms"
@@ -74,7 +73,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    style="@style/Theme.SmartCalculator.HeadLine5"/>
+                    style="@style/Theme.SmartCalculator.MainPages.Title"/>
 
                 <ImageButton
                         android:id="@+id/btnForms"
@@ -82,7 +81,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/common_padding_min"
                     android:src="@drawable/ic_arrow_down"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/primaryColor"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
@@ -102,14 +101,13 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorFormulas"
             style="@style/Theme.SmartCalculator.CardView">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/functions_content_bodies"
@@ -117,7 +115,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    style="@style/Theme.SmartCalculator.HeadLine5"/>
+                    style="@style/Theme.SmartCalculator.MainPages.Title"/>
 
                 <ImageButton
                     android:id="@+id/btnBodies"
@@ -125,7 +123,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/common_padding_min"
                     android:src="@drawable/ic_arrow_down"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/primaryColor"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>

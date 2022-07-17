@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/common_padding_default"
     tools:context=".usecases.fragments.FragmentsFunctions.FractionSimplifierFragment">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -31,6 +32,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/common_padding_default"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
         app:layout_constraintStart_toEndOf="@id/tilVariableA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -42,27 +45,22 @@
             android:padding="@dimen/common_padding_default"
             android:orientation="horizontal">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/prefix_value_x"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                style="@style/Theme.SmartCalculator.Common.Subtitle1"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvResultadoX"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/hint_value_result_simbol"
                 android:gravity="end"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                android:layout_gravity="center"
+                style="@style/Theme.SmartCalculator.Common.Subtitle2"/>
 
         </LinearLayout>
 
@@ -92,6 +90,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/common_padding_default"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
         app:layout_constraintStart_toEndOf="@id/tilVariableB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cvResX"
@@ -103,27 +103,22 @@
             android:padding="@dimen/common_padding_default"
             android:orientation="horizontal">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/prefix_value_x"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                style="@style/Theme.SmartCalculator.Common.Subtitle1"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvResultadoY"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
                 android:text="@string/hint_value_result_simbol"
                 android:gravity="end"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/TextAppearance.MaterialComponents.Body1"/>
+                android:layout_gravity="center"
+                style="@style/Theme.SmartCalculator.Common.Subtitle2"/>
 
         </LinearLayout>
 
@@ -134,7 +129,6 @@
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:layout_marginTop="@dimen/common_padding_min"
-        android:backgroundTint="@color/colorBackground"
         app:layout_constraintTop_toBottomOf="@id/cvResY"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>

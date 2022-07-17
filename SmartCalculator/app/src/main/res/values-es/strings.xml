@@ -281,5 +281,151 @@
     <string name="main_developer_dev">Desarrollador Android</string>
     <string name="main_developer_description">Estoy entusiasmado con las tecnologías móviles. Creador de ideas, curioso y amante del deporte</string>
 
+    <string name="onboarding_page_one">Página 1</string>
+    <string name="onboarding_page_two">Página 2</string>
+    <string name="onboarding_page_three">Página 3</string>
+    <string name="onboarding_page_four">Página 4</string>
+    <string name="onboarding_page_five">Página 5</string>
+    <string name="onboarding_welcome_title">Bienvenido A Smart Calculator!</string>
+    <string name="onboarding_text_button">Iniciar Aplicación</string>
+    <string name="onboarding_welcome_algebra">Operaciones Algebraicas.</string>
+    <string name="onboarding_description_algebra">El álgebra utiliza las operaciones de suma, resta, multiplicación y división. Adicionalmente están las operaciones de potencia, archivo y logaritmos.</string>
+    <string name="onboarding_welcome_conversion">Operaciones De Conversiones.</string>
+    <string name="onboarding_description_conversion">Cast le permite hacer comparaciones entre valores de diferentes tipos de datos o reemplazar un valor de un tipo de datos con un valor de otro tipo de datos.</string>
+    <string name="onboarding_welcome_geometry">Operaciones Geometricas.</string>
+    <string name="onboarding_description_geometry">Así como en matemáticas realizamos operaciones de suma, resta y división, también las podemos realizar en geometría, la diferencia es que en esta que las realizamos gráficamente.</string>
+    <string name="onboarding_welcome_others">Otras Operaciones.</string>
+    <string name="onboarding_description_others">Las operaciones de este apartado pueden ser tan importantes como las demás ya que no se pueden resolver de forma práctica en ningún sitio.</string>
+
+    <string name="fm_label_conversions">Conversiones</string>
+    <string name="fm_label_others">Otras</string>
+
+    <string name="functions_content_acceleration">Aceleración</string>
+    <string name="functions_content_data_storage">Almacenamiento De Datos</string>
+    <string name="functions_content_angle">Angulo</string>
+    <string name="functions_content_area">Área</string>
+    <string name="functions_content_energy">Energia</string>
+    <string name="functions_content_strenght">Fuerza</string>
+    <string name="functions_content_age">Edad</string>
+    <string name="functions_content_date">Fecha</string>
+    <string name="functions_content_time">Tiempo</string>
+    <string name="functions_content_body_mass">Índice de Masa Corporal</string>
+    <string name="functions_content_ohm">Ley De Ohm</string>
+
+    <string name="hint_ft">ft</string>
+    <string name="hint_in">in</string>
+
+    <string name="other_law_voltaje">Voltaje</string>
+    <string name="other_law_corriente">Corriente</string>
+    <string name="other_law_resistencia">Resistencia</string>
+    <string name="other_law_potencia">Potencia</string>
+    <string name="bottom_shet_optons_title">Selecciona Una Opción</string>
+    <string name="description_bottom_sheet_voltaje">Imagen Voltaje</string>
+
+    <string name="bottom_option_voltio">Voltio</string>
+    <string name="bottom_option_millivoltio">Milivoltio</string>
+
+    <string name="bottom_option_amperio">Amperio</string>
+    <string name="bottom_option_milliamperios">Miliamperio</string>
+
+    <string name="bottom_option_ohm">Ohm</string>
+    <string name="bottom_option_milliohm">Milliohm</string>
+
+    <string name="bottom_option_watio">Watio</string>
+    <string name="bottom_option_milivatios">Milivatios</string>
+    <string name="bottom_option_kilowatio">Kilowatio</string>
+
+    <string name="tv_other_age_date_born">Fecha De Nacimiento</string>
+    <string name="tv_other_age_date_current">Fecha Actual</string>
+
+    <string name="hint_day_born">Día De Nacimiento</string>
+    <string name="hint_day_current">Día Actual</string>
+    <string name="hint_month_born">Mes De Nacimiento</string>
+    <string name="hint_month_current">Mes Actual</string>
+
+    <string name="month_year_january">Enero</string>
+    <string name="month_year_february">Febrero</string>
+    <string name="month_year_march">Marzo</string>
+    <string name="month_year_april">Abril</string>
+    <string name="month_year_may">Mayo</string>
+    <string name="month_year_june">Junio</string>
+    <string name="month_year_july">Julio</string>
+    <string name="month_year_august">Agosto</string>
+    <string name="month_year_september">Septiembre</string>
+    <string name="month_year_october">Octubre</string>
+    <string name="month_year_november">Noviembre</string>
+    <string name="month_year_dicember">Diciembre</string>
+    <string name="tv_other_age_next_birthday">Sigueinte Cumpleaños:</string>
+
+    <string name="other_age_result">%1$d Años, %2$d Meses, %3$d Dias</string>
+    <string name="hint_value_change">Cambio</string>
+    <string name="angle_option_radian">Radian</string>
+    <string name="angle_option_grade">Grado</string>
+    <string name="angle_option_minute">Minuto</string>
+    <string name="angle_option_second">Segundo</string>
+    <string name="angle_option_sextant">Sextante</string>
+    <string name="angle_option_quadrant">Cuadrante</string>
+    <string name="angle_option_circle">Circulo</string>
+    <string name="description_floating_action_button_conversion">Button for more options</string>
+    <string name="bottom_shet_add_options">Añadir Opciones</string>
+    <string name="fab_selected_options_description">Button For Select Pictures</string>
+    <string name="hint_value">Valor</string>
+    <string name="dialog_next_update_title">Estamos trabajando, pronto nuevas funciones.</string>
+    <string name="acceleration_option_meter_over_second">Metro / Segundo²</string>
+    <string name="acceleration_option_pie_over_second">Pie / Segundo²</string>
+    <string name="acceleration_option_gravity">Gravedad</string>
+    <string name="acceleration_option_gal">Gal</string>
+    <string name="menu_bottom_nav_history_updates">Nuevas Actualizaciones</string>
+    <string name="other_updates">Otras Actualizaciones</string>
+
+    <string name="dialo_next_upadate">Aceptar</string>
+    <string name="menu_time_time_difference">Diferencia Horaria</string>
+    <string name="menu_time_time_difference_description">Tiempo Transcurrido Entre Dos Horas</string>
+    <string name="menu_time_add_time">Agregar / Restar Tiempo</string>
+    <string name="menu_time_add_time_description">Sumar O Restar Horas Y Minutos</string>
+    <string name="tv_start_hour">Hora Inicial</string>
+    <string name="tv_end_hour">Hora Final</string>
+    <string name="hint_hour">Hora</string>
+    <string name="hint_minute">Minuto</string>
+    <string name="hint_second">Segundo</string>
+    <string name="hint_difference">Diferencia:</string>
+    <string name="hint_value_am">AM</string>
+    <string name="tv_sum_rest">Sumar / Restar</string>
+    <string name="hint_method">Selecciona El Metodo</string>
+    <string name="tv_sum">Sumar</string>
+    <string name="hint_day">Día</string>
+    <string name="hint_year">Año</string>
+    <string name="tv_start_date">Fecha De Inicio</string>
+    <string name="tv_end_date">Fecha Final</string>
+    <string name="menu_date_date_difference">Diferencia De Fechas</string>
+    <string name="menu_date_date_difference_description">Tiempo Transcurrido Entre Dos Fechas</string>
+    <string name="menu_date_date_add">Agregar / Restar Fecha</string>
+    <string name="menu_date_date_add_description">Agregar O Quitar Años, Meses, Y Días</string>
+    <string name="hint_month">Mes</string>
+    <string name="fab_calculator">Calculadora</string>
+    <string name="tv_subtration">Resta</string>
+    <string name="hint_value_pm">PM</string>
+    <string name="storage_option_megabit">Megabit</string>
+    <string name="storage_option_gigabit">Gigabit</string>
+    <string name="storage_option_megabyte">Megabyte</string>
+    <string name="storage_option_gigabyte">Gigabyte</string>
+    <string name="storage_option_bit">Bit</string>
+    <string name="storage_option_kilobit">Kilobit</string>
+    <string name="storage_option_kibibit">Kibibit</string>
+    <string name="storage_option_kilobyte">Kilobyte</string>
+    <string name="storage_option_mebibit">Mebibit</string>
+    <string name="storage_option_gibibit">Gibibit</string>
+    <string name="storage_option_terabit">Terabit</string>
+    <string name="storage_option_tebibit">Tebibit</string>
+    <string name="storage_option_petabit">Petabit</string>
+    <string name="storage_option_pebibit">Pebibit</string>
+    <string name="storage_option_byte">Byte</string>
+    <string name="storage_option_kibibyte">Kibibyte</string>
+    <string name="storage_option_mebibyte">Mebibyte</string>
+    <string name="storage_option_gibibyte">Gibibyte</string>
+    <string name="storage_option_terabyte">Terabyte</string>
+    <string name="storage_option_tebibyte">Tebibyte</string>
+    <string name="storage_option_petabyte">Petabyte</string>
+    <string name="storage_option_pebibyte">Pebibyte</string>
 
 </resources>

@@ -2,10 +2,11 @@
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:clickable="true"
-    android:focusable="true"
+    app:strokeColor="@color/secondaryColor"
+    app:strokeWidth="@dimen/border_cardview"
     style="@style/Theme.SmartCalculator.CardView">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -13,7 +14,7 @@
         android:layout_height="match_parent"
         android:padding="@dimen/common_padding_default">
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvFormula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,7 +22,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            style="@style/Theme.SmartCalculator.Subtitle1"/>
+            style="@style/Theme.SmartCalculator.Item.Subtitle1"/>
 
         <ImageButton
             android:id="@+id/btnViewFormula"

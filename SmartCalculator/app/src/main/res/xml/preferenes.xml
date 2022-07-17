@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:title="@string/preferences_display_title">
+
+        <SwitchPreferenceCompat
+            app:title="@string/preference_enable_light_mode"
+            app:key="@string/key_preference_enable_light_mode"
+            android:defaultValue="true"/>
+
+        <ListPreference
+            app:title="@string/preferences_application_color"
+            app:key="@string/key_preference_application_color"
+            app:entries="@array/themesColors"
+            app:entryValues="@array/themesColors_values"
+            app:defaultValue="@string/preference_key_color_default"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/settings_title_formats">
+
+        <ListPreference
+            app:title="@string/preferences_unit_of_measurement"
+            app:key="@string/preferences_key_unit_of_measurement"
+            app:entries="@array/units_of_measurement"
+            app:entryValues="@array/units_of_measurement_values"
+            app:defaultValue="@string/preferences_key_units_metric"/>
+
+        <ListPreference
+            app:title="@string/preferences_number_of_decimals"
+            app:key="@string/preferences_key_number_of_decimals"
+            app:entries="@array/number_of_decimals"
+            app:entryValues="@array/number_of_decimals_values"
+            app:defaultValue="@string/preferences_key_two_decimals"/>
+
+        <ListPreference
+            app:title="@string/preferences_number_format"
+            app:key="@string/preferences_key_number_format"
+            app:entries="@array/number_format"
+            app:entryValues="@array/number_format_values"
+            app:defaultValue="@string/preferences_key_style_format_one"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/settings_title_calculator">
+
+        <ListPreference
+            app:title="@string/preferences_design_calculator"
+            app:key="@string/preferences_key_design_calculator"
+            app:entries="@array/design_calculator"
+            app:entryValues="@array/design_calculator_values"
+            app:defaultValue="@string/preferences_key_design_calculator_simple"/>
+
+        <SwitchPreferenceCompat
+            app:title="@string/preferences_enable_calculator_mode"
+            app:key="@string/preferences_key_enable_calculator_mode"
+            app:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

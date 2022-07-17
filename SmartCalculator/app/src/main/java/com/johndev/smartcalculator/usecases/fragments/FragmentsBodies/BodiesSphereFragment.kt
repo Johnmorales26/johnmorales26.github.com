@@ -29,7 +29,7 @@ class BodiesSphereFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val bodies = FunctionsGeometryBodies()
+        val bodies = FunctionsGeometryBodies(requireContext())
         binding.btnResult.setOnClickListener{
             if (validFields()){
                 val radio = binding.etRadio.text.toString().toDouble()
@@ -40,16 +40,6 @@ class BodiesSphereFragment : Fragment() {
                     tvVolumen.text = volume
 
                     database = context?.let { it1 -> DatabaseOperationHistory(it1) }!!
-
-                    // Send data to History
-                    val operationHistory = OperationHistory(
-                        nameFigure = getString(R.string.bodies_content_sphere),
-                        image = R.drawable.sphere,
-                        radiusA = radio,
-                        area = area,
-                        volume = volume)
-                    val add = AddHistory()
-                    context?.let { it1 -> add.AddHistory(operationHistory, it1, binding.root) }
                 }
             }
         }

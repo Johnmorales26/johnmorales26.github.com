@@ -7,12 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.johndev.smartcalculator.R
 import com.johndev.smartcalculator.databinding.FragmentMainExtraOptionsBinding
 import com.johndev.smartcalculator.usecases.Adapters.ExtraOptionsAdapter
 import com.johndev.smartcalculator.usecases.Interfaces.OnClickListenerExtraOptions
 import com.johndev.smartcalculator.usecases.base.ExtraOptions
-import com.johndev.smartcalculator.usecases.common.OperationHistoryActivity
+import com.johndev.smartcalculator.usecases.principalViews.OperationHistoryActivity
 
 class MainExtraOptionsFragment : Fragment(), OnClickListenerExtraOptions {
 
@@ -58,9 +57,7 @@ class MainExtraOptionsFragment : Fragment(), OnClickListenerExtraOptions {
     }
 
     private fun data(typeData: String): MutableList<ExtraOptions> {
-        val data: MutableList<ExtraOptions> = mutableListOf(
-                ExtraOptions(R.drawable.history, getString(R.string.title_history_operations))
-            );
+        val data: MutableList<ExtraOptions> = mutableListOf()
         return data
     }
 }

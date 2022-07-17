@@ -8,11 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.johndev.tmdb_guide.Constans.API_TV_AIRING_TODAY
-import com.johndev.tmdb_guide.Constans.API_TV_LATEST
-import com.johndev.tmdb_guide.Constans.API_TV_ON_THE_AIR
-import com.johndev.tmdb_guide.Constans.API_TV_POPULAR
-import com.johndev.tmdb_guide.Constans.API_TV_TOP_RATED
+import com.johndev.tmdb_guide.common.utils.Constans.API_TV_AIRING_TODAY
+import com.johndev.tmdb_guide.common.utils.Constans.API_TV_LATEST
+import com.johndev.tmdb_guide.common.utils.Constans.API_TV_ON_THE_AIR
+import com.johndev.tmdb_guide.common.utils.Constans.API_TV_POPULAR
+import com.johndev.tmdb_guide.common.utils.Constans.API_TV_TOP_RATED
 import com.johndev.tmdb_guide.Interfaces.OnTVPressed
 import com.johndev.tmdb_guide.Provider.Services.TVService
 import com.johndev.tmdb_guide.R

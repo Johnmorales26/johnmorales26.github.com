@@ -27,9 +27,10 @@
 
 
     <View
+        android:id="@+id/separator"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/colorPrimary"
+        android:layout_height="2dp"
+        android:background="@color/primaryDarkColor"
         android:layout_marginHorizontal="@dimen/common_padding_middle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -20,7 +20,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etAutoComplete"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            style="@style/TextInputEditText"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
@@ -35,9 +36,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         tools:listitem="@layout/item_card_movie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tilSearch"/>
 
     <com.google.android.material.button.MaterialButton
@@ -47,7 +50,6 @@
         android:text="@string/label_see_more"
         android:gravity="center"
         android:visibility="gone"
-        android:layout_marginStart="@dimen/common_padding_min"
         app:layout_constraintTop_toBottomOf="@id/recyclerView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

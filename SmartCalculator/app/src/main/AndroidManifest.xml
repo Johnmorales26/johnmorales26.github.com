@@ -10,46 +10,50 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartCalculator">
         <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".usecases.principalViews.ConversionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".usecases.onboarding.OnboardingActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
-            android:name=".usecases.common.OperationHistoryActivity"
+            android:name=".usecases.principalViews.OperationHistoryActivity"
             android:exported="false" />
         <activity
-            android:name=".usecases.common.FormulasActivity"
+            android:name=".usecases.principalViews.FormulasActivity"
             android:exported="true" />
         <activity
-            android:name=".usecases.common.CalculatorActivity"
+            android:name=".usecases.principalViews.CalculatorActivity"
             android:exported="true" />
         <activity
-            android:name=".usecases.common.OperationsSecondaryActivity"
+            android:name=".usecases.principalViews.OperationsSecondaryActivity"
             android:exported="true" />
         <activity
-            android:name=".usecases.common.OperationsActivity"
+            android:name=".usecases.principalViews.OperationsActivity"
             android:exported="true"
             android:label="@string/title_activity_operations"
             android:theme="@style/Theme.SmartCalculator.NoActionBar" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-6654658193615542~1665261929"/>
-            <!--android:value="ca-app-pub-3940256099942544~3347511713"-->
-
+            android:value="ca-app-pub-6654658193615542~1665261929" />
     </application>
 
 </manifest>

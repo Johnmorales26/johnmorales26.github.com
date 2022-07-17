@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="units_of_measurement">
+        <item>@string/preferences_units_metric</item>
+        <item>@string/preferences_units_imperial</item>
+    </string-array>
+
+    <string-array name="units_of_measurement_values">
+        <item>@string/preferences_key_units_metric</item>
+        <item>@string/preferences_key_units_imperial</item>
+    </string-array>
+
+    <string-array name="number_of_decimals">
+        <item>@string/preferences_two_decimals</item>
+        <item>@string/preferences_four_decimals</item>
+        <item>@string/preferences_six_decimals</item>
+        <item>@string/preferences_eight_decimals</item>
+    </string-array>
+
+    <string-array name="number_of_decimals_values">
+        <item>@string/preferences_key_two_decimals</item>
+        <item>@string/preferences_key_four_decimals</item>
+        <item>@string/preferences_key_six_decimals</item>
+        <item>@string/preferences_key_eight_decimals</item>
+    </string-array>
+
+    <string-array name="number_format">
+        <item>@string/preferences_style_format_one</item>
+        <item>@string/preferences_style_format_two</item>
+        <item>@string/preferences_style_format_three</item>
+        <item>@string/preferences_style_format_four</item>
+        <item>@string/preferences_style_format_five</item>
+        <item>@string/preferences_style_format_six</item>
+        <item>@string/preferences_style_format_seven</item>
+        <item>@string/preferences_style_format_eight</item>
+    </string-array>
+
+    <string-array name="number_format_values">
+        <item>@string/preferences_key_style_format_one</item>
+        <item>@string/preferences_key_style_format_two</item>
+        <item>@string/preferences_key_style_format_three</item>
+        <item>@string/preferences_key_style_format_four</item>
+        <item>@string/preferences_key_style_format_five</item>
+        <item>@string/preferences_key_style_format_six</item>
+        <item>@string/preferences_key_style_format_seven</item>
+        <item>@string/preferences_key_style_format_eight</item>
+    </string-array>
+
+    <string-array name="design_calculator">
+        <item>@string/preferences_design_calculator_simple</item>
+        <item>@string/preferences_design_calculator_scientific</item>
+    </string-array>
+
+    <string-array name="design_calculator_values">
+        <item>@string/preferences_key_design_calculator_simple</item>
+        <item>@string/preferences_key_design_calculator_scientific</item>
+    </string-array>
+
+    <string-array name="themesColors">
+
+        <item>@string/preference_color_default</item>
+        <item>@string/preference_color_red</item>
+        <item>@string/preference_color_yellow</item>
+        <item>@string/preference_color_blue</item>
+        <item>@string/preference_color_green</item>
+        <item>@string/preference_color_purple</item>
+        <item>@string/preference_color_orange</item>
+
+    </string-array>
+
+    <string-array name="themesColors_values">
+
+        <item>@string/preference_key_color_default</item>
+        <item>@string/preference_key_color_red</item>
+        <item>@string/preference_key_color_yellow</item>
+        <item>@string/preference_key_color_blue</item>
+        <item>@string/preference_key_color_green</item>
+        <item>@string/preference_key_color_purple</item>
+        <item>@string/preference_key_color_orange</item>
+
+    </string-array>
+
+</resources>

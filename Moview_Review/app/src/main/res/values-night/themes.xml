@@ -10,8 +10,21 @@
         <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
         <item name="colorOnSecondary">@color/secondaryTextColor</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor" >@color/status_bar_dark</item>
+        <!-- Types -->
+        <item name="textAppearanceHeadline6">@style/TextAppearance.TMDB.Headline6</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.TMDB.Headline5</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.TMDB.Headline4</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.TMDB.Headline3</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.TMDB.Headline2</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearance.TMDB.Headline1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.TMDB.Subtitle2</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.TMDB.Subtitle1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.TMDB.Body2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.TMDB.Body1</item>
+        <item name="textAppearanceButton">@style/TextAppearance.TMDB.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.TMDB.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.TMDB.Overline</item>
     </style>
 
     <style name="Theme.SmartCalculator.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
@@ -22,10 +35,8 @@
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
         <item name="cardElevation">@dimen/common_padding_min</item>
-        <item name="strokeColor">@color/secondaryColor</item>
-        <item name="strokeWidth">2dp</item>
         <item name="cardCornerRadius">@dimen/common_padding_default</item>
-        <item name="android:backgroundTint">@color/cards_and_dialogs</item>
+        <item name="android:backgroundTint">@color/cards_and_dialogs_dark</item>
         <item name="android:layout_margin">@dimen/common_padding_min</item>
     </style>
 
@@ -37,6 +48,19 @@
     <style name="Theme.TMDB.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
         <item name="boxStrokeColor">@color/secondaryColor</item>
         <item name="hintTextColor">@color/secondaryColor</item>
+    </style>
+
+    <style name="TextInputEditText">
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="BackgroundActivities">
+        <item name="android:background">@color/background_dark</item>
+    </style>
+
+    <style name="Theme.TMDB.AppBar" parent="Theme.SmartCalculator.PopupOverlay">
+        <item name="android:background">@color/app_bar_light</item>
+        <item name="titleTextColor">@color/primaryTextColor</item>
     </style>
 
 </resources>

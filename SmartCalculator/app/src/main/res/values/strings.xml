@@ -280,5 +280,254 @@
     <string name="main_developer_dev">Android Developer</string>
     <string name="main_developer_description">I\'m warmed of mobile technologies. Ideas maker, curious and sports lover</string>
 
+    <string name="onboarding_page_one">Page 1</string>
+    <string name="onboarding_page_two">Page 2</string>
+    <string name="onboarding_page_three">Page 3</string>
+    <string name="onboarding_page_four">Page 4</string>
+    <string name="onboarding_page_five">Page 5</string>
+    <string name="onboarding_welcome_title">Welcome to the Smart Calculator app!</string>
+    <string name="onboarding_text_button">Start App</string>
+    <string name="onboarding_welcome_algebra">Operations Algebra.</string>
+    <string name="onboarding_description_algebra">Algebra uses the operations of addition, subtraction, multiplication, and division. Additionally there are the operations of power, filing and logarithms.</string>
+    <string name="onboarding_welcome_conversion">Operations Conversion.</string>
+    <string name="onboarding_description_conversion">Cast allow you to make comparisons between values of different data types or to replace a value of one data type with a value of another data type.</string>
+    <string name="onboarding_welcome_geometry">Operations Geometry.</string>
+    <string name="onboarding_description_geometry">As in mathematics we perform addition, subtraction and division operations, we can also perform them in geometry, the difference is that in this that we perform them graphically.</string>
+    <string name="onboarding_welcome_others">Operations Other Options.</string>
+    <string name="onboarding_description_others">The operations in this section can be just as important as the others since they cannot be solved in a practical way anywhere.</string>
+    <string name="fm_label_conversions">Conversions</string>
+    <string name="fm_label_others">Others</string>
+    <string name="functions_content_acceleration">Acceleration</string>
+    <string name="functions_content_data_storage">Data Storage</string>
+    <string name="functions_content_angle">Angle</string>
+    <string name="functions_content_area">Area</string>
+    <string name="functions_content_energy">Energy</string>
+    <string name="functions_content_strenght">Strenght</string>
+    <string name="functions_content_age">Age</string>
+    <string name="functions_content_date">Date</string>
+    <string name="functions_content_time">Time</string>
+    <string name="functions_content_body_mass">Body Mass Index</string>
+    <string name="functions_content_ohm">Ohm´s Law</string>
+    <string name="hint_ft">ft</string>
+    <string name="hint_in">in</string>
+    <string name="other_law_voltaje">Voltage</string>
+    <string name="other_law_corriente">Current</string>
+    <string name="other_law_resistencia">Resistance</string>
+    <string name="other_law_potencia">Potential</string>
+    <string name="bottom_shet_optons_title">Select an option</string>
+    <string name="description_bottom_sheet_voltaje">Image Voltage</string>
+
+    <string name="bottom_option_voltio">Volt</string>
+    <string name="bottom_option_millivoltio">Millivolt</string>
+
+    <string name="bottom_option_amperio">Ampere</string>
+    <string name="bottom_option_milliamperios">Milliamp</string>
+
+    <string name="bottom_option_ohm">Ohm</string>
+    <string name="bottom_option_milliohm">Milliohm</string>
+
+    <string name="bottom_option_watio">Watt</string>
+    <string name="bottom_option_milivatios">Milliwatts</string>
+    <string name="bottom_option_kilowatio">Killowatt</string>
+
+    <string name="tv_other_age_date_born">Date Of Birth</string>
+    <string name="tv_other_age_date_current">Date Of Current</string>
+
+    <string name="hint_day_born">Day Born</string>
+    <string name="hint_day_current">Day Current</string>
+    <string name="hint_month_born">Month Born</string>
+    <string name="hint_month_current">Month Current</string>
+
+    <string name="month_year_january">January</string>
+    <string name="month_year_february">February</string>
+    <string name="month_year_march">March</string>
+    <string name="month_year_april">April</string>
+    <string name="month_year_may">May</string>
+    <string name="month_year_june">June</string>
+    <string name="month_year_july">July</string>
+    <string name="month_year_august">August</string>
+    <string name="month_year_september">September</string>
+    <string name="month_year_october">October</string>
+    <string name="month_year_november">November</string>
+    <string name="month_year_dicember">Dicember</string>
+    <string name="tv_other_age_next_birthday">Next Birthday:</string>
+
+    <string name="other_age_result">%1$d Years, %2$d Month, %3$d Days</string>
+    <string name="hint_value_change">Change</string>
+    <string name="angle_option_radian">Radian</string>
+    <string name="angle_option_grade">Grade</string>
+    <string name="angle_option_minute">Minute</string>
+    <string name="angle_option_second">Second</string>
+    <string name="angle_option_sextant">Sextant</string>
+    <string name="angle_option_quadrant">Quadrant</string>
+    <string name="angle_option_circle">Circle</string>
+    <string name="description_floating_action_button_conversion">Button for more options</string>
+    <string name="bottom_shet_add_options">Add Options</string>
+    <string name="fab_selected_options_description">Button For Select Pictures</string>
+    <string name="hint_value">Value</string>
+    <string name="dialog_next_update_title">We\'re working, soon new function.</string>
+    <string name="acceleration_option_meter_over_second">Meter / Second²</string>
+    <string name="acceleration_option_pie_over_second">Pie / Second²</string>
+    <string name="acceleration_option_gravity">Gravity</string>
+    <string name="acceleration_option_gal">Gal</string>
+    <string name="menu_bottom_nav_history_updates">News Updates</string>
+    <string name="other_updates">Other Updates</string>
+
+    <string name="dialo_next_upadate">Accept</string>
+    <string name="menu_time_time_difference">Time Difference</string>
+    <string name="menu_time_time_difference_description">Time Elapsed Between Two Hours</string>
+    <string name="menu_time_add_time">Add / Substract Time</string>
+    <string name="menu_time_add_time_description">Add Or Substract Hours, Minutes or Seconds</string>
+    <string name="tv_start_hour">Start Hour</string>
+    <string name="tv_end_hour">End Hour</string>
+    <string name="hint_hour">Hour</string>
+    <string name="hint_minute">Minute</string>
+    <string name="hint_second">Second</string>
+    <string name="hint_difference">Difference:</string>
+    <string name="hint_value_am">AM</string>
+    <string name="tv_sum_rest">Add / Substract</string>
+    <string name="hint_method">Select Method</string>
+    <string name="tv_sum">Sum</string>
+    <string name="hint_day">Day</string>
+    <string name="hint_year">Year</string>
+    <string name="tv_start_date">Start Date</string>
+    <string name="tv_end_date">Final Date</string>
+    <string name="menu_date_date_difference">Date Difference</string>
+    <string name="menu_date_date_difference_description">Time Elapsed Between Two Dates</string>
+    <string name="menu_date_date_add">Add / Substract Date</string>
+    <string name="menu_date_date_add_description">Add Or Substract Years, Month And Days</string>
+    <string name="hint_month">Month</string>
+    <string name="fab_calculator">Calculator</string>
+    <string name="tv_subtration">Subtraction</string>
+    <string name="hint_value_pm">PM</string>
+    <string name="storage_option_megabit">Megabit</string>
+    <string name="storage_option_gigabit">Gigabit</string>
+    <string name="storage_option_megabyte">Megabyte</string>
+    <string name="storage_option_gigabyte">Gigabyte</string>
+    <string name="storage_option_bit">Bit</string>
+    <string name="storage_option_kilobit">Kilobit</string>
+    <string name="storage_option_kibibit">Kibibit</string>
+    <string name="storage_option_kilobyte">Kilobyte</string>
+    <string name="storage_option_mebibit">Mebibit</string>
+    <string name="storage_option_gibibit">Gibibit</string>
+    <string name="storage_option_terabit">Terabit</string>
+    <string name="storage_option_tebibit">Tebibit</string>
+    <string name="storage_option_petabit">Petabit</string>
+    <string name="storage_option_pebibit">Pebibit</string>
+    <string name="storage_option_byte">Byte</string>
+    <string name="storage_option_kibibyte">Kibibyte</string>
+    <string name="storage_option_mebibyte">Mebibyte</string>
+    <string name="storage_option_gibibyte">Gibibyte</string>
+    <string name="storage_option_terabyte">Terabyte</string>
+    <string name="storage_option_tebibyte">Tebibyte</string>
+    <string name="storage_option_petabyte">Petabyte</string>
+    <string name="storage_option_pebibyte">Pebibyte</string>
+
+    <string name="area_option_area">Area</string>
+    <string name="area_option_acre">Acre</string>
+    <string name="area_option_centimenter">Centimeter ^2</string>
+    <string name="area_option_decameter">Decameter ^2</string>
+    <string name="area_option_hectarea">Hectarea ^2</string>
+    <string name="area_option_hectometer">Hectometer ^2</string>
+    <string name="area_option_kilometer">Kilometer ^2</string>
+    <string name="area_option_meter">Meter ^2</string>
+    <string name="area_option_micrometer">Micrometer ^2</string>
+    <string name="area_option_milimeter">Milimeter ^2</string>
+    <string name="area_option_mile">Mile ^2</string>
+    <string name="area_option_nanometer">Nanometer ^2</string>
+    <string name="area_option_pie">Ft ^2</string>
+    <string name="area_option_in">In ^2</string>
+    <string name="area_option_yard">Yard ^2</string>
+    <string name="functions_content_fibonacci">Fibonacci</string>
+    <string name="other_number_of_fibonacci">Number Of Fibonacci</string>
+    <string name="menu_bottom_nav_settings">Settings</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_title_formats">Formatos</string>
+
+    <string name="preferences_unit_of_measurement">Unit Of Measurement</string>
+    <string name="preferences_key_unit_of_measurement">pref_unit_of_measurement</string>
+
+    <string name="preferences_units_metric">Metric</string>
+    <string name="preferences_units_imperial">Imperial</string>
+    <string name="preferences_key_units_metric">pref_metric</string>
+    <string name="preferences_key_units_imperial">pref_imperial</string>
+
+    <string name="preferences_two_decimals">0.12</string>
+    <string name="preferences_four_decimals">0.1234</string>
+    <string name="preferences_six_decimals">0.123456</string>
+    <string name="preferences_eight_decimals">0.12345678</string>
+    <string name="preferences_key_two_decimals">pref_two_decimals</string>
+    <string name="preferences_key_four_decimals">pref_four_decimals</string>
+    <string name="preferences_key_six_decimals">pref_six_decimals</string>
+    <string name="preferences_key_eight_decimals">pref_eight_decimals</string>
+
+    <string name="preferences_number_of_decimals">Number Of Decimals</string>
+    <string name="preferences_key_number_of_decimals">pref_number_of_decimals</string>
+    
+    <string name="preferences_style_format_one">1,234.5</string>
+    <string name="preferences_style_format_two">1\'234.5</string>
+    <string name="preferences_style_format_three">1 234.5</string>
+    <string name="preferences_style_format_four">1234.5</string>
+    <string name="preferences_style_format_five">1.234,5</string>
+    <string name="preferences_style_format_six">1\'234,5</string>
+    <string name="preferences_style_format_seven">1 234,5</string>
+    <string name="preferences_style_format_eight">1 234,5</string>
+    
+    <string name="preferences_key_style_format_one">pref_style_format_one</string>
+    <string name="preferences_key_style_format_two">pref_style_format_two</string>
+    <string name="preferences_key_style_format_three">pref_style_format_three</string>
+    <string name="preferences_key_style_format_four">pref_style_format_four</string>
+    <string name="preferences_key_style_format_five">pref_style_format_five</string>
+    <string name="preferences_key_style_format_six">pref_style_format_six</string>
+    <string name="preferences_key_style_format_seven">pref_style_format_seven</string>
+    <string name="preferences_key_style_format_eight">pref_style_format_eight</string>
+    <string name="preferences_number_format">Number Format</string>
+    <string name="preferences_key_number_format">pref_number_format</string>
+
+    <string name="settings_title_calculator">Calculator</string>
+    <string name="preferences_design_calculator">Design</string>
+    <string name="preferences_key_design_calculator">pref_design_calculator</string>
+
+    <string name="preferences_design_calculator_simple">Simple</string>
+    <string name="preferences_design_calculator_scientific">Scientific</string>
+
+    <string name="preferences_key_design_calculator_simple">pref_design_calculator_simple</string>
+    <string name="preferences_key_design_calculator_scientific">pref_design_calculator_scientific</string>
+    <string name="preferences_enable_calculator_mode">Calculator Mode</string>
+    <string name="preferences_key_enable_calculator_mode">pref_key_calculator_mode</string>
+
+    <string name="key_preference_enable_light_mode">pref_enable_light_theme</string>
+    <string name="preferences_display_title">Screen</string>
+    <string name="preference_enable_light_mode">Light Theme</string>
+    <string name="calc_btn_square">√</string>
+    <string name="calc_btn_opening_parenthesis">(</string>
+    <string name="calc_btn_closing_parentheses">)</string>
+    <string name="calc_btn_sin">sin</string>
+    <string name="calc_btn_cos">cos</string>
+    <string name="calc_btn_tan">tan</string>
+    <string name="calc_btn_log">log</string>
+    <string name="calc_btn_ln">ln</string>
+    <string name="calc_btn_x_admiration">x!</string>
+    <string name="calc_btn_x_square">x²</string>
+    <string name="calc_btn_1_x">1/x</string>
+
+    <string name="preference_color_default">Defalult</string>
+    <string name="preference_color_red">Rojo</string>
+    <string name="preference_color_yellow">Amarillo</string>
+    <string name="preference_color_blue">Azul</string>
+    <string name="preference_color_green">Verde</string>
+    <string name="preference_color_purple">Morado</string>
+    <string name="preference_color_orange">Naranja</string>
+
+    <string name="preference_key_color_default">pref_defalult</string>
+    <string name="preference_key_color_red">pref_rojo</string>
+    <string name="preference_key_color_yellow">pref_amarillo</string>
+    <string name="preference_key_color_blue">pref_azul</string>
+    <string name="preference_key_color_green">pref_verde</string>
+    <string name="preference_key_color_purple">pref_morado</string>
+    <string name="preference_key_color_orange">pref_naranja</string>
+    <string name="key_preference_application_color">pref_ui_color</string>
+    <string name="preferences_application_color">Application Color</string>
+
     <!-- TODO: Remove or change this placeholder text -->
 </resources>

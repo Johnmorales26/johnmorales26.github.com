@@ -38,4 +38,6 @@
     <string name="label_season">Season %s</string>
 
     <string name="alert_required">Required</string>
+    <string name="tn_imgMovie">tn_imgMovie</string>
+    <string name="tn_tvTitle">tn_tvTitle</string>
 </resources>

@@ -1,49 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--  Primary Colors  -->
-    <color name="colorPrimary">#ffc107</color>
-    <color name="colorPrimaryLight">#fff350</color>
-    <color name="colorPrimaryDark">#c79100</color>
+    <color name="primaryColor">#9e9e9e</color>
+    <color name="primaryLightColor">#cfcfcf</color>
+    <color name="primaryDarkColor">#707070</color>
 
-    <!--  Secondary Colors  -->
-    <color name="colorSecondary">#e65100</color>
-    <color name="colorSecondaryLight">#ff833a</color>
-    <color name="colorSecondaryDark">#ac1900</color>
+    <color name="secondaryColor">#9e9e9e</color>
+    <color name="secondaryLightColor">#cfcfcf</color>
+    <color name="secondaryDarkColor">#707070</color>
 
-    <color name="colorPrimaryText">#000000</color>
-    <color name="colorSecondaryText">#000000</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#ffffff</color>
 
-    <color name="colorBackground">#f5f5f5</color>
-    <color name="colorSurface">#ffffff</color>
-    <color name="colorError">#b71c1c</color>
+    <!--  Dark Mode  -->
+    <color name="background">#1b1b1b</color>
+    <color name="surface">#212121</color>
+    <color name="error">#cf6679</color>
+    <color name="onPrimary">#000000</color>
+    <color name="onSecondary">#000000</color>
+    <color name="onBackground">#ffffff</color>
+    <color name="onSurface">#ffffff</color>
+    <color name="onError">#000000</color>
 
-    <color name="colorOnPrimary">#000000</color>
-    <color name="colorOnSecondary">#ffffff</color>
-    <color name="colorOnBackground">#000000</color>
-    <color name="colorOnSurface">#000000</color>
-    <color name="colorOnError">#ffffff</color>
+    <!--  Light Mode  -->
+    <color name="backgroundLight">#f3e5f5</color>
+    <color name="surfaceLight">#f5f5f5</color>
+    <color name="onBackgroundLight">#121212</color>
+    <color name="onSurfaceLight">#121212</color>
 
-    <color name="colorDivider">#1E000000</color>
+    <!--three different shades of black color-->
+    <color name="blac_shade_1">#292D36</color>
+    <color name="black_shade_2">#272B33</color>
+    <color name="black_shade_3">#22252D</color>
+    <color name="yellow">#ffa500</color>
 
-    <!--    Dark Mode   -->
+    <color name="primaryRedColor">#e57373</color>
+    <color name="primaryRedLightColor">#ffa4a2</color>
+    <color name="primaryRedDarkColor">#af4448</color>
+    <color name="primaryRedBackground">#ffebee</color>
 
-    <color name="colorFormulas">#a4a4a4</color>
-    <color name="colorPrimaryDarkMode">#424242</color>
-    <color name="colorPrimaryLightDarkMode">#6d6d6d</color>
-    <color name="colorPrimaryDarkDarkMode">#1b1b1b</color>
-    <color name="colorSecondaryDarkMode">#f9a825</color>
-    <color name="colorSecondaryLightDarkMode">#ffd95a</color>
-    <color name="colorSecondaryDarkDarkMode">#c17900</color>
-    <color name="primaryTextColor">#ffffff</color>
-    <color name="secondaryTextColor">#000000</color>
+    <color name="primaryPurpleColor">#ce93d8</color>
+    <color name="primaryPurpleLightColor">#ffc4ff</color>
+    <color name="primaryPurpleDarkColor">#9c64a6</color>
+    <color name="primaryPurpleBackground">#ede7f6</color>
 
-    <color name="colorBackgroundDarkMode">#000000</color>
-    <color name="colorSurfaceDarkMode">#424242</color>
+    <color name="primaryBlueColor">#90caf9</color>
+    <color name="primaryBlueLightColor">#c3fdff</color>
+    <color name="primaryBlueBackground">#e3f2fd</color>
+    <color name="primaryBlueDarkColor">#5d99c6</color>
 
-    <color name="colorOnPrimaryDarkMode">#000000</color>
-    <color name="colorOnSecondaryDarkMode">#ffffff</color>
-    <color name="colorOnBackgroundDarkMode">#000000</color>
-    <color name="colorOnSurfaceDarkMode">#000000</color>
-    <color name="colorOnErrorDarkMode">#ffffff</color>
+    <color name="primaryYellowColor">#fff59d</color>
+    <color name="primaryYellowLightColor">#ffffcf</color>
+    <color name="primaryYellowBackground">#fffde7</color>
+    <color name="primaryYellowDarkColor">#cbc26d</color>
 
+    <color name="primaryGreenColor">#a5d6a7</color>
+    <color name="primaryGreenLightColor">#d7ffd9</color>
+    <color name="primaryGreenBackground">#e8f5e9</color>
+    <color name="primaryGreenDarkColor">#75a478</color>
+
+    <color name="primaryOrangeColor">#ffcc80</color>
+    <color name="primaryOrangeLightColor">#ffffb0</color>
+    <color name="primaryOrangeBackground">#fff3e0</color>
+    <color name="primaryOrangeDarkColor">#ca9b52</color>
 </resources>

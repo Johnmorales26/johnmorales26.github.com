@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import com.johndev.tmdb_guide.Constans
+import com.johndev.tmdb_guide.common.utils.Constans
 import com.johndev.tmdb_guide.Interfaces.OnTVPressed
 import com.johndev.tmdb_guide.R
 import com.johndev.tmdb_guide.databinding.ItemCardBinding

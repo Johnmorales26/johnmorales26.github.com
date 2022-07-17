@@ -17,8 +17,7 @@ import com.johndev.smartcalculator.usecases.base.FiguresAndBodies
 import com.johndev.smartcalculator.usecases.base.Formulas
 import com.johndev.smartcalculator.usecases.base.Functionalities
 import com.johndev.smartcalculator.usecases.base.SecondaryMenus
-import com.johndev.smartcalculator.usecases.common.FormulasActivity
-import com.squareup.picasso.Picasso
+import com.johndev.smartcalculator.usecases.principalViews.FormulasActivity
 
 class MainFormulasFragment : Fragment(), OnClickListener {
 

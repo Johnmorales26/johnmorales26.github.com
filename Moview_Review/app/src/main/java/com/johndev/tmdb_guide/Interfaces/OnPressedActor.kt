@@ -1,9 +1,9 @@
 package com.johndev.tmdb_guide.Interfaces
 
-import com.johndev.tmdb_guide.Actors.Actor
+import com.johndev.tmdb_guide.common.entities.ActorEntity
 
 interface OnPressedActor {
 
-    fun OnActorPressed(actor: Actor)
+    fun OnActorPressed(actorEntity: ActorEntity)
 
 }

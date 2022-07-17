@@ -29,14 +29,14 @@ class BodiesCylinderFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val bodies = FunctionsGeometryBodies()
+        val bodies = FunctionsGeometryBodies(requireContext())
         binding.btnResult.setOnClickListener{
             if (validFields()){
                 val radio = binding.etRadio.text.toString().toDouble()
                 val height = binding.etHeight.text.toString().toDouble()
                 with(binding){
                     val area = bodies.totalAreaCylinder(radio, height)
-                    val lateralArea = bodies.two_Decimals(bodies.lateralAreaCylinder(radio, height).toDouble())
+                    val lateralArea = bodies.lateralAreaCylinder(radio, height)
                     val volume = bodies.volumeCylinder(radio, height)
                     tvArea.text = area
                     tvLateralArea.text = lateralArea

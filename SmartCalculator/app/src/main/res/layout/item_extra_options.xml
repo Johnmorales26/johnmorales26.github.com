@@ -2,10 +2,11 @@
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:clickable="true"
-    android:focusable="true"
+    app:strokeColor="@color/secondaryColor"
+    app:strokeWidth="@dimen/border_cardview"
     style="@style/Theme.SmartCalculator.CardView">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,25 +24,25 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvExtraOption"
-            style="@style/Theme.SmartCalculator.Subtitle1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/common_padding_min"
             android:text="@string/item_option"
             app:layout_constraintStart_toEndOf="@id/imgExtraOption"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Theme.SmartCalculator.Item.Subtitle1"/>
 
-        <TextView
-            style="@style/Theme.SmartCalculator.Subtitle2"
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/common_padding_min"
             android:text="@string/item_extra_formula"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/imgExtraOption"
-            app:layout_constraintTop_toBottomOf="@id/tvFormula"/>
+            style="@style/Theme.SmartCalculator.Item.Subtitle2"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

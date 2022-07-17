@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/crimson_pro</item>
         <item>@font/crimson_text</item>
+        <item>@font/gentium_basic</item>
+        <item>@font/gentium_basic_bold</item>
+        <item>@font/gentium_basic_bold_italic</item>
+        <item>@font/gentium_basic_italic</item>
         <item>@font/montserrat</item>
         <item>@font/playfair_display</item>
         <item>@font/rubik_light</item>

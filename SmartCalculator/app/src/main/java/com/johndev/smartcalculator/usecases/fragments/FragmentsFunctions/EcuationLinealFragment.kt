@@ -21,7 +21,7 @@ class EcuationLinealFragment : Fragment() {
         _binding = FragmentEcuationLinealBinding.inflate(inflater, container, false)
 
         //*************************************************************************
-        val algebra = FunctionsAlgebra()
+        val algebra = FunctionsAlgebra(requireContext())
         binding.btnResult.setOnClickListener{
             if (validFields()){
                 val valueA = binding.etVariableA.text.toString().toDouble()

@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     tools:context=".usecases.fragments.FragmentsFunctions.ContainerProportionFragment">
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvFormula"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        style="@style/TextAppearance.MaterialComponents.Subtitle2"/>
+        style="@style/Theme.SmartCalculator.Common.HeadLine5"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnMenuCalculate"
@@ -44,7 +44,6 @@
             android:layout_marginTop="@dimen/common_padding_default"
             android:paddingHorizontal="@dimen/common_padding_min"
             android:hint="@string/hint_value_a"
-            app:prefixText="@string/prefix_value_a"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/tilVariableX"
             app:layout_constraintTop_toTopOf="parent"
@@ -63,7 +62,6 @@
             android:layout_marginTop="@dimen/common_padding_default"
             android:paddingHorizontal="@dimen/common_padding_min"
             android:hint="@string/hint_value_x"
-            app:prefixText="@string/prefix_value_x"
             app:layout_constraintStart_toEndOf="@+id/tilVariableA"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -82,7 +80,6 @@
             android:layout_marginStart="@dimen/common_padding_min"
             android:layout_marginTop="@dimen/common_padding_min"
             android:hint="@string/hint_value_b"
-            app:prefixText="@string/prefix_value_b"
             app:layout_constraintTop_toBottomOf="@+id/tilVariableA"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/cvViewOneRight"
@@ -99,6 +96,8 @@
             android:visibility="visible"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            app:strokeColor="@color/secondaryColor"
+            app:strokeWidth="@dimen/border_cardview"
             app:layout_constraintTop_toBottomOf="@+id/tilVariableA"
             app:layout_constraintStart_toEndOf="@id/tilVariableB"
             app:layout_constraintEnd_toEndOf="parent"
@@ -110,27 +109,22 @@
                 android:padding="@dimen/common_padding_default"
                 android:orientation="horizontal">
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="25"
                     android:text="@string/prefix_value_y"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    style="@style/TextAppearance.MaterialComponents.Body1"/>
+                    style="@style/Theme.SmartCalculator.Common.Subtitle1"/>
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tvResultado"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="75"
                     android:gravity="end"
                     android:text="@string/hint_value_result_simbol"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    style="@style/TextAppearance.MaterialComponents.Body1"/>
+                    android:layout_gravity="center"
+                    style="@style/Theme.SmartCalculator.Common.Subtitle2"/>
 
             </LinearLayout>
 

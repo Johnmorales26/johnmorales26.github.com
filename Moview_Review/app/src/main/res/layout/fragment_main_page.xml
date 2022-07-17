@@ -5,16 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainPage.MainPageFragment">
+    tools:context=".mainModel.view.MainPageFragment">
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvPopular"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/label__popular"
-        android:textAppearance="?attr/textAppearanceHeadline6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextAppearance.TMDB.Subtitle1"/>
 
     <ImageButton
         android:id="@+id/btnPopular"
@@ -40,9 +40,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/label_currently_in_theaters"
-        android:textAppearance="?attr/textAppearanceHeadline6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/recyclerView"/>
+        app:layout_constraintTop_toBottomOf="@id/recyclerView"
+        style="@style/TextAppearance.TMDB.Subtitle1"/>
 
     <ImageButton
         android:id="@+id/btnCurrently"
@@ -68,9 +68,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/label_drama_this_year"
-        android:textAppearance="?attr/textAppearanceHeadline6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rvPlayingCinema"/>
+        app:layout_constraintTop_toBottomOf="@id/rvPlayingCinema"
+        style="@style/TextAppearance.TMDB.Subtitle1"/>
 
     <ImageButton
         android:id="@+id/btnDramas"
@@ -96,9 +96,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/label_best_of_tom"
-        android:textAppearance="?attr/textAppearanceHeadline6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rvDramaYear"/>
+        app:layout_constraintTop_toBottomOf="@id/rvDramaYear"
+        style="@style/TextAppearance.TMDB.Subtitle1"/>
 
     <ImageButton
         android:id="@+id/btnBest"

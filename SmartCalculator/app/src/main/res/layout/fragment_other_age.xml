@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/common_padding_default"
+    tools:context=".usecases.fragments.FragmentsOther.OtherAgeFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTitleDateBorn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_other_age_date_born"
+        android:padding="@dimen/common_padding_min"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Theme.SmartCalculator.HeadLine6"/>
+
+    <LinearLayout
+        android:id="@+id/containerBornDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/common_padding_min"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleDateBorn">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMonthBorn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:layout_gravity="center"
+            android:text="@string/month_year_january"
+            app:icon="@drawable/ic_arrow_drop_down"
+            app:iconGravity="end"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilDayBorn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:layout_gravity="center"
+            android:padding="@dimen/common_padding_min"
+            android:hint="@string/hint_day_born"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDayBorn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilYearBorn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:layout_gravity="center"
+            android:hint="@string/hint_month_born"
+            android:padding="@dimen/common_padding_min"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etYearBorn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTitleDateCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_other_age_date_current"
+        app:layout_constraintTop_toBottomOf="@id/containerBornDate"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Theme.SmartCalculator.HeadLine6"/>
+
+    <LinearLayout
+        android:id="@+id/llContainerCurrent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/common_padding_min"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleDateCurrent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMonthCurrent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:layout_gravity="center"
+            android:text="@string/month_year_january"
+            app:icon="@drawable/ic_arrow_drop_down"
+            app:iconGravity="end"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilDayCurrent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:layout_gravity="center"
+            android:hint="@string/hint_day_current"
+            android:padding="@dimen/common_padding_min"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDayCurrent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilYearCurrent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:layout_gravity="center"
+            android:hint="@string/hint_month_current"
+            android:padding="@dimen/common_padding_min"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etYearCurrent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTitleResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_results"
+        app:layout_constraintTop_toBottomOf="@id/llContainerCurrent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Theme.SmartCalculator.HeadLine6"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
+        style="@style/Theme.SmartCalculator.CardView"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleResult">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgAge"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_age_date"
+                android:padding="@dimen/common_padding_min"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvAgeTitleResult"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/functions_content_age"
+                app:layout_constraintStart_toEndOf="@id/imgAge"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tvAgeResult"
+                style="@style/Theme.SmartCalculator.HeadLine6"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvAgeResult"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="@string/functions_content_age"
+                app:layout_constraintStart_toEndOf="@id/imgAge"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAgeTitleResult"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Theme.SmartCalculator.Subtitle1"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvNextBirthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
+        style="@style/Theme.SmartCalculator.CardView"
+        app:layout_constraintTop_toBottomOf="@id/cvAge">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgNext"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="@dimen/common_padding_min"
+                android:src="@drawable/ic_next_birthday"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvNextTitleResult"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_other_age_next_birthday"
+                app:layout_constraintStart_toEndOf="@id/imgNext"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tvNextResult"
+                style="@style/Theme.SmartCalculator.HeadLine6"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvNextResult"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="@string/tv_other_age_next_birthday"
+                app:layout_constraintStart_toEndOf="@id/imgNext"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvNextTitleResult"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Theme.SmartCalculator.Subtitle1"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnResult"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/hint_value_result"
+        android:layout_marginEnd="@dimen/common_padding_min"
+        android:layout_marginHorizontal="@dimen/common_padding_min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvNextBirthday"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

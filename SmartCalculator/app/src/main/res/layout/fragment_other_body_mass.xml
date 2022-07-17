@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/common_padding_default"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".usecases.fragments.FragmentsOther.OtherBodyMassFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
+        style="@style/Theme.SmartCalculator.CardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_padding_min"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="20"
+                android:src="@drawable/ic_height"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:text="Height"
+                android:layout_gravity="center"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilHeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_gravity="center"
+                android:hint="@string/hint_height"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:layout_gravity="center"
+                android:hint="@string/hint_ft"
+                android:layout_marginHorizontal="@dimen/common_padding_nano"
+                android:visibility="gone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilIN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:layout_gravity="center"
+                android:hint="@string/hint_in"
+                android:layout_marginHorizontal="@dimen/common_padding_nano"
+                android:visibility="gone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etIN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cvHeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
+        style="@style/Theme.SmartCalculator.CardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_padding_min"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="20"
+                android:src="@drawable/ic_weights"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:text="@string/hint_weight"
+                android:layout_gravity="center"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilWeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_gravity="center"
+                android:hint="@string/hint_weight"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipMetrico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unidades: Metrico"
+        android:checkable="true"
+        android:clickable="true"
+        app:rippleColor="@color/primaryColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvWeight"/>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipImperial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unidades: Imperial"
+        android:checkable="true"
+        android:clickable="true"
+        app:rippleColor="@color/primaryColor"
+        android:layout_marginStart="@dimen/common_padding_min"
+        app:layout_constraintStart_toEndOf="@+id/chipMetrico"
+        app:layout_constraintTop_toBottomOf="@id/cvWeight"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/chipMetrico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/secondaryColor"
+        app:strokeWidth="@dimen/border_cardview"
+        style="@style/Theme.SmartCalculator.CardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_padding_min"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="20"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_calculator_body_mass"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:text="@string/hint_weight"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilResultIMC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="@string/hint_results"
+                    android:enabled="false"
+                    android:paddingVertical="@dimen/common_padding_min"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:paddingVertical="@dimen/common_padding_min"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnResult"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/hint_value_result"
+        android:layout_marginEnd="@dimen/common_padding_min"
+        android:layout_marginHorizontal="@dimen/common_padding_min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvResults"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

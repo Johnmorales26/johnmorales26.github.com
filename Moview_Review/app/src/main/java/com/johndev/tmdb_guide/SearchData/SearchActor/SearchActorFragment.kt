@@ -1,20 +1,34 @@
 package com.johndev.tmdb_guide.SearchData.SearchActor
 
+import android.app.ActivityOptions
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Pair
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.johndev.tmdb_guide.DetailsActor.DetailsActorActivity
+import com.android.volley.Request
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
+import com.google.gson.Gson
+import com.johndev.tmdb_guide.detailsActorModel.view.DetailsActorActivity
 import com.johndev.tmdb_guide.Interfaces.OnPressedSearch
 import com.johndev.tmdb_guide.R
-import com.johndev.tmdb_guide.SearchData.SearchCommon.SearchAdapter
-import com.johndev.tmdb_guide.SearchData.SearchCommon.SearchData
+import com.johndev.tmdb_guide.common.adapters.SearchAdapter
+import com.johndev.tmdb_guide.common.entities.SearchData
 import com.johndev.tmdb_guide.SearchData.SearchCommon.SearchValues
+import com.johndev.tmdb_guide.common.entities.ActorEntity
+import com.johndev.tmdb_guide.common.utils.Constans
+import com.johndev.tmdb_guide.common.utils.hideKeyBoard
 import com.johndev.tmdb_guide.databinding.FragmentSearchActorBinding
+import com.johndev.tmdb_guide.detailsActorModel.viewModel.ActorViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.util.*
@@ -44,6 +58,7 @@ class SearchActorFragment : Fragment(), OnPressedSearch {
     private fun configureButton(searchActor: SearchValues) {
         binding.btnSearch.setOnClickListener {
             if (validFields()){
+                hideKeyBoard(requireContext(), binding.root)
                 adapter.deleteAll()
                 val company = binding.etAutoComplete.text.toString().lowercase(Locale.ROOT).trim()
                 binding.btnMore.visibility = View.VISIBLE
@@ -74,11 +89,15 @@ class SearchActorFragment : Fragment(), OnPressedSearch {
         }
     }
 
-    override fun onSearchPressed(data: SearchData) {
+    override fun onSearchPressed(data: SearchData, imgPhoto: View, tvName: View) {
         val intent = Intent(context, DetailsActorActivity::class.java).apply {
-            putExtra(getString(R.string.key_actor_passed), data.id.toString().trim())
+            putExtra(getString(R.string.key_actor_passed), data.id.trim())
         }
-        startActivity(intent)
+        val imgPair: Pair<View, String> = Pair.create(imgPhoto, getString(R.string.tn_imgMovie))
+        val namePair: Pair<View, String> = Pair.create(tvName, getString(R.string.tn_tvTitle))
+        val options = ActivityOptions.makeSceneTransitionAnimation(activity, imgPair, namePair)
+            .toBundle()
+        startActivity(intent, options)
     }
 
     private fun validFields(): Boolean{

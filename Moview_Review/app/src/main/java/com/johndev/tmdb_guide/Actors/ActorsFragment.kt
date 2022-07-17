@@ -8,10 +8,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.johndev.tmdb_guide.DetailsActor.DetailsActorActivity
+import com.johndev.tmdb_guide.detailsActorModel.view.DetailsActorActivity
 import com.johndev.tmdb_guide.Interfaces.OnPressedActor
 import com.johndev.tmdb_guide.Provider.Services.ActorsService
 import com.johndev.tmdb_guide.R
+import com.johndev.tmdb_guide.common.adapters.ActorsAdapter
+import com.johndev.tmdb_guide.common.entities.ActorEntity
 import com.johndev.tmdb_guide.databinding.FragmentActorsBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -59,7 +61,7 @@ class ActorsFragment : Fragment(), OnPressedActor {
     }
 
     private fun setupRecyclerView() {
-        val data: MutableList<Actor> = mutableListOf()
+        val data: MutableList<ActorEntity> = mutableListOf()
         binding.let {
             actorsAdapter = ActorsAdapter(data, this)
             it.rvActors.apply {
@@ -69,9 +71,9 @@ class ActorsFragment : Fragment(), OnPressedActor {
         }
     }
 
-    override fun OnActorPressed(actor: Actor) {
+    override fun OnActorPressed(actorEntity: ActorEntity) {
         val intent = Intent(context, DetailsActorActivity::class.java).apply {
-            putExtra(getString(R.string.key_actor_passed), actor.id.toString().trim())
+            putExtra(getString(R.string.key_actor_passed), actorEntity.id.toString().trim())
         }
         startActivity(intent)
     }

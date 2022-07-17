@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:strokeColor="@color/secondaryColor"
+    app:strokeWidth="@dimen/border_cardview"
+    style="@style/Theme.SmartCalculator.CardView">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <com.google.android.material.textview.MaterialTextView
+           android:id="@+id/tvTitle"
+           android:text="@string/dialog_next_update_title"
+           android:textAlignment="center"
+           android:gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintBottom_toTopOf="@id/imgView"
+           style="@style/Theme.SmartCalculator.Onboarding.Title"/>
+
+       <ImageView
+           android:id="@+id/imgView"
+           android:layout_width="match_parent"
+           android:layout_height="400dp"
+           android:src="@drawable/ic_design_data"
+           app:layout_constraintTop_toBottomOf="@id/tvTitle"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintBottom_toTopOf="@+id/btnNext"/>
+
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/btnNext"
+           android:layout_width="wrap_content"
+           android:layout_height="0dp"
+           android:layout_weight="20"
+           android:layout_gravity="center"
+           android:text="@string/dialo_next_upadate"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"/>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

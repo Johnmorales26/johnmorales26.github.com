@@ -7,13 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
-import com.johndev.tmdb_guide.Actors.KnownFor
-import com.johndev.tmdb_guide.Constans
+import com.johndev.tmdb_guide.common.entities.KnownFor
+import com.johndev.tmdb_guide.common.utils.Constans
 import com.johndev.tmdb_guide.Interfaces.OnPressedMovie
-import com.johndev.tmdb_guide.MoviePopularTheaters.CardMovieAdapter
-import com.johndev.tmdb_guide.PopularMovies.MoviePopular
+import com.johndev.tmdb_guide.common.adapters.CardMovieAdapter
+import com.johndev.tmdb_guide.common.entities.MoviePopular
 import com.johndev.tmdb_guide.Provider.Services.MoviesService
+import com.johndev.tmdb_guide.common.entities.DataRequestEntity
 import com.johndev.tmdb_guide.databinding.FragmentMoviesTheatersBinding
+import com.johndev.tmdb_guide.mainModel.view.MainActivity.Companion.mainViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -44,12 +46,12 @@ class MoviesTheatersFragment : Fragment(), OnPressedMovie {
     private suspend fun inflateList() = withContext(Dispatchers.Default) {
         val moviesService = MoviesService(activity, requireContext(), adapter)
         lifecycleScope.launch(Dispatchers.Default) {
-            moviesService.getDataMovie(Constans.API_POPULAR_MOVIES)
+            //moviesService.getDataMovie(Constans.API_POPULAR_MOVIES, mainViewModel)
         }
     }
 
     private fun setupRecyclerView() {
-        val data: MutableList<MoviePopular> = mutableListOf()
+        val data: MutableList<DataRequestEntity> = mutableListOf()
         binding.let {
             adapter = CardMovieAdapter(data, this)
             it.recyclerView.apply {
@@ -59,7 +61,9 @@ class MoviesTheatersFragment : Fragment(), OnPressedMovie {
         }
     }
 
-    override fun OnMoviePressed(movie: MoviePopular) {}
+    override fun OnMoviePressed(movie: DataRequestEntity, imgPhoto: View) {
+
+    }
 
     override fun OnMovieKnowPressed(movie: KnownFor) {}
 

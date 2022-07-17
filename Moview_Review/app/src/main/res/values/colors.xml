@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primaryColor">#212121</color>
-    <color name="primaryLightColor">#484848</color>
-    <color name="primaryDarkColor">#000000</color>
+    <color name="primaryColor">#4f4699</color>
+    <color name="primaryLightColor">#7f72ca</color>
+    <color name="primaryDarkColor">#1c1e6a</color>
 
-    <color name="secondaryColor">#ffea00</color>
-    <color name="secondaryLightColor">#ffff56</color>
-    <color name="secondaryDarkColor">#c7b800</color>
+    <color name="secondaryColor">#ffc14f</color>
+    <color name="secondaryLightColor">#fff480</color>
+    <color name="secondaryDarkColor">#c8911a</color>
 
     <color name="primaryTextColor">#ffffff</color>
     <color name="secondaryTextColor">#000000</color>
     <color name="backgroundTitleMovie">#B3FFFFFF</color>
 
-    <color name="cards_and_dialogs">#424242</color>
-    <color name="background">#303030</color>
+    <color name="status_bar_light">#757575</color>
+    <color name="app_bar_light">#E0E0E0</color>
+    <color name="background_light">#EEEEEE</color>
+    <color name="cards_and_dialogs_light">#FAFAFA</color>
+
+    <color name="status_bar_dark">#000000</color>
+    <color name="app_bar_dark">#212121</color>
+    <color name="background_dark">#303030</color>
+    <color name="cards_and_dialogs_dark">#424242</color>
+
 </resources>
